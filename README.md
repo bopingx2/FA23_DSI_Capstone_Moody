@@ -4,5 +4,6 @@ This repository is the Capstone Project for Fall 2023 MS in Data Science at Colu
 
 Group Member:
 Boping Xia (bx2210)
+Xinhao Dai (xd2285)
 
 Currently under construction.
