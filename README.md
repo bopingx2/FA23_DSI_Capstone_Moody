@@ -6,5 +6,6 @@ Group Member:
 Boping Xia (bx2210)
 Xinhao Dai (xd2285)
 Mingkang Yuan (my2705)
+Shumin Song (ss6606)
 
 Currently under construction.
