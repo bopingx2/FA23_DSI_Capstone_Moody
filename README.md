@@ -15,8 +15,8 @@ Margaret Reed (mwreed1)
 
 |                           |                                                  | Egypt     | Hungary   | Nigeria | Poland | Romania |
 |---------------------------|--------------------------------------------------|-----------|-----------|---------|--------|---------|
-| Bond Markets              | Term Premium                                     |           |           |         |        |         |
-|                           | Risk Premium                                     |           |           |         |        |         |
+| Bond Markets              | Term Premium                                     |✓ GFD      | ✓ GFD     | Not Found|✓ GFD   | ✓ GFD   |
+|                           | Risk Premium                                     |✓ GFD      | ✓ GFD     | ✓ GFD   |Not Found| ✓ GFD   |
 |                           | EMBI sovereign bond spreads                      |           |           |         |        |         |
 | Equity Markets            | stock prices, mom% change                        |           |           |         |        |         |
 |                           | stock prices, mom24mma% change                   |           |           |         |        |         |
