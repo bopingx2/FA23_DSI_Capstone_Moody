@@ -17,7 +17,7 @@ Margaret Reed (mwreed1)
 |---------------------------|--------------------------------------------------|-----------|-----------|---------|--------|---------|
 | Bond Markets              | Term Premium                                     |✓ GFD      | ✓ GFD     | Not Found|✓ GFD   | ✓ GFD   |
 |                           | Risk Premium                                     |✓ GFD      | ✓ GFD     | ✓ GFD   |Not Found| ✓ GFD   |
-|                           | EMBI sovereign bond spreads                      |           |           |         |        |         |
+|                           | EMBI sovereign bond spreads                      |Not Found  | ✓ GFD     | ✓ GFD   | ✓ GFD   |Not Found|
 | Equity Markets            | stock prices, mom% change                        |           |           |         |        |         |
 |                           | stock prices, mom24mma% change                   |           |           |         |        |         |
 |                           | stock market volatility                          |           |           |         |        |         |
