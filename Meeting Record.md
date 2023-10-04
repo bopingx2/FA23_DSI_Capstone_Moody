@@ -1,5 +1,7 @@
 # Meeting Record 
 
+## 10/4
+
 current month - last month / last month mom%
 
 current month - last month / last month mom24mam% growth rate of 24 month's moving avergae
