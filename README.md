@@ -7,7 +7,7 @@ Boping Xia (bx2210)
 Xinhao Dai (xd2285)
 Mingkang Yuan (my2705)
 Shumin Song (ss6606)
-Margaret Reed (mwreed1)
+Margaret Reed (mr4251)
 
 ## Data Gathering
 ### Data Gathering Checklist
