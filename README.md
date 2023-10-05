@@ -27,9 +27,9 @@ Margaret Reed (mr4251)
 |                           | Business conditions/eco Barometer/eco Sentiment  (X)|           |           |         |        |         |
 |                           | Economic conditions/barometer/sentiment     (X)     |           |           |         |        |         |
 |                           | Policy Uncertainty                               |           |           |         |        |         |
-| Money and Portfolio Flows | Broad money, mo12m%change                        |✓ WDI           |✓ WDI            |✓ WDI         |✓ WDI         | ✓ WDI         |
+| Money and Portfolio Flows | Broad money, mo12m%change                        |           |           |         |        |         |
 |                           | Velocity of money, mo12m change                  |           |           |         |        |         |
-|                           | Portfolio Flows                                  | ✓ WDI           |✓ WDI            | ✓ WDI         |  ✓ WDI       | ✓ WDI         |
+|                           | Portfolio Flows                                  |           |          |         |       |         |
 
 
 
