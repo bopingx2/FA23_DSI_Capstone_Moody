@@ -31,7 +31,7 @@ Margaret Reed (mr4251)
 | Money and Portfolio Flows | Broad money, mo12m%change                        |           |           |         |        |         |
 |                           | Velocity of money, mo12m change                  |           |           |         |        |         |
 |                           | Portfolio Flows                                  |           |          |         |       |         |
-|                           | Foreign Exchange Reserve (change % year over year)|           |          |         |       |         |
+|                           | Foreign Exchange Reserve (change % year over year)|Not Found  |✓ GFD      |✓ GFD    |✓ GFD   |✓ GFD    |
 |                           | Foreign Exchange Reserve (nil USD) / GDP         |           |          |         |       |         |
 |   Bank Lending            | Bank lending, mo12m% change (total bank lending)     |           |          |         |       |         |
     
