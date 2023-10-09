@@ -23,7 +23,7 @@ Margaret Reed (mr4251)
 |                           | stock market volatility                          |Not Found  |✓ GFD      |✓ GFD    |✓ GFD   |✓ GFD    |
 | Macero Fundamentals       | REER                                             |✓ IMF      |✓ IMF      |✓ IMF   |✓ IMF     |    ✓ IMF      |
 |                           | Current Account Balance (change % year over year)|Not Found  |✓ GFD      |Not Found |✓ GFD   |✓ GFD    |
-|                           | Current Account Balance (mil USD) / GDP  |           |Not Found  |✓ GFD      |Not Found |✓ GFD   |✓ GFD    |
+|                           | Current Account Balance (mil USD) / GDP  |           Not Found  |✓ GFD      |Not Found |✓ GFD   |✓ GFD    |
 |                           | Policy rate-fed funds rate differential (based on AVG figures)|           |           |         |        |         |
 |                           | One-Day Repurchase Rate %AVG             |           |           |         |        |         |
 |                           | One-Day Repurchase Rate %EOP |           |           |         |        |         |
