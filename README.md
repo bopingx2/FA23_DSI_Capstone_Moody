@@ -22,14 +22,19 @@ Margaret Reed (mr4251)
 |                           | stock prices, mom24mma% change                   |           |           |         |        |         |
 |                           | stock market volatility                          |Not Found  |✓ GFD      |✓ GFD    |✓ GFD   |✓ GFD    |
 | Macero Fundamentals       | REER                                             |✓ IMF      |✓ IMF      |✓ IMF   |✓ IMF     |    ✓ IMF      |
-|                           | PMIs                         (X)                    |✓ S&P     | ✓ S&P    |  ✓ S&P  |✓ S&P   |Not Found|
-|                           | Manuf./business/industry expectations/confidence (X)|           |           |         |        |         |
-|                           | Business conditions/eco Barometer/eco Sentiment  (X)|           |           |         |        |         |
-|                           | Economic conditions/barometer/sentiment     (X)     |           |           |         |        |         |
+|                           | Current Account Balance (change % year over year)|           |           |         |        |         |
+|                           | Current Account Balance (mil USD) / GDP  |           |           |         |        |         |
+|                           | Policy rate-fed funds rate differential (based on AVG figures)|           |           |         |        |         |
+|                           | One-Day Repurchase Rate %AVG             |           |           |         |        |         |
+|                           | One-Day Repurchase Rate %EOP |           |           |         |        |         |
 |                           | Policy Uncertainty                               |           |           |         |        |         |
 | Money and Portfolio Flows | Broad money, mo12m%change                        |           |           |         |        |         |
 |                           | Velocity of money, mo12m change                  |           |           |         |        |         |
 |                           | Portfolio Flows                                  |           |          |         |       |         |
+|                           | Foreign Exchange Reserve (change % year over year)|           |          |         |       |         |
+|                           | Foreign Exchange Reserve (nil USD) / GDP         |           |          |         |       |         |
+|   Bank Lending            | Bank lending, mo12m% change (total bank lending)     |           |          |         |       |         |
+    
 
 
 
