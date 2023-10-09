@@ -1,0 +1,16 @@
+Ticker,Name,Series Type,Currency,Country,Sector,Industry,Sic,Exchange,Cik,Fiscal_End,Units,Scale,Flow,Adjustment,Periodicity,Metadata,Corporate_History
+GFDD.SM.01.ROM,Romania Stock price volatility,Stocks - Technical Indicators,Non Currency Series,Romania,,,,,,,Units,Units,Stock,Current Not Seasonally Adjusted,Annual From Dec 1999 To Dec 2011<BR>,Stock price volatility is the average of the 360-day volatility of the national stock market index. Bloomberg,
+Date,Ticker,Close,Annual_Percent_Change
+12/31/1999,GFDD.SM.01.ROM,37.23833,
+12/31/2000,GFDD.SM.01.ROM,36.80691,-1.15853745321016
+12/31/2001,GFDD.SM.01.ROM,40.95813,11.2783713710279
+12/31/2002,GFDD.SM.01.ROM,28.13995,-31.2958135539879
+12/31/2003,GFDD.SM.01.ROM,23.94602,-14.9038288980613
+12/31/2004,GFDD.SM.01.ROM,16.5686,-30.8085435491994
+12/31/2005,GFDD.SM.01.ROM,27.39358,65.3343070627573
+12/31/2006,GFDD.SM.01.ROM,28.57265,4.30418368099387
+12/31/2007,GFDD.SM.01.ROM,22.35637,-21.7560499288655
+12/31/2008,GFDD.SM.01.ROM,29.06802,30.021197537883
+12/31/2009,GFDD.SM.01.ROM,45.31772,55.9023284007648
+12/31/2010,GFDD.SM.01.ROM,38.03904,-16.0614435148105
+12/31/2011,GFDD.SM.01.ROM,26.54282,-30.2221612322498
