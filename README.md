@@ -20,7 +20,7 @@ Margaret Reed (mr4251)
 |                           | EMBI sovereign bond spreads    (X)                  |Not Found  | ✓ GFD     | ✓ GFD   | ✓ GFD   |Not Found|
 | Equity Markets            | stock prices, mom% change                        |           |           |         |        |         |
 |                           | stock prices, mom24mma% change                   |           |           |         |        |         |
-|                           | stock market volatility                          |           |           |         |        |         |
+|                           | stock market volatility                          |Not Found  |✓ GFD      |✓ GFD    |✓ GFD   |✓ GFD    |
 | Macero Fundamentals       | REER                                             |✓ IMF      |✓ IMF      |✓ IMF   |✓ IMF     |    ✓ IMF      |
 |                           | PMIs                         (X)                    |✓ S&P     | ✓ S&P    |  ✓ S&P  |✓ S&P   |Not Found|
 |                           | Manuf./business/industry expectations/confidence (X)|           |           |         |        |         |
