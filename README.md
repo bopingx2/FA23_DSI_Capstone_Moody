@@ -33,7 +33,7 @@ Margaret Reed (mr4251)
 |                           | Portfolio Flows                                  |           |          |         |       |         |
 |                           | Foreign Exchange Reserve (change % year over year)|Not Found  |✓ GFD      |✓ GFD    |✓ GFD   |✓ GFD    |
 |                           | Foreign Exchange Reserve (nil USD) / GDP         |Not Found  |✓ GFD      |✓ GFD    |✓ GFD   |✓ GFD    |
-|   Bank Lending            | Bank lending, mo12m% change (total bank lending)     |           |          |         |       |         |
+|   Bank Lending            | Bank lending, mo12m% change (total bank lending)     |✓ CEIC           |✓ CEIC              |✓ CEIC             |✓ CEIC           |✓ CEIC             |
     
 
 
