@@ -28,7 +28,7 @@ Margaret Reed (mr4251)
 |                           | One-Day Repurchase Rate %AVG             |           |           |         |        |         |
 |                           | One-Day Repurchase Rate %EOP |           |           |         |        |         |
 |                           | Policy Uncertainty                               |           |           |         |        |         |
-| Money and Portfolio Flows | Broad money, mo12m%change                        | ✓ WDI           |          | ✓ WDI         |       |          |
+| Money and Portfolio Flows | Broad money, mo12m%change                        | ✓ WDI           |           | ✓ WDI         |✓ IMF       | ✓ IMF         |
 |                           | Velocity of money, mo12m change                  |           |           |         |        |         |
 |                           | Portfolio Flows                                  |            |        |      |        |         |
 |                           | Foreign Exchange Reserve (change % year over year)|Not Found  |✓ GFD      |✓ GFD    |✓ GFD   |✓ GFD    |
