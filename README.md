@@ -22,8 +22,8 @@ Margaret Reed (mr4251)
 |                           | stock prices, mom24mma% change                   |           |           |         |        |         |
 |                           | stock market volatility                          |Not Found  |✓ GFD      |✓ GFD    |✓ GFD   |✓ GFD    |
 | Macero Fundamentals       | REER                                             |✓ IMF      |✓ IMF      |✓ IMF   |✓ IMF     |    ✓ IMF      |
-|                           | Current Account Balance (change % year over year)|Not Found  |✓ GFD      |Not Found |✓ GFD   |✓ GFD    |
-|                           | Current Account Balance (mil USD) / GDP  |           Not Found  |✓ GFD      |Not Found |✓ GFD   |✓ GFD    |
+|                           | Current Account Balance (change % year over year)|✓ CEIC |✓ GFD      |✓ CEIC |✓ GFD   |✓ GFD    |
+|                           | Current Account Balance (mil USD) / GDP  |           ✓ CEIC  |✓ GFD      |✓ CEIC |✓ GFD   |✓ GFD    |
 |                           | Policy rate-fed funds rate differential (based on AVG figures)|           |           |         |        |         |
 |                           | One-Day Repurchase Rate %AVG             |           |           |         |        |         |
 |                           | One-Day Repurchase Rate %EOP |           |           |         |        |         |
@@ -31,8 +31,8 @@ Margaret Reed (mr4251)
 | Money and Portfolio Flows | Broad money, mo12m%change                        | ✓ WDI           | ✓ WDI           | ✓ WDI         | ✓ WDI        | ✓ WDI         |
 |                           | Velocity of money, mo12m change                  |           |           |         |        |         |
 |                           | Portfolio Flows                                  | ✓ WDI           | ✓ WDI          | ✓ WDI         | ✓ WDI       | ✓ WDI         |
-|                           | Foreign Exchange Reserve (change % year over year)|Not Found  |✓ GFD      |✓ GFD    |✓ GFD   |✓ GFD    |
-|                           | Foreign Exchange Reserve (nil USD) / GDP         |Not Found  |✓ GFD      |✓ GFD    |✓ GFD   |✓ GFD    |
+|                           | Foreign Exchange Reserve (change % year over year)|✓ CEIC |✓ GFD      |✓ GFD    |✓ GFD   |✓ GFD    |
+|                           | Foreign Exchange Reserve (nil USD) / GDP         |✓ CEIC |✓ GFD      |✓ GFD    |✓ GFD   |✓ GFD    |
 |   Bank Lending            | Bank lending, mo12m% change (total bank lending)     |✓ CEIC           |✓ CEIC              |✓ CEIC             |✓ CEIC           |✓ CEIC             |
     
 

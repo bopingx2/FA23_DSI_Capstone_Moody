@@ -1,0 +1,60 @@
+,Current Account Balance: USD mn: Annual: Egypt
+Region,Egypt
+Subnational,
+Frequency,"Annual, ending ""Jun"" of each year"
+Unit,USD mn
+Source,CEIC Data
+Status,Active
+Series ID,414448247
+SR Code,SR197226057
+Trade Code,
+Mnemonic,
+Function Description,
+First Obs. Date,1991
+Last Obs. Date,2023
+Last Update Time,28/09/2023
+Series remarks,
+Suggestions,
+Mean,-3949.2363636363625
+Variance,45190627.36551137
+Standard Deviation,6722.397441799419
+Skewness,-0.9607019882574304
+Kurtosis,-0.0838560922089604
+Coefficient Variation,-1.702201849374646
+Min,-19831.1
+Max,3819.9
+Median,-1723.8
+No. of Obs,33
+1991,3819.9
+1992,2669.9
+1993,2295.1
+1994,409.9
+1995,385.9
+1996,-185.4
+1997,118.6
+1998,-2478.6
+1999,-1723.8
+2000,-1163.1
+2001,-33.4
+2002,614.2
+2003,1943
+2004,3418.1
+2005,2910.6
+2006,1751.9
+2007,2269
+2008,888.3
+2009,-4424.3
+2010,-4317.6
+2011,-6087.8
+2012,-10146.3
+2013,-6390.4
+2014,-2779.7
+2015,-12142.6
+2016,-19831.1
+2017,-14394
+2018,-5962.3
+2019,-10893.9
+2020,-11166.7
+2021,-18436.4
+2022,-16551.3
+2023,-4710.5
