@@ -1,0 +1,37 @@
+,Domestic Liquidity & Counterpart Assets: Income Velocity of Money: GDP % of M2
+Region,Egypt
+Subnational,
+Frequency,Monthly
+Unit,%
+Source,Central Bank of Egypt
+Status,Active
+Series ID,98763507
+SR Code,SR1127977
+Trade Code,
+Mnemonic,
+Function Description,
+First Obs. Date,01/2002
+Last Obs. Date,04/2023
+Last Update Time,25/09/2023
+Series remarks,
+Suggestions,
+Mean,1.193375606
+Variance,0.006216177241680201
+Standard Deviation,0.07884273740605535
+Skewness,0.15610275309199884
+Kurtosis,-1.4120794385486706
+Coefficient Variation,0.06606699266320963
+Min,1.08916046
+Max,1.31005647
+Median,1.1942182350000001
+No. of Obs,10
+07/2022,1.31005647
+08/2022,1.29090447
+09/2022,1.26466689
+10/2022,1.22381159
+11/2022,1.20117344
+12/2022,1.18726303
+01/2023,1.13988424
+02/2023,1.12350933
+03/2023,1.10332614
+04/2023,1.08916046
