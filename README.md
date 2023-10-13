@@ -18,10 +18,10 @@ Margaret Reed (mr4251)
 | Bond Markets              | Term Premium                                     |✓ GFD      | ✓ GFD     | Not Found|✓ GFD   | ✓ GFD   |
 |                           | Risk Premium                                     |✓ GFD      | ✓ GFD     | ✓ GFD   |Not Found| ✓ GFD   |
 |                           | EMBI sovereign bond spreads    (X)                  |Not Found  | ✓ GFD     | ✓ GFD   | ✓ GFD   |Not Found|
-| Equity Markets            | stock prices, mom% change                        |           |           |         |        |         |
-|                           | stock prices, mom24mma% change                   |           |           |         |        |         |
-|                           | stock market volatility                          |Not Found  |✓ GFD      |✓ GFD    |✓ GFD   |✓ GFD    |
-| Macero Fundamentals       | REER                                             |✓ IMF      |✓ IMF      |✓ IMF   |✓ IMF     |    ✓ IMF      |
+| Equity Markets            | stock prices, mom% change                        |    ✓       |    ✓       |     ✓    |        ✓|     ✓    |
+|                           | stock prices, mom24mma% change                   |       ✓    |      ✓     |   ✓      |  ✓      |     ✓    |
+|                           | stock market volatility                          |✓  |✓      |✓    |✓   |✓    |
+| Macero Fundamentals       | REER                                             | Not Found in IMF      |✓ IMF      |✓ IMF   |✓ IMF     |    ✓ IMF      |
 |                           | Current Account Balance (change % year over year)|✓ CEIC |✓ GFD      |✓ CEIC |✓ GFD   |✓ GFD    |
 |                           | Current Account Balance (mil USD) / GDP  |           ✓ CEIC  |✓ GFD      |✓ CEIC |✓ GFD   |✓ GFD    |
 |                           | Policy rate-fed funds rate differential (based on AVG figures)|           |           |         |        |         |
