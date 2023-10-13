@@ -24,7 +24,8 @@ Margaret Reed (mr4251)
 | Macero Fundamentals       | REER                                             | Not Found in IMF      |✓ IMF      |✓ IMF   |✓ IMF     |    ✓ IMF      |
 |                           | Current Account Balance (change % year over year)|✓ CEIC |✓ GFD      |✓ CEIC |✓ GFD   |✓ GFD    |
 |                           | Current Account Balance (mil USD) / GDP  |           ✓ CEIC  |✓ GFD      |✓ CEIC |✓ GFD   |✓ GFD    |
-|                           | Policy rate-fed funds rate differential (based on AVG figures)|           |           |         |        |         |
+|                           | Policy rate-fed funds rate differential (based on AVG figures)|           |           |✓ CEIC|        |✓ CEIC|
+|                           | Policy rate-fed funds rate differential (based on EOP figures)|✓ CEIC|✓ CEIC|✓ CEIC|✓ CEIC|✓ CEIC|
 |                           | One-Day Repurchase Rate %AVG             |           |           |         |        |         |
 |                           | One-Day Repurchase Rate %EOP |           |           |         |        |         |
 |                           | Policy Uncertainty                               |           |           |         |        |         |
