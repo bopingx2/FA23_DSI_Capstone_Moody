@@ -1,0 +1,202 @@
+---
+title: "Capstone data source Risk premium"
+author: "Mingkang Yuan"
+date: "2023-10-01"
+output: html_document
+---
+
+
+## Egypt Term premium (2012-current)
+
+```{r}
+library(tidyverse)
+library(janitor)
+egypt_10yr_yield = read.csv('/Users/yuanmingkang/Desktop/Fall_24/Capstone/data source/Term Premium/Egypt_10yr_yield.csv')
+egypt_10yr_yield_1 = egypt_10yr_yield %>% select("Ticker","Series.Type") %>% slice(-1) %>% row_to_names(row_number = 1)
+
+us_10yr_yield = read.csv('/Users/yuanmingkang/Desktop/Fall_24/Capstone/data source/Risk Premium new/US_10yr_yield.csv')
+us_10yr_yield_1 = us_10yr_yield %>% select("Ticker","Series.Type") %>% slice(-1) %>% row_to_names(row_number = 1)
+
+
+library(dplyr)
+merged_data_egypt <- merge(egypt_10yr_yield_1, us_10yr_yield_1, by="Date", all=TRUE)
+
+merged_data_egypt <- merged_data_egypt[!is.na(merged_data_egypt$Close.x) & !is.na(merged_data_egypt$Close.y), ]
+
+merged_data_egypt$Close.x <- as.numeric(as.character(merged_data_egypt$Close.x))
+merged_data_egypt$Close.y <- as.numeric(as.character(merged_data_egypt$Close.y))
+
+merged_data_egypt$RiskPremium <- round(merged_data_egypt$Close.x - merged_data_egypt$Close.y, 2)
+
+col_names <- colnames(merged_data_egypt)
+
+col_names[col_names == "Close.x"] <- "ten_yr_egypt"
+col_names[col_names == "Close.y"] <- "ten_yr_us"
+colnames(merged_data_egypt) <- col_names
+
+merged_data_egypt$Date <- as.Date(merged_data_egypt$Date, format="%m/%d/%Y")
+
+
+merged_data_egypt <- merged_data_egypt %>% arrange(Date)
+
+head(merged_data_egypt)
+
+write.csv(merged_data_egypt, file = "Egypt_riskpremium.csv", row.names = FALSE)
+
+```
+
+## Hungary Risk premium (1999-current)
+
+```{r}
+library(tidyverse)
+library(janitor)
+hungary_10yr_yield = read.csv('/Users/yuanmingkang/Desktop/Fall_24/Capstone/data source/Term Premium/hungary_10yr_yield.csv')
+hungary_10yr_yield_1 = hungary_10yr_yield %>% select("Ticker","Currency") %>% slice(-1) %>% row_to_names(row_number = 1)
+
+us_10yr_yield = read.csv('/Users/yuanmingkang/Desktop/Fall_24/Capstone/data source/Risk Premium new/US_10yr_yield.csv')
+us_10yr_yield_1 = us_10yr_yield %>% select("Ticker","Series.Type") %>% slice(-1) %>% row_to_names(row_number = 1)
+
+
+library(dplyr)
+merged_data_hungary <- merge(hungary_10yr_yield_1, us_10yr_yield_1, by="Date", all=TRUE)
+
+merged_data_hungary <- merged_data_hungary[!is.na(merged_data_hungary$Close.x) & !is.na(merged_data_hungary$Close.y), ]
+
+merged_data_hungary$Close.x <- as.numeric(as.character(merged_data_hungary$Close.x))
+merged_data_hungary$Close.y <- as.numeric(as.character(merged_data_hungary$Close.y))
+
+merged_data_hungary$RiskPremium <- round(merged_data_hungary$Close.x - merged_data_hungary$Close.y, 2)
+
+col_names <- colnames(merged_data_hungary)
+
+col_names[col_names == "Close.x"] <- "ten_yr_hungary"
+col_names[col_names == "Close.y"] <- "ten_yr_us"
+colnames(merged_data_hungary) <- col_names
+
+merged_data_hungary$Date <- as.Date(merged_data_hungary$Date, format="%m/%d/%Y")
+
+
+merged_data_hungary <- merged_data_hungary %>% arrange(Date)
+
+head(merged_data_hungary)
+
+write.csv(merged_data_hungary, file = "hungary_riskpremium.csv", row.names = FALSE)
+
+```
+
+## Nigeria Risk premium (2007-2022)
+
+```{r}
+library(tidyverse)
+library(janitor)
+nigeria_10yr_yield = read.csv('/Users/yuanmingkang/Desktop/Fall_24/Capstone/data source/Term Premium/Nigeria_10yr_yield.csv')
+nigeria_10yr_yield_1 = nigeria_10yr_yield %>% select("Ticker","Series.Type") %>% slice(-1) %>% row_to_names(row_number = 1)
+
+us_10yr_yield = read.csv('/Users/yuanmingkang/Desktop/Fall_24/Capstone/data source/Risk Premium new/US_10yr_yield.csv')
+us_10yr_yield_1 = us_10yr_yield %>% select("Ticker","Series.Type") %>% slice(-1) %>% row_to_names(row_number = 1)
+
+
+library(dplyr)
+merged_data_nigeria <- merge(nigeria_10yr_yield_1, us_10yr_yield_1, by="Date", all=TRUE)
+
+merged_data_nigeria <- merged_data_nigeria[!is.na(merged_data_nigeria$Close.x) & !is.na(merged_data_nigeria$Close.y), ]
+
+merged_data_nigeria$Close.x <- as.numeric(as.character(merged_data_nigeria$Close.x))
+merged_data_nigeria$Close.y <- as.numeric(as.character(merged_data_nigeria$Close.y))
+
+merged_data_nigeria$RiskPremium <- round(merged_data_nigeria$Close.x - merged_data_nigeria$Close.y, 2)
+
+col_names <- colnames(merged_data_nigeria)
+
+col_names[col_names == "Close.x"] <- "ten_yr_nigeria"
+col_names[col_names == "Close.y"] <- "ten_yr_us"
+colnames(merged_data_nigeria) <- col_names
+
+merged_data_nigeria$Date <- as.Date(merged_data_nigeria$Date, format="%m/%d/%Y")
+
+
+merged_data_nigeria <- merged_data_nigeria %>% arrange(Date)
+
+head(merged_data_nigeria)
+
+write.csv(merged_data_nigeria, file = "nigeria_riskpremium.csv", row.names = FALSE)
+
+```
+
+
+## Poland risk premium (1999-current)
+
+```{r}
+library(tidyverse)
+library(janitor)
+poland_10yr_yield = read.csv('/Users/yuanmingkang/Desktop/Fall_24/Capstone/data source/Term Premium/poland_10yr_yield.csv')
+poland_10yr_yield_1 = poland_10yr_yield %>% select("Ticker","Series.Type") %>% slice(-1) %>% row_to_names(row_number = 1)
+
+us_10yr_yield = read.csv('/Users/yuanmingkang/Desktop/Fall_24/Capstone/data source/Risk Premium new/US_10yr_yield.csv')
+us_10yr_yield_1 = us_10yr_yield %>% select("Ticker","Series.Type") %>% slice(-1) %>% row_to_names(row_number = 1)
+
+
+library(dplyr)
+merged_data_poland <- merge(poland_10yr_yield_1, us_10yr_yield_1, by="Date", all=TRUE)
+
+merged_data_poland <- merged_data_poland[!is.na(merged_data_poland$Close.x) & !is.na(merged_data_poland$Close.y), ]
+
+merged_data_poland$Close.x <- as.numeric(as.character(merged_data_poland$Close.x))
+merged_data_poland$Close.y <- as.numeric(as.character(merged_data_poland$Close.y))
+
+merged_data_poland$RiskPremium <- round(merged_data_poland$Close.x - merged_data_poland$Close.y, 2)
+
+col_names <- colnames(merged_data_poland)
+
+col_names[col_names == "Close.x"] <- "ten_yr_poland"
+col_names[col_names == "Close.y"] <- "ten_yr_us"
+colnames(merged_data_poland) <- col_names
+
+merged_data_poland$Date <- as.Date(merged_data_poland$Date, format="%m/%d/%Y")
+
+
+merged_data_poland <- merged_data_poland %>% arrange(Date)
+
+head(merged_data_poland)
+
+write.csv(merged_data_poland, file = "poland_riskpremium.csv", row.names = FALSE)
+
+```
+## Romania risk premium (2001-current)
+
+```{r}
+library(tidyverse)
+library(janitor)
+romania_10yr_yield = read.csv('/Users/yuanmingkang/Desktop/Fall_24/Capstone/data source/Term Premium/romania_10yr_yield.csv')
+romania_10yr_yield_1 = romania_10yr_yield %>% select("Ticker","Series.Type") %>% slice(-1) %>% row_to_names(row_number = 1)
+
+us_10yr_yield = read.csv('/Users/yuanmingkang/Desktop/Fall_24/Capstone/data source/Risk Premium new/US_10yr_yield.csv')
+us_10yr_yield_1 = us_10yr_yield %>% select("Ticker","Series.Type") %>% slice(-1) %>% row_to_names(row_number = 1)
+
+
+library(dplyr)
+merged_data_romania <- merge(romania_10yr_yield_1, us_10yr_yield_1, by="Date", all=TRUE)
+
+merged_data_romania <- merged_data_romania[!is.na(merged_data_romania$Close.x) & !is.na(merged_data_romania$Close.y), ]
+
+merged_data_romania$Close.x <- as.numeric(as.character(merged_data_romania$Close.x))
+merged_data_romania$Close.y <- as.numeric(as.character(merged_data_romania$Close.y))
+
+merged_data_romania$RiskPremium <- round(merged_data_romania$Close.x - merged_data_romania$Close.y, 2)
+
+col_names <- colnames(merged_data_romania)
+
+col_names[col_names == "Close.x"] <- "ten_yr_romania"
+col_names[col_names == "Close.y"] <- "ten_yr_us"
+colnames(merged_data_romania) <- col_names
+
+merged_data_romania$Date <- as.Date(merged_data_romania$Date, format="%m/%d/%Y")
+
+
+merged_data_romania <- merged_data_romania %>% arrange(Date)
+
+head(merged_data_romania)
+
+write.csv(merged_data_romania, file = "romania_riskpremium.csv", row.names = FALSE)
+
+```
