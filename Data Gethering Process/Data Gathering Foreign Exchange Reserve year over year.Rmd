@@ -1,0 +1,93 @@
+---
+title: "Capstone data source Foreign Exchange Reserve (mil USD)/GDP"
+author: "Mingkang Yuan"
+date: "2023-10-09"
+output: html_document
+---
+
+## Nigeria Foreign Exchange Reserve percent year over year
+
+```{r}
+library(tidyverse)
+library(janitor)
+library(lubridate)
+nigeria_reserve = read.csv('/Users/yuanmingkang/Desktop/Fall_24/Capstone/data source/Foreign exchange reserve(change% yr over yr)/new/nigeria_monthly.csv')
+
+
+names(nigeria_reserve)[names(nigeria_reserve) == "X"] <- "Date"
+names(nigeria_reserve)[2] <- "Reserves"
+nigeria_reserve <- nigeria_reserve[-c(1:26),]
+
+
+nigeria_reserve$Reserves <- as.numeric(as.character(nigeria_reserve$Reserves))
+
+
+nigeria_reserve$YoY_change <- c(rep(NA, 12), 
+  (nigeria_reserve$Reserves[13:nrow(nigeria_reserve)] - nigeria_reserve$Reserves[1:(nrow(nigeria_reserve)-12)]) / nigeria_reserve$Reserves[1:(nrow(nigeria_reserve)-12)] * 100
+)
+
+
+
+
+nigeria_reserve$Date <- c(seq(as.Date("1970-01-01"), length.out = nrow(nigeria_reserve), by = "months"))
+
+nigeria_reserve$Date <- as.Date(nigeria_reserve$Date, format="%m/%Y")
+
+
+nigeria_reserve$Date <- lubridate::ymd(paste0(year(nigeria_reserve$Date), "-", month(nigeria_reserve$Date), "-", days_in_month(nigeria_reserve$Date)))
+
+nigeria_reserve$Date <- format(nigeria_reserve$Date, "%m/%d/%Y")
+
+
+head(nigeria_reserve, 17)
+
+
+
+#write.csv(nigeria_reserve, file = "Nigeria_monthly.csv", row.names = FALSE)
+
+```
+
+## Egypt Foreign Exchange Reserve percent year over year
+
+```{r}
+library(tidyverse)
+library(janitor)
+egypt_reserve = read.csv('/Users/yuanmingkang/Desktop/Fall_24/Capstone/data source/Foreign exchange reserve(change% yr over yr)/new/egypt_monthly.csv')
+
+
+names(egypt_reserve)[names(egypt_reserve) == "X"] <- "Date"
+names(egypt_reserve)[2] <- "Reserves"
+egypt_reserve <- egypt_reserve[-c(1:26),]
+
+
+egypt_reserve$Reserves <- as.numeric(as.character(egypt_reserve$Reserves))
+
+
+egypt_reserve$YoY_change <- c(rep(NA, 12), 
+  (egypt_reserve$Reserves[13:nrow(egypt_reserve)] - egypt_reserve$Reserves[1:(nrow(egypt_reserve)-12)]) / egypt_reserve$Reserves[1:(nrow(egypt_reserve)-12)] * 100
+)
+
+
+
+
+egypt_reserve$Date <- c(seq(as.Date("2004-12-01"), length.out = nrow(egypt_reserve), by = "months"))
+
+
+egypt_reserve$Date <- as.Date(egypt_reserve$Date, format="%m/%Y")
+
+
+egypt_reserve$Date <- lubridate::ymd(paste0(year(egypt_reserve$Date), "-", month(egypt_reserve$Date), "-", days_in_month(egypt_reserve$Date)))
+
+egypt_reserve$Date <- format(egypt_reserve$Date, "%m/%d/%Y")
+
+
+head(egypt_reserve, 17)
+
+
+
+#write.csv(egypt_reserve, file = "Egypt_monthly.csv", row.names = FALSE)
+
+```
+
+
+
