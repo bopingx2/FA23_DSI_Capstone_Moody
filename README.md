@@ -15,9 +15,8 @@ Margaret Reed (mr4251)
 
 |                           |                                                  | Egypt     | Hungary   | Nigeria | Poland | Romania |
 |---------------------------|--------------------------------------------------|-----------|-----------|---------|--------|---------|
-| Bond Markets              | Term Premium                                     |✓ GFD      | ✓ GFD     | Not Found|✓ GFD   | ✓ GFD   |
-|                           | Risk Premium                                     |✓ GFD      | ✓ GFD     | ✓ GFD   |Not Found| ✓ GFD   |
-|                           | EMBI sovereign bond spreads    (X)                  |Not Found  | ✓ GFD     | ✓ GFD   | ✓ GFD   |Not Found|
+| Bond Markets              | Term Premium                                     |✓ GFD      | ✓ GFD     ||✓ GFD   | ✓ GFD   |
+|                           | Risk Premium                                     ||||||
 | Equity Markets            | stock prices, mom% change                        |    ✓       |    ✓       |     ✓    |        ✓|     ✓    |
 |                           | stock prices, mom24mma% change                   |       ✓    |      ✓     |   ✓      |  ✓      |     ✓    |
 |                           | stock market volatility                          |✓  |✓      |✓    |✓   |✓    |
@@ -28,7 +27,6 @@ Margaret Reed (mr4251)
 |                           | Policy rate-fed funds rate differential (based on EOP figures)|✓ CEIC|✓ CEIC|✓ CEIC|✓ CEIC|✓ CEIC|
 |                           | One-Day Repurchase Rate %AVG             |           |           |         |        |         |
 |                           | One-Day Repurchase Rate %EOP |           |           |         |        |         |
-|                           | Policy Uncertainty                               |           |           |         |        |         |
 | Money and Portfolio Flows | Broad money, mo12m%change                        | ✓ WDI     |           | ✓ WDI   | ✓ IMF  | ✓ IMF   |
 |                           | Velocity of money, mo12m change                  | ✓ CBE     |           |         |        |         |
 |                           | Portfolio Flows                                  |           |           |         |        |         |
