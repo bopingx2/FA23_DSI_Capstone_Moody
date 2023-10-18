@@ -80,4 +80,3 @@ egypt_data %>%
   ) +
   theme_minimal()
 ```
-
