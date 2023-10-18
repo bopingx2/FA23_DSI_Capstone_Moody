@@ -30,7 +30,7 @@ Margaret Reed (mr4251)
 | Money and Portfolio Flows | Broad money, mo12m%change                        | ✓ WDI     |           | ✓ WDI   | ✓ IMF  | ✓ IMF   |
 |                           | Velocity of money, mo12m change                  | ✓ CBE     |           |         |        |         |
 |                           | Portfolio Flows                                  |           |           |         |        |         |
-|                           | Foreign Exchange Reserve (change % year over year)|✓ CEIC |✓ GFD      |✓ GFD    |✓ GFD   |✓ GFD    |
+|                           | Foreign Exchange Reserve (change % year over year)|✓ CEIC 2005.12-2023.9 |✓ GFD 1996.1-2013.4     |✓ GFD 1971.1-2023.5   |✓ GFD 2001.1-2013.5  |✓ GFD 1996.8- 2013.4  |
 |                           | Foreign Exchange Reserve (nil USD) / GDP         |✓ CEIC |✓ GFD      |✓ GFD    |✓ GFD   |✓ GFD    |
 |   Bank Lending            | Bank lending, mo12m% change (total bank lending)     |✓ CEIC           |✓ CEIC              |✓ CEIC             |✓ CEIC           |✓ CEIC             |
     
