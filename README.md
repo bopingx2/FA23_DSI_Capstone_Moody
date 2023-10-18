@@ -15,7 +15,7 @@ Margaret Reed (mr4251)
 
 |                           |                                                  | Egypt     | Hungary   | Nigeria | Poland | Romania |
 |---------------------------|--------------------------------------------------|-----------|-----------|---------|--------|---------|
-| Bond Markets              | Term Premium                                     |✓ GFD      | ✓ GFD     ||✓ GFD   | ✓ GFD   |
+| Bond Markets              | Term Premium                                     |✓ GFD2012.9-2022.9      | ✓ GFD     ||✓ GFD   | ✓ GFD   |
 |                           | Risk Premium                                     |2012.9-2023.9|1999.1-2023.9|2007.12-2022.9|1999.5-2023.3|2001.12-2023.6|
 | Equity Markets            | stock prices, mom% change                        |    ✓       |    ✓       |     ✓    |        ✓|     ✓    |
 |                           | stock prices, mom24mma% change                   |       ✓    |      ✓     |   ✓      |  ✓      |     ✓    |
