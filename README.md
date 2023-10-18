@@ -39,3 +39,9 @@ Margaret Reed (mr4251)
 
 
 Currently under construction.
+
+Select one from block component
+Term pre different options select one
+Repurchase avg, eof use one.
+same sign
+Bank lending under portifolio flows
