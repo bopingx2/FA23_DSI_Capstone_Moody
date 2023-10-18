@@ -27,7 +27,7 @@ Margaret Reed (mr4251)
 |                           | Policy rate-fed funds rate differential (based on EOP figures)|✓ CEIC</br>2011.11-12</br>2012.12</br>2013.12</br>2014.11-12</br>2015.10-2023.7|✓ CEIC</br>1985.1-2022.8|✓ CEIC</br>2007.1-2023.4|✓ CEIC</br>1998.1-2022.8|✓ CEIC</br>1993.12-2022.08|
 |                           | One-Day Repurchase Rate %AVG             |           |           |         |        |         |
 |                           | One-Day Repurchase Rate %EOP |           |           |         |        |         |
-| Money and Portfolio Flows | Broad money, mo12m%change                        | ✓ WDI     |           | ✓ WDI   | ✓ IMF  | ✓ IMF   |
+| Money and Portfolio Flows | Broad money, mo12m%change                        | ✓ WDI  2004.1-2023.7   |           | ✓ WDI  2001.12-2023.4 | ✓ IMF 2004.3-2023.7 | ✓ IMF  2001.12-2023.8 |
 |                           | Velocity of money, mo12m change                  | ✓ CBE     |           |         |        |         |
 |                           | Portfolio Flows                                  |           |           |         |        |         |
 |                           | Foreign Exchange Reserve (change % year over year)|✓ CEIC 2005.12-2023.9 |✓ GFD 1996.1-2013.4     |✓ GFD 1971.1-2023.5   |✓ GFD 2001.1-2013.5  |✓ GFD 1996.8- 2013.4  |
