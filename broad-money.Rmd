@@ -1,0 +1,83 @@
+---
+title: "broad-money"
+author: "Margaret Reed"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r load-packages}
+library(tidyverse)
+```
+
+```{r egypt-data}
+egypt_data <- read_csv("data/Broad Money/BroadMoneyEgypt_raw.csv", skip = 27, col_names = c("date", "value"))
+egypt_data <- egypt_data %>%
+  mutate(
+    date = paste0("01/", date),
+    date = as.Date(date, format = "%d/%m/%Y"),
+    mo12m = (value - lag(value, 12))/lag(value, 12)
+  )
+write_csv(egypt_data, "data/Broad Money/broad_money_egypt.csv")
+```
+
+```{r nigeria-data}
+nigeria_data <- read_csv("data/Broad Money/BroadMoneyNigeria_raw.csv", skip = 27, col_names = c("date", "value"))
+
+nigeria_data <- nigeria_data %>%
+  mutate(
+    date = paste0("01/", date),
+    date = as.Date(date, format = "%d/%m/%Y"),
+    mo12m = (value - lag(value, 12))/lag(value, 12)
+  )
+
+write_csv(nigeria_data, "data/Broad Money/broad_money_nigeria.csv")
+```
+
+```{r poland-data}
+poland_data <- read_csv("data/Broad Money/BroadMoneyPoland_raw.csv", skip = 27, col_names = c("date", "value"))
+
+poland_data <- poland_data %>%
+  mutate(
+    date = paste0("01/", date),
+    date = as.Date(date, format = "%d/%m/%Y"),
+    mo12m = (value - lag(value, 12))/lag(value, 12)
+  )
+
+write_csv(poland_data, "data/Broad Money/broad_money_poland.csv")
+```
+```{r romania-data}
+romania_data <- read_csv("data/Broad Money/BroadMoneyRomania_raw.csv", skip = 27, col_names = c("date", "value"))
+
+romania_data <- romania_data %>%
+  mutate(
+    date = paste0("01/", date),
+    date = as.Date(date, format = "%d/%m/%Y"),
+    mo12m = (value - lag(value, 12))/lag(value, 12)
+  )
+
+write_csv(romania_data, "data/Broad Money/broad_money_romania.csv")
+```
+
+
+
+```{r visualize}
+countries <- c("Egypt" = "#D55E00", "Nigeria" = "#009E73", "Poland" = "#CC79A7", "Romania" = "#0072B2")
+
+egypt_data %>%
+  filter(!is.na(mo12m)) %>%
+  ggplot(aes(x = date, y = mo12m)) +
+  geom_line(aes(color = "Egypt")) +
+  geom_line(data = nigeria_data, aes(color = "Nigeria")) + 
+  geom_line(data = poland_data, aes(color = "Poland")) +
+  geom_line(data = romania_data, aes(color = "Romania")) + 
+  scale_color_manual(values = countries) +
+  labs(
+    x = "Date", y = "Mo12m% change", color = "Country", title = "Broad Money"
+  ) +
+  theme_minimal()
+```
+
