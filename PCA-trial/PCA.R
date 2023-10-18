@@ -1,9 +1,10 @@
 ## This file is for the PCA-trial
 library(lubridate)
-library(dplyr)
+library(rlang)
 library(tidyverse)
 library(ggplot2)
-
+library(factoextra)
+library(ggcorrplot)
 
 ## Read Data 
 ## Romania
@@ -33,10 +34,10 @@ Rom_Bank_Lending <- Rom_Bank_Lending %>% select("Date", "mo12m_change")
 colnames(Rom_Bank_Lending)[2] <- "Bank_Lending_mo12m_change"
 
 
-Rom_Foreign_exchange_reserve_change <- read.csv("data/Foreign exchange reserve year over yr new/Romania_monthly.csv", skip = 2)
-Rom_Foreign_exchange_reserve_change = Rom_Foreign_exchange_reserve_change %>% select("Date", "Annual_Percent_Change")
-Rom_Foreign_exchange_reserve_change$Date <- format(mdy(Rom_Foreign_exchange_reserve_change$Date), "%Y-%m")
-colnames(Rom_Foreign_exchange_reserve_change)[2] <- "FER_change"
+#Rom_Foreign_exchange_reserve_change <- read.csv("data/Foreign exchange reserve year over yr new/Romania_monthly.csv", skip = 2)
+#Rom_Foreign_exchange_reserve_change = Rom_Foreign_exchange_reserve_change %>% select("Date", "Annual_Percent_Change")
+#Rom_Foreign_exchange_reserve_change$Date <- format(mdy(Rom_Foreign_exchange_reserve_change$Date), "%Y-%m")
+#colnames(Rom_Foreign_exchange_reserve_change)[2] <- "FER_change"
 
 
 Rom_Term_Premium <- read.csv("data/Term Premium/Romania_termpremium.csv") %>% select("Date", "TermPremium")
@@ -48,17 +49,19 @@ Rom_Risk_Premium$Date <- format(ymd(Rom_Risk_Premium$Date), "%Y-%m")
 ## Merge Data
 
 Rom_merged <- list(Rom_BET_mo24mma, Rom_BET_mom, Rom_BET_volatility, Rom_REER, 
-                    Rom_Bank_Lending, Rom_Foreign_exchange_reserve_change, Rom_Term_Premium, Rom_Risk_Premium) %>% 
+                    Rom_Bank_Lending, Rom_Term_Premium, Rom_Risk_Premium) %>% 
               reduce(full_join, by='Date')
+Rom_scaled <- as.data.frame(scale(Rom_merged[, 2:ncol(Rom_merged)]))
 
-Rom_PCA = princomp(~ BET_mo24mma_change + BET_mom_change + BET_volatility + REER + Bank_Lending_mo12m_change + 
-           FER_change + TermPremium + RiskPremium, data = Rom_merged, na.action = na.omit, cor = TRUE)
+ggcorrplot(cor(Rom_scaled, use = "complete.obs"))
+
+Rom_PCA = princomp(~ BET_mo24mma_change + BET_mom_change + BET_volatility + REER + Bank_Lending_mo12m_change + TermPremium + RiskPremium, data = Rom_scaled, na.action = na.omit, cor = TRUE)
 summary(Rom_PCA)
 Rom_PCA$loadings
 Rom_plot = cbind(na.omit(Rom_merged)["Date"], Rom_PCA$scores[,1])
 colnames(Rom_plot)[2] = "Comp1"
 Rom_plot$Date = ym(Rom_plot$Date)
 ggplot(data = Rom_plot, mapping = aes(x = Date, y = Comp1))+geom_line() + 
-  scale_x_date(date_breaks = "1 year", date_labels = "%Y")
-
+  scale_x_date(date_breaks = "1 year", date_labels = "%y")+xlab("Year")
+fviz_pca_var(Rom_PCA, col.var = "black")
 
