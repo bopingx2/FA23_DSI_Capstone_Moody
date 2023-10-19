@@ -21,7 +21,7 @@ Margaret Reed (mr4251)
 |                           | stock prices, mom24mma% change                   |✓ 2002.12-2023.9 |✓ 2002.12-2023.9 |✓ 2003.1-2023.9 |✓ 2002.12-2023.9 |✓ 2005.1-2023.9|
 |                           | stock market volatility                          |✓ 2001.2-2023.9  |✓ 2001.2-2023.9  |✓ 2001.2-2023.9 |✓ 2001.2-2023.9  |✓ 2003.3-2023.9  |
 | Macero Fundamentals       | REER                                             | Not Found in IMF      |✓ IMF 1990.10-2023.8     |✓ IMF 1979.12-2023.8  |✓ IMF 1990.10-2023.8    |    ✓ IMF 1990.10-2023.8      |
-|                           | Current Account Balance (change % year over year)just have annually|✓ CEIC |✓ GFD      |✓ CEIC |✓ GFD   |✓ GFD    |
+|                           | Current Account Balance (change % year over year)|✓ CEIC 1994.12-2023.6|✓ CEIC 1990.12-2023.6      |✓ CEIC 2009.3-2022.12 |✓ CEIC 2001.3-2023.6   |✓ CEIC 2003.9-2023.6    |
 |                           | Current Account Balance (mil USD) / GDP  |           ✓ CEIC  |✓ GFD      |✓ CEIC |✓ GFD   |✓ GFD    |
 |                           | Policy rate-fed funds rate differential (based on AVG figures)|           |           |✓ CEIC</br>2006.12.11-2023.10.12|        |✓ CEIC</br>2004.1.1-2023.10.12|
 |                           | Policy rate-fed funds rate differential (based on EOP figures)|✓ CEIC</br>2011.11-12</br>2012.12</br>2013.12</br>2014.11-12</br>2015.10-2023.7|✓ CEIC</br>1985.1-2022.8|✓ CEIC</br>2007.1-2023.4|✓ CEIC</br>1998.1-2022.8|✓ CEIC</br>1993.12-2022.08|
