@@ -22,7 +22,7 @@ Margaret Reed (mr4251)
 |                           | stock market volatility                           |✓ 2001.2-2023.9|✓ 2001.2-2023.9 |✓ 2001.2-2023.9|✓ 2001.2-2023.9 |✓ 2003.3-2023.9|
 | Macero Fundamentals       | REER                                              | Not Found in IMF|✓ IMF</br>1990.10-2023.8|✓ IMF</br>1979.12-2023.8|✓ IMF</br>1990.10-2023.8|✓ IMF</br>1990.10-2023.8|
 |                           | Current Account Balance (change % year over year) |✓ CEIC</br>1994.12-2023.6|✓</br>CEIC 1990.12-2023.6|✓ CEIC</br>2009.3-2022.12|✓ CEIC</br>2001.3-2023.6|✓ CEIC</br>2003.9-2023.6|
-|                           | Current Account Balance (mil USD) / GDP           |✓ CEIC|✓ GFD|✓ CEIC|✓ GFD|✓ GFD|
+|                           | Current Account Balance (mil USD) / GDP           |✓ CEIC</br>2001.9-2023.4|✓ CEIC</br> 1995.3-2023.6|✓ CEIC </br>2010.3-2022.12|✓ CEIC </br>2022.3-2023.6|✓ CEIC </br>2022.9-2023.6|
 |                           | Policy rate-fed funds rate differential           |✓ CEIC</br>Use Discount Rate</br>1991.1-2023.9|✓ CEIC</br>1985.1-2022.8|✓ CEIC</br>2007.1-2023.4|✓ CEIC</br>1998.1-2022.8|✓ CEIC</br>1993.12-2022.08|
 |                           | One-Day Repurchase Rate %AVG                      |           |           |         |        |         |
 |                           | One-Day Repurchase Rate %EOP                      |           |           |         |        |         |
