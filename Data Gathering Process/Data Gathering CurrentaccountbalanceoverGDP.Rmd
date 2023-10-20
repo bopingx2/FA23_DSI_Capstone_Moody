@@ -1,0 +1,148 @@
+---
+title: "Capstone data source Current Account balance/GDP "
+author: "Mingkang Yuan"
+date: "2023-10-19"
+output: html_document
+---
+## Egypt Current account balance percent year over year
+
+```{r}
+library(tidyverse)
+library(janitor)
+library(lubridate)
+egypt_balance_monthly = read.csv('/Users/yuanmingkang/Desktop/Fall_24/Capstone/data source/Current account balance new/Monthly/Egypt_monthly.csv')
+
+GDP_monthly = read.csv('/Users/yuanmingkang/Desktop/Fall_24/Capstone/data source/GDP/New in mil USD/GDP_in_mil_USD_Egypt.csv')
+
+mergedData_egypt <- merge(egypt_balance_monthly, GDP_monthly, by='Date', all.y = T)
+
+
+Egypt_currentovergdp <- mergedData_egypt %>%
+  filter(!is.na(Interp.Balance)) %>%
+  mutate(Current_over_GDP = (Interp.Balance / GDP.in.mil.USD) * 100) %>%
+  select(Date, Current_over_GDP)
+
+head(Egypt_currentovergdp)
+
+
+write.csv(Egypt_currentovergdp, file = "Egypt_currentovergdp.csv", row.names = FALSE)
+
+
+
+```
+
+## Hungary Current account balance percent year over year
+
+```{r}
+library(tidyverse)
+library(janitor)
+library(lubridate)
+hungary_balance_monthly = read.csv('/Users/yuanmingkang/Desktop/Fall_24/Capstone/data source/Current account balance new/Monthly/hungary_monthly.csv')
+
+GDP_monthly = read.csv('/Users/yuanmingkang/Desktop/Fall_24/Capstone/data source/GDP/New in mil USD/GDP_in_mil_USD_hungary.csv')
+
+mergedData_hungary <- merge(hungary_balance_monthly, GDP_monthly, by='Date', all.y = T)
+
+
+hungary_currentovergdp <- mergedData_hungary %>%
+  filter(!is.na(Interp.Balance)) %>%
+  mutate(Current_over_GDP = (Interp.Balance / GDP.in.mil.USD) * 100) %>%
+  select(Date, Current_over_GDP)
+
+head(hungary_currentovergdp)
+
+
+write.csv(hungary_currentovergdp, file = "hungary_currentovergdp.csv", row.names = FALSE)
+
+
+
+```
+
+
+## nigeria Current account balance percent year over year
+
+```{r}
+library(tidyverse)
+library(janitor)
+library(lubridate)
+nigeria_balance_monthly = read.csv('/Users/yuanmingkang/Desktop/Fall_24/Capstone/data source/Current account balance new/Monthly/nigeria_monthly.csv')
+
+GDP_monthly = read.csv('/Users/yuanmingkang/Desktop/Fall_24/Capstone/data source/GDP/New in mil USD/GDP_in_mil_USD_nigeria.csv')
+
+mergedData_nigeria <- merge(nigeria_balance_monthly, GDP_monthly, by='Date', all.y = T)
+
+
+nigeria_currentovergdp <- mergedData_nigeria %>%
+  filter(!is.na(Interp.Balance)) %>%
+  mutate(Current_over_GDP = (Interp.Balance / GDP.in.mil.USD) * 100) %>%
+  select(Date, Current_over_GDP)
+
+head(nigeria_currentovergdp)
+
+
+write.csv(nigeria_currentovergdp, file = "nigeria_currentovergdp.csv", row.names = FALSE)
+
+
+
+```
+
+
+## poland Current account balance percent year over year
+
+```{r}
+library(tidyverse)
+library(janitor)
+library(lubridate)
+poland_balance_monthly = read.csv('/Users/yuanmingkang/Desktop/Fall_24/Capstone/data source/Current account balance new/Monthly/poland_monthly.csv')
+
+GDP_monthly = read.csv('/Users/yuanmingkang/Desktop/Fall_24/Capstone/data source/GDP/New in mil USD/GDP_in_mil_USD_poland.csv')
+
+mergedData_poland <- merge(poland_balance_monthly, GDP_monthly, by='Date', all.y = T)
+
+
+poland_currentovergdp <- mergedData_poland %>%
+  filter(!is.na(Interp.Balance)) %>%
+  mutate(Current_over_GDP = (Interp.Balance / GDP.in.mil.USD) * 100) %>%
+  select(Date, Current_over_GDP)
+
+head(poland_currentovergdp)
+
+
+write.csv(poland_currentovergdp, file = "poland_currentovergdp.csv", row.names = FALSE)
+
+
+
+```
+
+## romania Current account balance percent year over year
+
+```{r}
+library(tidyverse)
+library(janitor)
+library(lubridate)
+romania_balance_monthly = read.csv('/Users/yuanmingkang/Desktop/Fall_24/Capstone/data source/Current account balance new/Monthly/romania_monthly.csv')
+
+GDP_monthly = read.csv('/Users/yuanmingkang/Desktop/Fall_24/Capstone/data source/GDP/New in mil USD/GDP_in_mil_USD_romania.csv')
+
+mergedData_romania <- merge(romania_balance_monthly, GDP_monthly, by='Date', all.y = T)
+
+
+romania_currentovergdp <- mergedData_romania %>%
+  filter(!is.na(Interp.Balance)) %>%
+  mutate(Current_over_GDP = (Interp.Balance / GDP.in.mil.USD) * 100) %>%
+  select(Date, Current_over_GDP)
+
+head(romania_currentovergdp)
+
+
+
+write.csv(romania_currentovergdp, file = "romania_currentovergdp.csv", row.names = FALSE)
+
+
+
+```
+
+
+
+
+
