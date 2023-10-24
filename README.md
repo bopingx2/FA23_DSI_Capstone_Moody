@@ -28,7 +28,7 @@ Margaret Reed (mr4251)
 |                           | One-Day Repurchase Rate %EOP                      |           |           |         |        |         |
 | Money and Portfolio Flows | Broad money, mo12m%change                         |✓ WDI</br>2004.1-2023.7 ||✓ WDI</br>2001.12-2023.4|✓ IMF</br>2004.3-2023.7|✓ IMF</br>2001.12-2023.8|
 |                           | Velocity of money, mo12m change                   |✓ CBE      |           |         |        |         |
-|                           | Portfolio Flows                                   |✓IFF 2000.3-2023.6 |✓IFF 2014.4-2023.7|✓IFF 2005.3-2024.12 |✓IFF 2000.1-2023.7 |✓IFF 2005.1-2023.7 |
+|                           | Portfolio Flows                                   |✓ IFF 2000.3-2023.6 |✓ IFF 2014.4-2023.7|✓ IFF 2005.3-2024.12 |✓ IFF 2000.1-2023.7 |✓ IFF 2005.1-2023.7 |
 |                           | Foreign Exchange Reserve (change % year over year)|✓ CEIC</br>2005.12-2023.9|✓ GFD</br>1996.1-2013.4|✓ GFD</br>1971.1-2023.5|✓ GFD</br>2001.1-2013.5|✓ GFD</br>1996.8-2013.4|
 |                           | Foreign Exchange Reserve (nil USD) / GDP          |✓ CEIC</br>2004.12-2023.4|✓ GFD</br>1995.3-2013.4|✓ GFD</br>2010.3-2023.5|✓ GFD</br>2002.3-2013.5|✓ GFD</br>1995.8-2013.4|
 |   Bank Lending            | Bank lending, mo12m% change (total bank lending)  |✓ CEIC</br>1980.06-2023.8 |✓ CEIC</br>2001.01-2023.9|✓ CEIC</br>2007.01-2023.8|✓ CEIC</br>2006.01-2023.8|✓ CEIC</br>2006.12-2023.8|
