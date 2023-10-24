@@ -91,4 +91,23 @@ romania_mv <- romania_gdp %>%
 write_csv(romania_mv, "../data/Velocity of Money/money_velocity_romania.csv")
 ```
 
+```{r egypt-calc}
+egypt_mv <- read_csv("../data/Velocity of Money/VelocityMoneyEgypt_raw.csv")
+
+egypt_mv <- egypt_mv %>%
+  slice(27:n()) %>%
+  clean_names() %>%
+  rename("date" = "x1", "value" = "domestic_liquidity_counterpart_assets_m2_percent_of_gdp") %>%
+  mutate(
+    date = paste0("01/", date),
+    date = as.Date(date, format = "%d/%m/%Y"),
+    value = as.numeric(value),
+    money_velocity = 1/value,
+    mo12m = (money_velocity - lag(money_velocity, 12))/lag(money_velocity, 12)
+  ) %>%
+  select(date, money_velocity, mo12m)
+
+write_csv(egypt_mv, "../data/Velocity of Money/money_velocity_egypt.csv")
+```
+
 
