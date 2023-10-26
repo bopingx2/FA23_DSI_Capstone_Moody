@@ -29,8 +29,8 @@ Margaret Reed (mr4251)
 | Money and Portfolio Flows | Broad money, mo12m%change                         | ✓ WDI</br>2004.1-2023.7 |  | ✓ WDI</br>2001.12-2023.4 | ✓ IMF</br>2004.3-2023.7 | ✓ IMF</br>2001.12-2023.8 |
 |                           | Velocity of money, mo12m change                   | ✓ CBE</br>2002.1-2023.4 |  | ✓ </br>2010.3-2023.4 | ✓ </br>2004.3-2023.6 | ✓ </br>2001.12-2023.6 |
 |                           | Portfolio Flows                                   | ✓ IFF</br>2000.3-2023.6 | ✓ IFF</br>2014.4-2023.7| ✓ IFF</br>2005.3-2024.12 | ✓</br>IFF 2000.1-2023.7 | ✓</br>IFF 2005.1-2023.7 |
-|                           | Foreign Exchange Reserve (change % year over year)| ✓ CEIC</br>2004.12-2023.9 | ✓ CEIC</br>1998.1-2023.9 | ✓ CEIC</br>1960.1-2023.6 | ✓ CEIC</br>1998.1-2023.9 | ✓ CEIC</br>2005.4-2023.9 |
-|                           | Foreign Exchange Reserve (nil USD) / GDP          | ✓ CEIC</br>2004.12-2023.4 | ✓ GFD</br>1995.3-2013.4 | ✓ GFD</br>2010.3-2023.5 | ✓ GFD</br>2002.3-2013.5 | ✓ GFD</br>1995.8-2013.4 |
+|                           | Foreign Exchange Reserve (change % year over year)| ✓ CEIC</br>2005.12-2023.9 | ✓ CEIC</br>1999.1-2023.9 | ✓ CEIC</br>1961.1-2023.6 | ✓ CEIC</br>1999.1-2023.9 | ✓ CEIC</br>2006.4-2023.9 |
+|                           | Foreign Exchange Reserve (nil USD) / GDP          | ✓ CEIC</br>2004.12-2023.4 | ✓ GFD</br>1998.1-2023.6 | ✓ GFD</br>2010.3-2023.6 | ✓ GFD</br>2002.3-2023.6 | ✓ GFD</br>2005.4-2023.6 |
 |                           | Bank lending, mo12m% change (total bank lending)  | ✓ CEIC</br>1980.06-2023.8 | ✓ CEIC</br>2001.01-2023.9 | ✓ CEIC</br>2007.01-2023.8 | ✓ CEIC</br>2006.01-2023.8 | ✓ CEIC</br>2006.12-2023.8 |
     
 
