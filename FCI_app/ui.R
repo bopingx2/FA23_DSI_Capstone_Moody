@@ -9,25 +9,27 @@
 
 library(shiny)
 
+egypt_data <- read_csv('../data/egypt_data.csv')
+
+
 # Define UI for application that draws a histogram
 fluidPage(
 
     # Application title
-    titlePanel("Old Faithful Geyser Data"),
+    titlePanel("Explore Egypt financial data"),
 
     # Sidebar with a slider input for number of bins
     sidebarLayout(
         sidebarPanel(
-            sliderInput("bins",
-                        "Number of bins:",
-                        min = 1,
-                        max = 50,
-                        value = 30)
+          varSelectInput("var",
+                        "Choose variable",
+                        egypt_data %>% select(-date)
+                        )
         ),
 
         # Show a plot of the generated distribution
         mainPanel(
-            plotOutput("distPlot")
+            plotOutput("exploreEgypt")
         )
     )
 )
