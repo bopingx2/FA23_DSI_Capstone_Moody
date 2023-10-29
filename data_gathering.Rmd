@@ -129,20 +129,8 @@ egypt_money_velocity <- egypt_money_velocity %>%
 ```{r join-data}
 data_set <- list(egypt_bank_lending_rate, egypt_broad_money, egypt_account_balance_pc, egypt_account_balance_gdp, egypt_fer_pc, egypt_fer_gdp, egypt_policy_rate, egypt_portfolio_flows, egypt_risk_premium, egypt_volatility, egypt_stock_price_mom, egypt_stock_price_24mma, egypt_term_premium, egypt_money_velocity)
 
-egypt_data <- egypt_bank_lending_rate %>%
-  full_join(egypt_broad_money) %>%
-  full_join(egypt_account_balance_pc) %>%
-  full_join(egypt_account_balance_gdp) %>%
-  full_join(egypt_fer_pc) %>%
-  full_join(egypt_fer_gdp) %>%
-  full_join(egypt_policy_rate) %>%
-  full_join(egypt_portfolio_flows) %>%
-  full_join(egypt_risk_premium) %>%
-  full_join(egypt_volatility) %>%
-  full_join(egypt_stock_price_mom) %>%
-  full_join(egypt_stock_price_24mma) %>%
-  full_join(egypt_term_premium) %>%
-  full_join(egypt_money_velocity) %>%
+egypt_data <- data_set %>%
+  reduce(full_join, by="my") %>%
   mutate(date = as.Date(paste0(my, "-01"), format = "%Y-%m-%d")) %>%
   select(date, everything(), -my) %>%
   arrange(date)
