@@ -3,9 +3,14 @@ library(readr)
 library(tidyverse)
 library(data.table)
 library(ggplot2)
+library(shinyWidgets)
 
-egypt_data <- fread('/Users/yuanmingkang/Downloads/egypt_data.csv') %>% mutate(country = 'Egypt')
-hungary_data <- fread('/Users/yuanmingkang/Downloads/egypt_data.csv') %>% mutate(country = 'Hungary')
+wd = getwd()
+
+egypt_data <- read_csv(paste0(wd, '/../data/egypt_data.csv')) %>% 
+  mutate(country = 'Egypt')
+hungary_data <- read_csv(paste0(wd, '/../data/egypt_data.csv')) %>% 
+  mutate(country = 'Hungary')
 
 combined_data <- bind_rows(egypt_data, hungary_data)
 
@@ -18,9 +23,14 @@ ui <- fluidPage(
   
   sidebarLayout(
     sidebarPanel(
-      selectInput("country", "Select Country", choices = unique(combined_data$country)),
-      varSelectInput("var", "Choose variable", combined_data %>% select(-date, -country)),
-      dateRangeInput("dateRange", "Select Date Range", start = min(combined_data$date), end = max(combined_data$date))
+      selectInput("country", "Select Country", 
+                  choices = unique(combined_data$country)),
+      varSelectInput("var", "Choose variable", combined_data %>% 
+                       select(-date, -country)),
+      dateRangeInput("dateRange", "Select Date Range", 
+                     start = min(combined_data$date), 
+                     end = max(combined_data$date)),
+      prettyCheckbox("smooth", "Apply smooth line")
     ),
     
     mainPanel(
@@ -32,14 +42,19 @@ ui <- fluidPage(
 server <- function(input, output, session) {
   filtered_data <- reactive({
     combined_data %>% 
-      filter(country == input$country, date >= input$dateRange[1], date <= input$dateRange[2], !is.na(!!input$var)) 
+      filter(country == input$country, date >= input$dateRange[1], 
+             date <= input$dateRange[2], !is.na(!!input$var)) 
   })
   
   output$explorePlot <- renderPlot({
-    ggplot(filtered_data(), aes(x = date, y = !!input$var)) +
+    p = ggplot(filtered_data(), aes(x = date, y = !!input$var)) +
       geom_line() +
       theme_minimal() +
       labs(title = paste("Time Series Plot for", input$country))
+    
+    if(input$smooth) p = p + geom_smooth(se = F)
+    
+    p
   })
 }
 
