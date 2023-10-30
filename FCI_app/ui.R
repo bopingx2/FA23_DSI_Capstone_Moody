@@ -8,6 +8,7 @@
 #
 
 library(shiny)
+library(shinyWidgets)
 
 egypt_data <- read_csv('../data/egypt_data.csv')
 
@@ -21,11 +22,19 @@ fluidPage(
     # Sidebar with a slider input for number of bins
     sidebarLayout(
         sidebarPanel(
-          varSelectInput("var",
-                        "Choose variable",
-                        egypt_data %>% select(-date)
-                        )
+          varSelectInput(
+            "var",
+            "Choose variable",
+            egypt_data %>% select(-date)
+            ),
+          
+          prettyCheckbox(
+            "smooth",
+            "Apply smooth line"
+          )
+          
         ),
+        
 
         # Show a plot of the generated distribution
         mainPanel(

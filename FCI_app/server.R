@@ -16,11 +16,15 @@ function(input, output, session) {
 
     output$exploreEgypt <- renderPlot({
 
-      egypt_data %>%
+      p = egypt_data %>%
         filter(!is.na(!!input$var)) %>%
         ggplot(aes(x = date, y = !!input$var)) +
         geom_line() +
         theme_minimal()
+      
+      if(input$smooth) p = p + geom_smooth(se = F)
+      
+      p
 
     })
 
