@@ -15,7 +15,12 @@ library(janitor)
 library(purrr)
 ```
 
-```{r load-data}
+
+
+
+```{r load-data-egypt}
+setwd("/Users/margaretreed/Class/FA23_DSI_Capstone_Moody/")
+
 egypt_bank_lending_rate <- read_csv("data/Bank Lending Rate/Bank Lending Rate mo12m change Egypt.csv")
 egypt_broad_money <- read_csv("data/Broad Money/broad_money_egypt.csv")
 egypt_account_balance_pc <- read_csv("data/Current Account Balance(change% yr over yr)/Egypt_monthly_yroveryr.csv")
@@ -33,7 +38,7 @@ egypt_term_premium <- read_csv("data/Term Premium/Egypt_termpremium.csv")
 egypt_money_velocity <- read_csv("data/Velocity of Money/money_velocity_egypt.csv")
 ```
 
-```{r clean-data}
+```{r clean-data-egypt}
 egypt_bank_lending_rate <- egypt_bank_lending_rate %>%
   clean_names() %>%
   select(date, mo12m_change) %>%
@@ -126,7 +131,7 @@ egypt_money_velocity <- egypt_money_velocity %>%
 ```
 
 
-```{r join-data}
+```{r join-data-egypt}
 data_set <- list(egypt_bank_lending_rate, egypt_broad_money, egypt_account_balance_pc, egypt_account_balance_gdp, egypt_fer_pc, egypt_fer_gdp, egypt_policy_rate, egypt_portfolio_flows, egypt_risk_premium, egypt_volatility, egypt_stock_price_mom, egypt_stock_price_24mma, egypt_term_premium, egypt_money_velocity)
 
 egypt_data <- data_set %>%
@@ -136,8 +141,27 @@ egypt_data <- data_set %>%
   arrange(date)
 ```
 
-```{r write-data}
+```{r write-data-egypt}
 write_csv(egypt_data, "data/egypt_data.csv")
 ```
 
+```{r load-data-hungary}
+setwd("/Users/margaretreed/Class/FA23_DSI_Capstone_Moody/")
 
+hungary_bank_lending_rate <- read_csv("data/Bank Lending Rate/Bank_Lending_Rate_mo12m change_Hungary")
+
+# egypt_broad_money <- read_csv("data/Broad Money/broad_money_egypt.csv")
+# egypt_account_balance_pc <- read_csv("data/Current Account Balance(change% yr over yr)/Egypt_monthly_yroveryr.csv")
+# egypt_account_balance_gdp <- read_csv("data/Current Account Balance(overGDP)/Egypt_currentovergdp.csv")
+# egypt_fer_pc <- read_csv("data/Foreign exchange reserve(change% yr over yr)/FER_yryr%_Egypt.csv")
+# egypt_fer_gdp <- read_csv("data/Foreign exchange reserve(mil USD)overGDP/FER_GDP_ratio_Egypt.csv")
+# egypt_policy_rate <- read_csv("data/Policy Rate/Policy_Fed_Rate_diff_Egypt.csv")
+# egypt_portfolio_flows <- read_csv("data/Portfolio Flows/portfolio_flows_egypt.csv")
+# # can't find REER
+# egypt_risk_premium <- read_csv("data/Risk Premium/Egypt_riskpremium.csv")
+# egypt_volatility <- read_csv("data/Stock market volatility/Egypt_Volatility.csv")
+# egypt_stock_price_mom <- read_csv("data/stock prices/EGX30_mom%change.csv")
+# egypt_stock_price_24mma <- read_csv("data/stock prices/EGX30_mo24mma_change.csv")
+# egypt_term_premium <- read_csv("data/Term Premium/Egypt_termpremium.csv")
+# egypt_money_velocity <- read_csv("data/Velocity of Money/money_velocity_egypt.csv")
+```
