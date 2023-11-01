@@ -1,0 +1,113 @@
+---
+title: "Money Velocity"
+author: "Margaret Reed"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r load-pkgs}
+library(tidyverse)
+library(janitor)
+```
+
+```{r nigeria-calc}
+nigeria_m2 <- read_csv("../data/Broad Money/broad_money_nigeria.csv")
+nigeria_gdp <- read_csv("../data/GDP/GDP_in_mil_USD_Nigeria.csv")
+
+nigeria_mv <- nigeria_gdp %>%
+  clean_names() %>%
+  select(date, gdp_in_mil_local) %>%
+  rename("gdp" = "gdp_in_mil_local") %>%
+  mutate(my = format(date, "%Y-%m")) %>%
+  inner_join(
+    nigeria_m2 %>%
+      select(date, value) %>%
+      mutate(my = format(date, "%Y-%m")),
+    by = c("my")
+  ) %>%
+  select(date.y, value, gdp) %>%
+  mutate(
+    money_velocity = gdp/value,
+    mo12m = (money_velocity - lag(money_velocity, 12))/lag(money_velocity, 12)
+  ) %>%
+  rename("date" = "date.y")
+
+write_csv(nigeria_mv, "../data/Velocity of Money/money_velocity_nigeria.csv")
+```
+
+
+```{r poland-calc}
+poland_m2 <- read_csv("../data/Broad Money/broad_money_poland.csv")
+poland_gdp <- read_csv("../data/GDP/GDP_in_mil_USD_poland.csv")
+
+poland_mv <- poland_gdp %>%
+  clean_names() %>%
+  select(date, gdp_in_mil_local) %>%
+  rename("gdp" = "gdp_in_mil_local") %>%
+  mutate(my = format(date, "%Y-%m")) %>%
+  inner_join(
+    poland_m2 %>%
+      select(date, value) %>%
+      mutate(my = format(date, "%Y-%m")),
+    by = c("my")
+  ) %>%
+  select(date.y, value, gdp) %>%
+  mutate(
+    money_velocity = gdp/value,
+    mo12m = (money_velocity - lag(money_velocity, 12))/lag(money_velocity, 12)
+  ) %>%
+  rename("date" = "date.y")
+
+write_csv(poland_mv, "../data/Velocity of Money/money_velocity_poland.csv")
+```
+
+
+```{r romania-calc}
+romania_m2 <- read_csv("../data/Broad Money/broad_money_romania.csv")
+romania_gdp <- read_csv("../data/GDP/GDP_in_mil_USD_romania.csv")
+
+romania_mv <- romania_gdp %>%
+  clean_names() %>%
+  select(date, gdp_in_mil_local) %>%
+  rename("gdp" = "gdp_in_mil_local") %>%
+  mutate(my = format(date, "%Y-%m")) %>%
+  inner_join(
+   romania_m2 %>%
+      select(date, value) %>%
+      mutate(my = format(date, "%Y-%m")),
+    by = c("my")
+  ) %>%
+  select(date.y, value, gdp) %>%
+  mutate(
+    money_velocity = gdp/value,
+    mo12m = (money_velocity - lag(money_velocity, 12))/lag(money_velocity, 12)
+  ) %>%
+  rename("date" = "date.y")
+
+write_csv(romania_mv, "../data/Velocity of Money/money_velocity_romania.csv")
+```
+
+```{r egypt-calc}
+egypt_mv <- read_csv("../data/Velocity of Money/VelocityMoneyEgypt_raw.csv")
+
+egypt_mv <- egypt_mv %>%
+  slice(27:n()) %>%
+  clean_names() %>%
+  rename("date" = "x1", "value" = "domestic_liquidity_counterpart_assets_m2_percent_of_gdp") %>%
+  mutate(
+    date = paste0("01/", date),
+    date = as.Date(date, format = "%d/%m/%Y"),
+    value = as.numeric(value),
+    money_velocity = 1/value,
+    mo12m = (money_velocity - lag(money_velocity, 12))/lag(money_velocity, 12)
+  ) %>%
+  select(date, money_velocity, mo12m)
+
+write_csv(egypt_mv, "../data/Velocity of Money/money_velocity_egypt.csv")
+```
+
+

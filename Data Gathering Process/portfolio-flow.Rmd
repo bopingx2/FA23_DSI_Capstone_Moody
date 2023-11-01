@@ -1,0 +1,124 @@
+---
+title: "Portfolio Flow"
+author: "Margaret Reed"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r load-pkgs}
+library(tidyverse)
+library(janitor)
+```
+
+```{r clean-data-hungary}
+hungary_data <- read_csv("../data/Portfolio Flows/NetPortfolioFlowsHungary_raw.csv", skip = 4, col_select = 1:3) %>% rename("date" = "...1")
+
+hungary_data <- hungary_data %>%
+  clean_names() %>%
+  mutate(
+    net_flow = equity + debt,
+    date = paste0("01 ", date),
+    date = str_replace(date, "-", " "),
+    date = as.Date(date, format = "%d %b %y"),
+    ) %>%
+  filter(!is.na(net_flow))
+
+write_csv(hungary_data, "../data/Portfolio Flows/portfolio_flows_hungary.csv")
+```
+
+```{r clean-data-poland}
+poland_data <- read_csv("../data/Portfolio Flows/NetPortfolioFlowsPoland_raw.csv", skip = 4, col_select = 1:3) %>% rename("date" = "...1")
+
+poland_data <- poland_data %>%
+  clean_names() %>%
+  mutate(
+    net_flow = equity + debt,
+    date = paste0("01 ", date),
+    date = str_replace(date, "-", " "),
+    date = as.Date(date, format = "%d %b %y"),
+    ) %>%
+  filter(!is.na(net_flow))
+
+write_csv(poland_data, "../data/Portfolio Flows/portfolio_flows_poland.csv")
+```
+
+```{r clean-data-romania}
+romania_data <- read_csv("../data/Portfolio Flows/NetPortfolioFlowsRomania_raw.csv", skip = 4, col_select = 1:3) %>% rename("date" = "...1")
+
+romania_data <- romania_data %>%
+  clean_names() %>%
+  mutate(
+    net_flow = equity + debt,
+    date = paste0("01 ", date),
+    date = str_replace(date, "-", " "),
+    date = as.Date(date, format = "%d %b %y"),
+    ) %>%
+  filter(!is.na(net_flow))
+
+write_csv(romania_data, "../data/Portfolio Flows/portfolio_flows_romania.csv")
+```
+
+```{r clean-data-egypt}
+egypt_data <- read_csv("../data/Portfolio Flows/PortfolioInvestmentEgypt_raw.csv")
+
+egypt_data <- egypt_data %>% 
+  slice(1, 16) %>%
+  t() %>%
+  as.tibble() %>%
+  slice(3:n()) %>%
+  rename("date" = "V1", "portfolio_inv" = "V2") %>%
+  mutate(
+    date = paste0("01 ", date),
+    date = str_replace(date, "-", " "),
+    date = as.Date(date, format = "%d %b %y"),
+    portfolio_inv = str_remove(portfolio_inv, ","),
+    portfolio_inv = as.numeric(portfolio_inv)
+    ) %>%
+  filter(!is.na(portfolio_inv))
+```
+
+```{r egypt-data-interpolate}
+egypt_data_int <- egypt_data %>%
+  mutate(month = date %>% `day<-`(1)) %>%
+  complete(month = seq.Date(min(month), max(month), by = "month")) %>%
+  fill(portfolio_inv) %>%
+  select(month, portfolio_inv) %>%
+  rename("date" = "month")
+
+write_csv(egypt_data_int, "../data/Portfolio Flows/portfolio_flows_egypt.csv")
+```
+
+```{r clean-data-nigeria}
+nigeria_data <- read_csv("../data/Portfolio Flows/PortfolioInvestmentNigeria_raw.csv")
+
+nigeria_data <- nigeria_data %>%
+  slice(1, 16) %>%
+  t() %>%
+  as.tibble() %>%
+  slice(3:n()) %>%
+  rename("date" = "V1", "portfolio_inv" = "V2") %>%
+  mutate(
+    date = paste0("01 ", date),
+    date = str_replace(date, "-", " "),
+    date = as.Date(date, format = "%d %b %y"),
+    portfolio_inv = str_remove(portfolio_inv, ","),
+    portfolio_inv = as.numeric(portfolio_inv)
+    ) %>%
+  filter(!is.na(portfolio_inv))
+```
+
+```{r nigeria-data-interpolate}
+nigeria_data_int <- nigeria_data %>%
+  mutate(month = date %>% `day<-`(1)) %>%
+  complete(month = seq.Date(min(month), max(month), by = "month")) %>%
+  fill(portfolio_inv) %>%
+  select(month, portfolio_inv) %>%
+  rename("date" = "month")
+
+write_csv(nigeria_data_int, "../data/Portfolio Flows/portfolio_flows_nigeria.csv")
+```
+

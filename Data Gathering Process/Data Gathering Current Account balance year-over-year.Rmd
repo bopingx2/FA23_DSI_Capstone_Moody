@@ -1,0 +1,351 @@
+---
+title: "Capstone data source Current Account balance "
+author: "Mingkang Yuan"
+date: "2023-10-09"
+output: html_document
+---
+
+
+## Egypt Current account balance percent year over year
+
+```{r}
+library(tidyverse)
+library(janitor)
+library(lubridate)
+egypt_balance_quarter = read.csv('/Users/yuanmingkang/Desktop/Fall_24/Capstone/data source/Current account balance new/Quarterly/Current Account Balance USD mn Quarterly Egypt.csv')
+
+
+names(egypt_balance_quarter)[names(egypt_balance_quarter) == "X"] <- "Date"
+names(egypt_balance_quarter)[2] <- "Balance"
+egypt_balance_quarter <- egypt_balance_quarter[-c(1:26),]
+
+
+egypt_balance_quarter$Balance <- as.numeric(as.character(egypt_balance_quarter$Balance))
+
+
+
+egypt_balance_quarter$Date <- c(seq(as.Date("1993-12-01"), length.out = nrow(egypt_balance_quarter), by = "quarter"))
+
+
+egypt_balance_quarter$Date <- as.Date(egypt_balance_quarter$Date, format="%m/%Y")
+
+
+egypt_balance_quarter$Date <- format(egypt_balance_quarter$Date, "%m/%d/%Y")
+
+
+#head(egypt_balance_quarter, 17)
+
+
+egypt_balance_quarter$Date <- as.Date(egypt_balance_quarter$Date, format="%m/%d/%Y")
+
+
+DateSeq <- seq(egypt_balance_quarter$Date[1], tail(egypt_balance_quarter$Date, 1), by="1 month")
+
+egyptMonthly <- data.frame(Date=DateSeq, Interp.Balance=spline(egypt_balance_quarter$Date, egypt_balance_quarter$Balance, method="natural", xout=DateSeq)$y)
+
+
+mergedData_egypt <- merge(egypt_balance_quarter, egyptMonthly, by='Date', all.y = T)
+
+mergedData_egypt$Date <- lubridate::ymd(paste0(year(mergedData_egypt$Date), "-", month(mergedData_egypt$Date), "-", days_in_month(mergedData_egypt$Date)))
+
+mergedData_egypt$Interp.Balance <- round(mergedData_egypt$Interp.Balance, 2)
+head(mergedData_egypt)
+
+
+
+write.csv(mergedData_egypt, file = "Egypt_monthly.csv", row.names = FALSE)
+
+# Create a lag of 12 months for the Interp.Balance column
+mergedData_egypt$lag_12 <- lag(mergedData_egypt$Interp.Balance, 12)
+
+# Calculate YoY % change
+mergedData_egypt$YoY_pct_change <- ((mergedData_egypt$Interp.Balance - mergedData_egypt$lag_12) / mergedData_egypt$lag_12) * 100
+
+# Remove the temporary lag_12 column
+mergedData_egypt$lag_12 <- NULL
+
+head(mergedData_egypt,13)
+
+write.csv(mergedData_egypt, file = "Egypt_monthly_yroveryr.csv", row.names = FALSE)
+
+
+
+
+```
+
+
+## Hungary Current account balance percent year over year
+
+```{r}
+library(tidyverse)
+library(janitor)
+library(lubridate)
+hungary_balance_quarter = read.csv('/Users/yuanmingkang/Desktop/Fall_24/Capstone/data source/Current account balance new/Quarterly/Current Account Balance USD mn Quarterly hungary.csv')
+
+
+names(hungary_balance_quarter)[names(hungary_balance_quarter) == "X"] <- "Date"
+names(hungary_balance_quarter)[2] <- "Balance"
+hungary_balance_quarter <- hungary_balance_quarter[-c(1:26),]
+
+
+hungary_balance_quarter$Balance <- as.numeric(as.character(hungary_balance_quarter$Balance))
+
+
+
+hungary_balance_quarter$Date <- c(seq(as.Date("1989-12-01"), length.out = nrow(hungary_balance_quarter), by = "quarter"))
+
+
+hungary_balance_quarter$Date <- as.Date(hungary_balance_quarter$Date, format="%m/%Y")
+
+
+hungary_balance_quarter$Date <- format(hungary_balance_quarter$Date, "%m/%d/%Y")
+
+
+#head(hungary_balance_quarter, 17)
+
+
+hungary_balance_quarter$Date <- as.Date(hungary_balance_quarter$Date, format="%m/%d/%Y")
+
+
+DateSeq <- seq(hungary_balance_quarter$Date[1], tail(hungary_balance_quarter$Date, 1), by="1 month")
+
+hungaryMonthly <- data.frame(Date=DateSeq, Interp.Balance=spline(hungary_balance_quarter$Date, hungary_balance_quarter$Balance, method="natural", xout=DateSeq)$y)
+
+
+mergedData_hungary <- merge(hungary_balance_quarter, hungaryMonthly, by='Date', all.y = T)
+
+mergedData_hungary$Date <- lubridate::ymd(paste0(year(mergedData_hungary$Date), "-", month(mergedData_hungary$Date), "-", days_in_month(mergedData_hungary$Date)))
+
+mergedData_hungary$Interp.Balance <- round(mergedData_hungary$Interp.Balance, 2)
+head(mergedData_hungary)
+
+
+
+write.csv(mergedData_hungary, file = "hungary_monthly.csv", row.names = FALSE)
+
+# Create a lag of 12 months for the Interp.Balance column
+mergedData_hungary$lag_12 <- lag(mergedData_hungary$Interp.Balance, 12)
+
+# Calculate YoY % change
+mergedData_hungary$YoY_pct_change <- ((mergedData_hungary$Interp.Balance - mergedData_hungary$lag_12) / mergedData_hungary$lag_12) * 100
+
+# Remove the temporary lag_12 column
+mergedData_hungary$lag_12 <- NULL
+
+head(mergedData_hungary,13)
+
+write.csv(mergedData_hungary, file = "hungary_monthly_yroveryr.csv", row.names = FALSE)
+
+
+
+
+```
+
+
+
+
+## nigeria Current account balance percent year over year
+
+```{r}
+library(tidyverse)
+library(janitor)
+library(lubridate)
+nigeria_balance_quarter = read.csv('/Users/yuanmingkang/Desktop/Fall_24/Capstone/data source/Current account balance new/Quarterly/Current Account Balance USD mn Quarterly nigeria.csv')
+
+
+names(nigeria_balance_quarter)[names(nigeria_balance_quarter) == "X"] <- "Date"
+names(nigeria_balance_quarter)[2] <- "Balance"
+nigeria_balance_quarter <- nigeria_balance_quarter[-c(1:26),]
+
+
+nigeria_balance_quarter$Balance <- as.numeric(as.character(nigeria_balance_quarter$Balance))
+
+
+
+nigeria_balance_quarter$Date <- c(seq(as.Date("2008-03-01"), length.out = nrow(nigeria_balance_quarter), by = "quarter"))
+
+
+nigeria_balance_quarter$Date <- as.Date(nigeria_balance_quarter$Date, format="%m/%Y")
+
+
+nigeria_balance_quarter$Date <- format(nigeria_balance_quarter$Date, "%m/%d/%Y")
+
+
+#head(nigeria_balance_quarter, 17)
+
+
+nigeria_balance_quarter$Date <- as.Date(nigeria_balance_quarter$Date, format="%m/%d/%Y")
+
+
+DateSeq <- seq(nigeria_balance_quarter$Date[1], tail(nigeria_balance_quarter$Date, 1), by="1 month")
+
+nigeriaMonthly <- data.frame(Date=DateSeq, Interp.Balance=spline(nigeria_balance_quarter$Date, nigeria_balance_quarter$Balance, method="natural", xout=DateSeq)$y)
+
+
+mergedData_nigeria <- merge(nigeria_balance_quarter, nigeriaMonthly, by='Date', all.y = T)
+
+mergedData_nigeria$Date <- lubridate::ymd(paste0(year(mergedData_nigeria$Date), "-", month(mergedData_nigeria$Date), "-", days_in_month(mergedData_nigeria$Date)))
+
+mergedData_nigeria$Interp.Balance <- round(mergedData_nigeria$Interp.Balance, 2)
+head(mergedData_nigeria)
+
+
+
+write.csv(mergedData_nigeria, file = "nigeria_monthly.csv", row.names = FALSE)
+
+# Create a lag of 12 months for the Interp.Balance column
+mergedData_nigeria$lag_12 <- lag(mergedData_nigeria$Interp.Balance, 12)
+
+# Calculate YoY % change
+mergedData_nigeria$YoY_pct_change <- ((mergedData_nigeria$Interp.Balance - mergedData_nigeria$lag_12) / mergedData_nigeria$lag_12) * 100
+
+# Remove the temporary lag_12 column
+mergedData_nigeria$lag_12 <- NULL
+
+head(mergedData_nigeria,13)
+
+write.csv(mergedData_nigeria, file = "Nigeria_monthly_yroveryr.csv", row.names = FALSE)
+
+
+
+
+```
+
+
+## poland Current account balance percent year over year
+
+```{r}
+library(tidyverse)
+library(janitor)
+library(lubridate)
+poland_balance_quarter = read.csv('/Users/yuanmingkang/Desktop/Fall_24/Capstone/data source/Current account balance new/Quarterly/Current Account Balance USD mn Quarterly poland.csv')
+
+
+names(poland_balance_quarter)[names(poland_balance_quarter) == "X"] <- "Date"
+names(poland_balance_quarter)[2] <- "Balance"
+poland_balance_quarter <- poland_balance_quarter[-c(1:26),]
+
+
+poland_balance_quarter$Balance <- as.numeric(as.character(poland_balance_quarter$Balance))
+
+
+
+poland_balance_quarter$Date <- c(seq(as.Date("2000-03-01"), length.out = nrow(poland_balance_quarter), by = "quarter"))
+
+
+poland_balance_quarter$Date <- as.Date(poland_balance_quarter$Date, format="%m/%Y")
+
+
+poland_balance_quarter$Date <- format(poland_balance_quarter$Date, "%m/%d/%Y")
+
+
+#head(poland_balance_quarter, 17)
+
+
+poland_balance_quarter$Date <- as.Date(poland_balance_quarter$Date, format="%m/%d/%Y")
+
+
+DateSeq <- seq(poland_balance_quarter$Date[1], tail(poland_balance_quarter$Date, 1), by="1 month")
+
+polandMonthly <- data.frame(Date=DateSeq, Interp.Balance=spline(poland_balance_quarter$Date, poland_balance_quarter$Balance, method="natural", xout=DateSeq)$y)
+
+
+mergedData_poland <- merge(poland_balance_quarter, polandMonthly, by='Date', all.y = T)
+
+mergedData_poland$Date <- lubridate::ymd(paste0(year(mergedData_poland$Date), "-", month(mergedData_poland$Date), "-", days_in_month(mergedData_poland$Date)))
+
+mergedData_poland$Interp.Balance <- round(mergedData_poland$Interp.Balance, 2)
+head(mergedData_poland)
+
+
+
+write.csv(mergedData_poland, file = "poland_monthly.csv", row.names = FALSE)
+
+# Create a lag of 12 months for the Interp.Balance column
+mergedData_poland$lag_12 <- lag(mergedData_poland$Interp.Balance, 12)
+
+# Calculate YoY % change
+mergedData_poland$YoY_pct_change <- ((mergedData_poland$Interp.Balance - mergedData_poland$lag_12) / mergedData_poland$lag_12) * 100
+
+# Remove the temporary lag_12 column
+mergedData_poland$lag_12 <- NULL
+
+head(mergedData_poland,13)
+
+write.csv(mergedData_poland, file = "Poland_monthly_yroveryr.csv", row.names = FALSE)
+
+
+
+
+```
+
+## romania Current account balance percent year over year
+
+```{r}
+library(tidyverse)
+library(janitor)
+library(lubridate)
+romania_balance_quarter = read.csv('/Users/yuanmingkang/Desktop/Fall_24/Capstone/data source/Current account balance new/Quarterly/Current Account Balance USD mn Quarterly romania.csv')
+
+
+names(romania_balance_quarter)[names(romania_balance_quarter) == "X"] <- "Date"
+names(romania_balance_quarter)[2] <- "Balance"
+romania_balance_quarter <- romania_balance_quarter[-c(1:26),]
+
+
+romania_balance_quarter$Balance <- as.numeric(as.character(romania_balance_quarter$Balance))
+
+
+
+romania_balance_quarter$Date <- c(seq(as.Date("2002-09-01"), length.out = nrow(romania_balance_quarter), by = "quarter"))
+
+
+romania_balance_quarter$Date <- as.Date(romania_balance_quarter$Date, format="%m/%Y")
+
+
+romania_balance_quarter$Date <- format(romania_balance_quarter$Date, "%m/%d/%Y")
+
+
+#head(romania_balance_quarter, 17)
+
+
+romania_balance_quarter$Date <- as.Date(romania_balance_quarter$Date, format="%m/%d/%Y")
+
+
+DateSeq <- seq(romania_balance_quarter$Date[1], tail(romania_balance_quarter$Date, 1), by="1 month")
+
+romaniaMonthly <- data.frame(Date=DateSeq, Interp.Balance=spline(romania_balance_quarter$Date, romania_balance_quarter$Balance, method="natural", xout=DateSeq)$y)
+
+
+mergedData_romania <- merge(romania_balance_quarter, romaniaMonthly, by='Date', all.y = T)
+
+mergedData_romania$Date <- lubridate::ymd(paste0(year(mergedData_romania$Date), "-", month(mergedData_romania$Date), "-", days_in_month(mergedData_romania$Date)))
+
+mergedData_romania$Interp.Balance <- round(mergedData_romania$Interp.Balance, 2)
+head(mergedData_romania)
+
+
+
+write.csv(mergedData_romania, file = "romania_monthly.csv", row.names = FALSE)
+
+# Create a lag of 12 months for the Interp.Balance column
+mergedData_romania$lag_12 <- lag(mergedData_romania$Interp.Balance, 12)
+
+# Calculate YoY % change
+mergedData_romania$YoY_pct_change <- ((mergedData_romania$Interp.Balance - mergedData_romania$lag_12) / mergedData_romania$lag_12) * 100
+
+# Remove the temporary lag_12 column
+mergedData_romania$lag_12 <- NULL
+
+head(mergedData_romania,13)
+
+write.csv(mergedData_romania, file = "romania_monthly_yroveryr.csv", row.names = FALSE)
+
+
+
+
+```
+
+
+
+
