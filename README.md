@@ -15,7 +15,7 @@ Margaret Reed (mr4251)
 
 |                           |                                                   | Egypt     | Hungary   | Nigeria | Poland | Romania |
 |---------------------------|---------------------------------------------------|-----------|-----------|---------|--------|---------|
-| Bond Markets              | Term Premium                                      | ✓ GFD</br>***2013.5-2022.9*** | ✓ GFD</br>1999.1-2023.9 | ✓ Investing</br>Use 2 Yr</br>2008.2-2023.9 | ✓ GFD</br>2003.12-**2023.3** | ✓ GFD</br>2008.1-**2022.9** |
+| Bond Markets              | Term Premium                                      | ✓ GFD</br>***2013.5-2022.9*** | ✓ GFD</br>1999.1-2023.9 | ✓ Investing</br>Use 2 Yr</br>2008.2-2023.9 | ✓ GFD</br>2003.12-**2023.3** | ✓ GFD</br>2008.1-***2022.9*** |
 |                           | Risk Premium                                      | ✓ CEIC</br>**2013.5-2023.9** | ✓ CEIC</br>1999.1-2023.9 | ✓ CEIC</br>2007.12-2023.9 | ✓ CEIC</br>1999.5-***2023.3*** | ✓ CEIC</br>2001.12-**2023.6** |
 | Equity Markets            | Stock Prices, mom% change                         | ✓ Bloomberg</br>2001.1-2023.9 | ✓ Bloomberg</br>2001.1-2023.9 | ✓ Bloomberg</br>2001.2-2023.9| ✓ Bloomberg</br>2001.1-2023.9 | ✓ Bloomberg</br>2003.2-2023.9|
 |                           | Stock Prices, mom24mma% change                    | ✓ Bloomberg</br>2002.12-2023.9 | ✓ Bloomberg</br>2002.12-2023.9 | ✓ Bloomberg</br>2003.1-2023.9 | ✓ Bloomberg</br>2002.12-2023.9 | ✓ Bloomberg</br>2005.1-2023.9 |
