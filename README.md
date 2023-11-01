@@ -44,3 +44,5 @@ Select one from block component</br>
 Term pre different options select one</br>
 Repurchase avg, eop use one.</br>
 same sign</br>
+Comparing FCI: correlation and alignment</br>
+Send csv by **11/03**
