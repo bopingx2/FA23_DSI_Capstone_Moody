@@ -15,7 +15,7 @@ Margaret Reed (mr4251)
 
 |                           |                                                   | Egypt     | Hungary   | Nigeria | Poland | Romania |
 |---------------------------|---------------------------------------------------|-----------|-----------|---------|--------|---------|
-| Bond Markets              | Term Premium                                      | ✓ GFD</br>2012.9-2022.9 | ✓ GFD</br>1999.1-2023.9 |✓ Investing</br>2008.01-2011.07</br>2012.07-20117.10</br>2019.07-2023.09 | ✓ GFD</br>2003.12-2023.3 | ✓ GFD</br>2008.1-2022.9 |
+| Bond Markets              | Term Premium                                      | ✓ GFD</br>2012.9-2022.9 | ✓ GFD</br>1999.1-2023.9 |✓ Investing</br>Use 2 Yr</br>2008.2-2023.9 | ✓ GFD</br>2003.12-2023.3 | ✓ GFD</br>2008.1-2022.9 |
 |                           | Risk Premium                                      | ✓ CEIC</br>2012.9-2023.9| ✓ CEIC</br>1999.1-2023.9 | ✓ CEIC</br>2007.12-2022.9 | ✓ CEIC</br>1999.5-2023.3 | ✓ CEIC</br>2001.12-2023.6 |
 | Equity Markets            | Stock Prices, mom% change                         | ✓ Bloomberg</br>2001.1-2023.9 | ✓ Bloomberg</br>2001.1-2023.9 | ✓ Bloomberg</br>2001.2-2023.9| ✓ Bloomberg</br>2001.1-2023.9 | ✓ Bloomberg</br>2003.2-2023.9|
 |                           | Stock Prices, mom24mma% change                    | ✓ Bloomberg</br>2002.12-2023.9 | ✓ Bloomberg</br>2002.12-2023.9 | ✓ Bloomberg</br>2003.1-2023.9 | ✓ Bloomberg</br>2002.12-2023.9 | ✓ Bloomberg</br>2005.1-2023.9 |
@@ -24,9 +24,9 @@ Margaret Reed (mr4251)
 |                           | Current Account Balance (change % year over year) | ✓ CEIC</br>1994.12-2023.6 | ✓</br>CEIC 1990.12-2023.6 | ✓ CEIC</br>2009.3-2022.12 | ✓ CEIC</br>2001.3-2023.6 | ✓ CEIC</br>2003.9-2023.6 |
 |                           | Current Account Balance (mil USD) / GDP           | ✓ CEIC</br>2001.9-2023.4 | ✓ CEIC</br> 1995.3-2023.6 | ✓ CEIC </br>2010.3-2022.12 | ✓ CEIC </br>2022.3-2023.6 | ✓ CEIC </br>2022.9-2023.6 |
 |                           | Policy (One-Day Repo) Rate %AVG                   |  |  |  |  |  |
-|                           | Policy (One-Day Repo) Rate %EOP                   | ✓ CEIC</br>Use Discount Rate</br>1991.1-2023.9 | ✓ CEIC</br>1985.1-2022.8 | ✓ CEIC</br>2007.1-2023.4 | ✓ CEIC</br>1998.1-2022.8 | ✓ CEIC</br>1993.12-2022.08 |
+|                           | Policy (One-Day Repo) Rate %EOP                   | ✓ CEIC</br>2005.10-2023.9 | ✓ CEIC</br>1995.1-2023.9 | ✓ CEIC</br>2007.1-2023.9 | ✓ CEIC</br>1995.1-2023.9 | ✓ CEIC</br>2003.1-2023.09 |
 |                           | Policy Rate & Fed Funds Rate Differential %AVP    |  |  |  |  |  |
-|                           | Policy Rate & Fed Funds Rate Differential %EOP    | ✓ CEIC</br>Use Discount Rate</br>1991.1-2023.9 | ✓ CEIC</br>1985.1-2022.8 | ✓ CEIC</br>2007.1-2023.4 | ✓ CEIC</br>1998.1-2022.8 | ✓ CEIC</br>1993.12-2022.08 |
+|                           | Policy Rate & Fed Funds Rate Differential %EOP    | ✓ CEIC</br>2005.10-2023.9 | ✓ CEIC</br>1995.1-2023.9 | ✓ CEIC</br>2007.1-2023.9 | ✓ CEIC</br>1995.1-2023.9 | ✓ CEIC</br>2003.1-2022.09 |
 | Money and Portfolio Flows | Broad Money, mo12m%change                         | ✓ WDI</br>2004.1-2023.7 |  | ✓ WDI</br>2001.12-2023.4 | ✓ IMF</br>2004.3-2023.7 | ✓ IMF</br>2001.12-2023.8 |
 |                           | Velocity of Money, mo12m change                   | ✓ CBE</br>2002.1-2023.4 |  | ✓ </br>2010.3-2023.4 | ✓ </br>2004.3-2023.6 | ✓ </br>2001.12-2023.6 |
 |                           | Portfolio Flows                                   | ✓ IFF</br>2000.3-2023.6 | ✓ IFF</br>2014.4-2023.7| ✓ IFF</br>2005.3-2024.12 | ✓</br>IFF 2000.1-2023.7 | ✓</br>IFF 2005.1-2023.7 |
