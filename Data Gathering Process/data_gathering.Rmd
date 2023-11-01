@@ -202,7 +202,7 @@ hungary_portfolio_flows <- hungary_portfolio_flows %>%
   mutate(my = format(date, "%Y-%m")) %>%
   select(my, portfolio_flows)
 
-hungary_reer %>%
+hungary_reer <- hungary_reer %>%
   slice(27:n()) %>%
   clean_names() %>%
   rename("date" = "x1", "reer" = "real_effective_exchange_rate_index_based_on_consumer_price_index") %>%
