@@ -262,3 +262,195 @@ hungary_data <- data_set %>%
 write_csv(hungary_data, "../data/hungary_data.csv")
 ```
 
+
+```{r load-data-nigeria}
+nigeria_bank_lending_rate <- read_csv("../data/Bank Lending Rate/Bank_Lending_Rate_mo12m_Change_Nigeria.csv")
+nigeria_broad_money <- read_csv("../data/Broad Money/broad_money_nigeria.csv")
+nigeria_account_balance_pc <- read_csv("../data/Current Account Balance(change% yr over yr)/Curr_Acnt_Balance_yroveryr_Nigeria.csv")
+nigeria_account_balance_gdp <- read_csv("../data/Current Account Balance(overGDP)/Curr_Acnt_Balance_Over_GDP_Nigeria.csv")
+nigeria_fer_pc <- read_csv("../data/Foreign exchange reserve(change% yr over yr)/FER_yryr%_Nigeria.csv")
+nigeria_fer_gdp <- read_csv("../data/Foreign exchange reserve(mil USD)overGDP/FER_GDP_ratio_Nigeria.csv")
+nigeria_policy_rate <- read_csv("../data/Policy Rate Fed Funds Rate Diff/Policy_Fed_Rate_diff_AVG_Nigeria.csv")
+nigeria_portfolio_flows <- read_csv("../data/Portfolio Flows/portfolio_flows_nigeria.csv")
+nigeria_reer <- read_csv("../data/REER/REER_Nigeria.csv")
+nigeria_risk_premium <- read_csv("../data/Risk Premium/Risk_Premium_Nigeria.csv")
+nigeria_volatility <- read_csv("../data/Stock market volatility/Volatility_Nigeria.csv")
+nigeria_stock_price_mom <- read_csv("../data/stock prices/Stock_mom%change_Nigeria.csv")
+nigeria_stock_price_24mma <- read_csv("../data/stock prices/Stock_mo24mma_Nigeria.csv")
+nigeria_term_premium <- read_csv("../data/Term Premium/Term_Premium_Nigeria.csv")
+nigeria_money_velocity <- read_csv("../data/Velocity of Money/money_velocity_nigeria.csv")
+```
+
+```{r data-clean-nigeria}
+nigeria_bank_lending_rate <- nigeria_bank_lending_rate %>%
+  clean_names() %>%
+  rename("bank_lending" = mo12m_change) %>%
+  mutate(date = as.Date(paste0(date, "-01"), format = "%Y-%m-%d"),
+         my = format(date, "%Y-%m")) %>%
+  select(my, bank_lending)
+
+nigeria_broad_money <- nigeria_broad_money %>%
+  rename("broad_money" = "mo12m") %>%
+  mutate(date = as.Date(paste0(date, "-01"), format = "%Y-%m-%d"),
+         my = format(date, "%Y-%m")) %>%
+  select(my, broad_money)
+
+nigeria_account_balance_pc <- nigeria_account_balance_pc %>%
+  clean_names() %>%
+  rename("account_balance_pc" = "yo_y_pct_change") %>%
+  filter(!is.na(account_balance_pc)) %>%
+  mutate(my = format(date, "%Y-%m")) %>%
+  select(my, account_balance_pc)
+
+nigeria_account_balance_gdp <- nigeria_account_balance_gdp %>%
+  clean_names() %>%
+  mutate(my = format(date, "%Y-%m")) %>%
+  select(my, current_over_gdp)
+
+nigeria_fer_pc <- nigeria_fer_pc %>%
+  clean_names() %>%
+  rename("fer_pc" = "yryr_percent") %>%
+  mutate(my = format(date, "%Y-%m")) %>%
+  select(my, fer_pc)
+
+nigeria_fer_gdp <- nigeria_fer_gdp %>%
+  clean_names() %>%
+  mutate(my = format(date, "%Y-%m")) %>%
+  select(my, fer_gdp)
+
+nigeria_policy_rate <- nigeria_policy_rate %>%
+  clean_names() %>%
+  mutate(my = format(date, "%Y-%m")) %>%
+  select(my, rate_difference)
+
+nigeria_portfolio_flows <- nigeria_portfolio_flows %>%
+  rename("portfolio_flows" = "portfolio_inv") %>%
+  mutate(my = format(date, "%Y-%m")) %>%
+  select(my, portfolio_flows)
+
+nigeria_reer <- nigeria_reer %>%
+  slice(27:n()) %>%
+  clean_names() %>%
+  rename("date" = "x1", "reer" = "real_effective_exchange_rate_index_based_on_consumer_price_index") %>%
+  mutate(date = as.Date(paste0("01/", date), format = "%d/%m/%Y")) %>%
+  mutate(my = format(date, "%Y-%m")) %>%
+  select(my, reer)
+
+nigeria_risk_premium <- nigeria_risk_premium %>%
+  clean_names() %>%
+  mutate(my = format(date, "%Y-%m")) %>%
+  select(my, risk_premium)
+
+nigeria_volatility <- nigeria_volatility %>%
+  clean_names() %>%
+  filter(!is.na(volatility)) %>%
+  mutate(date = as.Date(paste0(date, "-01"), format = "%Y-%m-%d"),
+         month = month(date), 
+         year = year(date)) %>%
+  group_by(month, year) %>%
+  summarize(volatility = mean(volatility)) %>%
+  ungroup() %>%
+  mutate(date = as.Date(paste0(year, "-", month, "-01")),
+         my = format(date, "%Y-%m")) %>%
+  select(my, volatility)
+
+nigeria_stock_price_mom <- nigeria_stock_price_mom %>%
+  clean_names() %>%
+  rename("stock_price_mom" = "mom_percent_change") %>%
+  mutate(my = format(date, "%Y-%m")) %>%
+  select(my, stock_price_mom)
+
+nigeria_stock_price_24mma <- nigeria_stock_price_24mma %>%
+  clean_names() %>%
+  rename("stock_price_24mma" = "mo24mma_percent_change") %>%
+  filter(!is.na(stock_price_24mma)) %>%
+  mutate(my = format(date, "%Y-%m")) %>%
+  select(my, stock_price_24mma)
+
+nigeria_term_premium <- nigeria_term_premium %>%
+  clean_names() %>%
+  mutate(my = format(date, "%Y-%m")) %>%
+  select(my, term_premium)
+
+nigeria_money_velocity <- nigeria_money_velocity %>%
+  select(date, mo12m) %>%
+  rename("money_velocity" = "mo12m") %>%
+  mutate(date = as.Date(paste0(date, "-01"), format = "%Y-%m-%d"),
+         my = format(date, "%Y-%m")) %>%
+  select(my, money_velocity)
+```
+
+```{r }
+hungary_fer_gdp <- hungary_fer_gdp %>%
+  clean_names() %>%
+  mutate(my = format(date, "%Y-%m")) %>%
+  select(my, fer_gdp)
+
+hungary_policy_rate <- hungary_policy_rate %>%
+  clean_names() %>%
+  mutate(my = format(date, "%Y-%m")) %>%
+  select(my, rate_difference)
+
+hungary_portfolio_flows <- hungary_portfolio_flows %>%
+  rename("portfolio_flows" = "net_flow") %>%
+  mutate(my = format(date, "%Y-%m")) %>%
+  select(my, portfolio_flows)
+
+hungary_reer <- hungary_reer %>%
+  slice(27:n()) %>%
+  clean_names() %>%
+  rename("date" = "x1", "reer" = "real_effective_exchange_rate_index_based_on_consumer_price_index") %>%
+  mutate(date = as.Date(paste0("01/", date), format = "%d/%m/%Y")) %>%
+  mutate(my = format(date, "%Y-%m")) %>%
+  select(my, reer)
+
+hungary_risk_premium <- hungary_risk_premium %>%
+  clean_names() %>%
+  mutate(my = format(date, "%Y-%m")) %>%
+  select(my, risk_premium)
+
+hungary_volatility <- hungary_volatility %>%
+  clean_names() %>%
+  filter(!is.na(volatility)) %>%
+  mutate(date = as.Date(paste0(date, "-01"), format = "%Y-%m-%d"),
+         month = month(date), 
+         year = year(date)) %>%
+  group_by(month, year) %>%
+  summarize(volatility = mean(volatility)) %>%
+  ungroup() %>%
+  mutate(date = as.Date(paste0(year, "-", month, "-01")),
+         my = format(date, "%Y-%m")) %>%
+  select(my, volatility)
+
+hungary_stock_price_mom <- hungary_stock_price_mom %>%
+  clean_names() %>%
+  rename("stock_price_mom" = "mom_percent_change") %>%
+  mutate(my = format(date, "%Y-%m")) %>%
+  select(my, stock_price_mom)
+
+hungary_stock_price_24mma <- hungary_stock_price_24mma %>%
+  clean_names() %>%
+  rename("stock_price_24mma" = "mo24mma_percent_change") %>%
+  filter(!is.na(stock_price_24mma)) %>%
+  mutate(my = format(date, "%Y-%m")) %>%
+  select(my, stock_price_24mma)
+
+hungary_term_premium <- hungary_term_premium %>%
+  clean_names() %>%
+  mutate(my = format(date, "%Y-%m")) %>%
+  select(my, term_premium)
+```
+
+```{r join-data-nigeria}
+data_set <- list(nigeria_bank_lending_rate, nigeria_broad_money, nigeria_account_balance_pc, nigeria_account_balance_gdp, nigeria_fer_pc, nigeria_fer_gdp, nigeria_policy_rate, nigeria_portfolio_flows, nigeria_reer, nigeria_risk_premium, nigeria_volatility, nigeria_stock_price_mom, nigeria_stock_price_24mma, nigeria_term_premium, nigeria_money_velocity)
+
+nigeria_data <- data_set %>%
+  reduce(full_join, by="my") %>%
+  mutate(date = as.Date(paste0(my, "-01"), format = "%Y-%m-%d")) %>%
+  select(date, everything(), -my) %>%
+  arrange(date)
+```
+
+```{r write-data-nigeria}
+write_csv(nigeria_data, "../data/nigeria_data.csv")
+```

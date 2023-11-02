@@ -9,10 +9,12 @@ wd = getwd()
 
 egypt_data <- read_csv(paste0(wd, '/../data/egypt_data.csv')) %>% 
   mutate(country = 'Egypt')
-hungary_data <- read_csv(paste0(wd, '/../data/egypt_data.csv')) %>% 
+hungary_data <- read_csv(paste0(wd, '/../data/hungary_data.csv')) %>% 
   mutate(country = 'Hungary')
+nigeria_data <- read_csv(paste0(wd, '/../data/nigeria_data.csv')) %>% 
+  mutate(country = 'Nigeria')
 
-combined_data <- bind_rows(egypt_data, hungary_data)
+combined_data <- bind_rows(egypt_data, hungary_data, nigeria_data)
 
 
 library(shinythemes)
@@ -42,15 +44,24 @@ ui <- fluidPage(
 server <- function(input, output, session) {
   filtered_data <- reactive({
     combined_data %>% 
-      filter(country == input$country, date >= input$dateRange[1], 
-             date <= input$dateRange[2], !is.na(!!input$var)) 
+      filter(
+        country == input$country, 
+        date >= input$dateRange[1],
+        date <= input$dateRange[2], 
+        !is.na(!!input$var)
+        ) 
   })
   
   output$explorePlot <- renderPlot({
-    p = ggplot(filtered_data(), aes(x = date, y = !!input$var)) +
+    p = ggplot(
+      filtered_data(), 
+      aes(x = date, y = !!input$var)
+      ) +
       geom_line() +
       theme_minimal() +
-      labs(title = paste("Time Series Plot for", input$country))
+      labs(
+        title = paste("Time Series Plot for", input$country)
+        )
     
     if(input$smooth) p = p + geom_smooth(se = F)
     
