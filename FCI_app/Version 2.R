@@ -7,20 +7,45 @@ library(shinyWidgets)
 
 wd = getwd()
 
-egypt_data <- read_csv(paste0(wd, '/../data/egypt_data.csv')) %>% 
-  mutate(country = 'Egypt')
-hungary_data <- read_csv(paste0(wd, '/../data/hungary_data.csv')) %>% 
-  mutate(country = 'Hungary')
-nigeria_data <- read_csv(paste0(wd, '/../data/nigeria_data.csv')) %>% 
-  mutate(country = 'Nigeria')
+egypt_data <- read_csv(paste0(wd, '/../data/Egypt_DataFrame.csv')) %>%
+  clean_names() %>%
+  mutate(
+    country = 'Egypt'
+    )
+hungary_data <- read_csv(paste0(wd, '/../data/Hungary_DataFrame.csv')) %>% 
+  clean_names() %>%
+  mutate(
+    country = 'Hungary'
+  )
+nigeria_data <- read_csv(paste0(wd, '/../data/Nigeria_DataFrame.csv')) %>% 
+  clean_names() %>%
+  mutate(
+    country = 'Nigeria'
+  )
+poland_data <- read_csv(paste0(wd, '/../data/Poland_DataFrame.csv')) %>% 
+  clean_names() %>%
+  mutate(
+    country = 'Poland'
+  )
+romania_data <- read_csv(paste0(wd, '/../data/Romania_DataFrame.csv')) %>% 
+  clean_names() %>%
+  mutate(
+    country = 'Romania'
+  )
 
-combined_data <- bind_rows(egypt_data, hungary_data, nigeria_data)
+combined_data <- bind_rows(egypt_data, hungary_data, nigeria_data, poland_data, 
+                           romania_data) %>%
+  mutate(
+    velocity_of_money_mo12m_percent_change = velocity_of_money_mo12m_percent_change*100,
+    broad_money_mo12m_percent_change = broad_money_mo12m_percent_change*100,
+    date = as.Date(paste0(date, "-01"), format = "%Y-%m-%d")
+  )
 
 
 library(shinythemes)
 
 ui <- fluidPage(
-  theme = shinytheme("slate"), 
+  theme = shinytheme("flatly"), 
   titlePanel("Explore Financial Data by Country"),
   
   sidebarLayout(
@@ -58,7 +83,7 @@ server <- function(input, output, session) {
       aes(x = date, y = !!input$var)
       ) +
       geom_line() +
-      theme_minimal() +
+      theme_bw() +
       labs(
         title = paste("Time Series Plot for", input$country)
         )

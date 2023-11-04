@@ -454,3 +454,48 @@ nigeria_data <- data_set %>%
 ```{r write-data-nigeria}
 write_csv(nigeria_data, "../data/nigeria_data.csv")
 ```
+
+```{r}
+wd = getwd()
+
+egypt_data <- read_csv(paste0(wd, '/../data/Egypt_DataFrame.csv')) %>%
+  clean_names() %>%
+  mutate(
+    country = 'Egypt'
+    )
+hungary_data <- read_csv(paste0(wd, '/../data/Hungary_DataFrame.csv')) %>% 
+  clean_names() %>%
+  mutate(
+    country = 'Hungary'
+  )
+nigeria_data <- read_csv(paste0(wd, '/../data/Nigeria_DataFrame.csv')) %>% 
+  clean_names() %>%
+  mutate(
+    country = 'Nigeria'
+  )
+poland_data <- read_csv(paste0(wd, '/../data/Poland_DataFrame.csv')) %>% 
+  clean_names() %>%
+  mutate(
+    country = 'Poland'
+  )
+romania_data <- read_csv(paste0(wd, '/../data/Romania_DataFrame.csv')) %>% 
+  clean_names() %>%
+  mutate(
+    country = 'Romania'
+  )
+
+bind_rows(egypt_data, hungary_data, nigeria_data, poland_data, romania_data) %>%
+mutate(
+  velocity_of_money_mo12m_percent_change = velocity_of_money_mo12m_percent_change*100,
+  broad_money_mo12m_percent_change = broad_money_mo12m_percent_change*100,
+  date = format(as.Date(paste0(date, "-01"), format = "%Y-%m-%d"), "%Y-%m")
+  )
+```
+
+
+```{r}
+combined_data
+```
+
+
+

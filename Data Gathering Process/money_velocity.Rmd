@@ -92,7 +92,7 @@ write_csv(romania_mv, "../data/Velocity of Money/money_velocity_romania.csv")
 ```
 
 ```{r egypt-calc}
-egypt_mv <- read_csv("../data/Velocity of Money/VelocityMoneyEgypt_raw.csv")
+egypt_mv <- read_csv("../data/Velocity of Money/raw/VelocityMoneyEgypt_raw.csv")
 
 egypt_mv <- egypt_mv %>%
   slice(27:n()) %>%

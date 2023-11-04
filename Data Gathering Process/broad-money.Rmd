@@ -14,52 +14,53 @@ library(tidyverse)
 ```
 
 ```{r egypt-data}
-egypt_data <- read_csv("data/Broad Money/BroadMoneyEgypt_raw.csv", skip = 27, col_names = c("date", "value"))
+egypt_data <- read_csv("../data/Broad Money/raw/BroadMoneyEgypt_raw.csv", skip = 27, col_names = c("date", "value"))
 egypt_data <- egypt_data %>%
   mutate(
     date = paste0("01/", date),
     date = as.Date(date, format = "%d/%m/%Y"),
-    mo12m = (value - lag(value, 12))/lag(value, 12)
+    mo12m = 100*(value - lag(value, 12))/lag(value, 12)
   )
-write_csv(egypt_data, "data/Broad Money/broad_money_egypt.csv")
+write_csv(egypt_data, "../data/Broad Money/broad_money_egypt.csv")
 ```
 
 ```{r nigeria-data}
-nigeria_data <- read_csv("data/Broad Money/BroadMoneyNigeria_raw.csv", skip = 27, col_names = c("date", "value"))
+nigeria_data <- read_csv("../data/Broad Money/raw/BroadMoneyNigeria_raw.csv", skip = 27, col_names = c("date", "value"))
 
 nigeria_data <- nigeria_data %>%
   mutate(
     date = paste0("01/", date),
     date = as.Date(date, format = "%d/%m/%Y"),
-    mo12m = (value - lag(value, 12))/lag(value, 12)
+    mo12m = 100*(value - lag(value, 12))/lag(value, 12)
   )
 
-write_csv(nigeria_data, "data/Broad Money/broad_money_nigeria.csv")
+write_csv(nigeria_data, "../data/Broad Money/broad_money_nigeria.csv")
 ```
 
 ```{r poland-data}
-poland_data <- read_csv("data/Broad Money/BroadMoneyPoland_raw.csv", skip = 27, col_names = c("date", "value"))
+poland_data <- read_csv("../data/Broad Money/raw/BroadMoneyPoland_raw.csv", skip = 27, col_names = c("date", "value"))
 
 poland_data <- poland_data %>%
   mutate(
     date = paste0("01/", date),
     date = as.Date(date, format = "%d/%m/%Y"),
-    mo12m = (value - lag(value, 12))/lag(value, 12)
+    mo12m = 100*(value - lag(value, 12))/lag(value, 12)
   )
 
-write_csv(poland_data, "data/Broad Money/broad_money_poland.csv")
+write_csv(poland_data, "../data/Broad Money/broad_money_poland.csv")
 ```
+
 ```{r romania-data}
-romania_data <- read_csv("data/Broad Money/BroadMoneyRomania_raw.csv", skip = 27, col_names = c("date", "value"))
+romania_data <- read_csv("../data/Broad Money/raw/BroadMoneyRomania_raw.csv", skip = 27, col_names = c("date", "value"))
 
 romania_data <- romania_data %>%
   mutate(
     date = paste0("01/", date),
     date = as.Date(date, format = "%d/%m/%Y"),
-    mo12m = (value - lag(value, 12))/lag(value, 12)
+    mo12m = 100*(value - lag(value, 12))/lag(value, 12)
   )
 
-write_csv(romania_data, "data/Broad Money/broad_money_romania.csv")
+write_csv(romania_data, "../data/Broad Money/broad_money_romania.csv")
 ```
 
 
