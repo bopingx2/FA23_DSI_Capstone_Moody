@@ -1,0 +1,144 @@
+explain variance ratio : 0.5249972003344449
+Term_Premium : -0.7071067811865492
+Risk_Premium : -0.7071067811865458
+id : 34590782
+explain variance ratio : 0.5249972003344449
+Term_Premium : -0.7071067811865492
+Risk_Premium : -0.7071067811865458
+
+id : 75071257
+explain variance ratio : 0.5249972003344449
+Term_Premium : -0.7071067811865492
+Risk_Premium : -0.7071067811865458
+
+id : 62159861
+Weight :
+explain variance ratio : 0.5249972003344449
+Term_Premium : -0.7071067811865492
+Risk_Premium : -0.7071067811865458
+
+id : 84302732
+Weight :
+explain variance ratio : 0.5249972003344449
+Term_Premium : -0.7071067811865492
+Risk_Premium : -0.7071067811865458
+
+id : 93054546
+Weight :
+explain variance ratio : 0.5249972003344449
+Term_Premium : -0.7071067811865492
+Risk_Premium : -0.7071067811865458
+
+id : 58919255
+Weight :
+explain variance ratio : 0.5249972003344449
+Term_Premium : -0.7071067811865492
+Risk_Premium : -0.7071067811865458
+
+id : 55819129
+Weight :
+explain variance ratio : 0.5249972003344449
+Term_Premium : -0.7071067811865492
+Risk_Premium : -0.7071067811865458
+
+id : 58115704
+Weight :
+explain variance ratio : 0.5249972003344449
+Term_Premium : -0.7071067811865492
+Risk_Premium : -0.7071067811865458
+
+id : 91021126
+corr_coef : [-6.77134252e-04 -2.54647111e-01  1.00000000e+00]
+Weight :
+explain variance ratio : 0.5249972003344449
+Term_Premium : -0.7071067811865492
+Risk_Premium : -0.7071067811865458
+
+id : 50849731
+corr_coef : -0.0006771342524383334
+Weight :
+explain variance ratio : 0.5249972003344449
+Term_Premium : -0.7071067811865492
+Risk_Premium : -0.7071067811865458
+
+--------------------
+id : 45330412
+corr_coef : -0.0006771342524383334
+explain variance ratio : 0.5249972003344449
+Weight :
+Term_Premium : -0.7071067811865492
+Risk_Premium : -0.7071067811865458
+--------------------
+
+--------------------
+id : 36963932
+corr_coef : -0.0006771342524383334
+explain variance ratio : 0.5249972003344449
+Weight :
+Term_Premium : -0.7071067811865492
+Risk_Premium : -0.7071067811865458
+--------------------
+
+--------------------
+id : 33816994
+corr_coef : -0.0006771342524383334
+explain variance ratio : 0.5249972003344449
+Weight :
+Term_Premium : -0.7071067811865492
+Risk_Premium : -0.7071067811865458
+--------------------
+
+--------------------
+id : 96024694
+corr_coef : -0.0006771342524383334
+explain variance ratio : 0.5249972003344449
+Weight :
+Term_Premium : -0.7071067811865492
+Risk_Premium : -0.7071067811865458
+--------------------
+
+--------------------
+id : 18511077
+corr_coef : -0.0006771342524383334
+explain variance ratio : 0.5249972003344449
+Weight :
+Term_Premium : -0.7071067811865492
+Risk_Premium : -0.7071067811865458
+--------------------
+
+--------------------
+id : 87284768
+corr_coef : -0.0006771342524383334
+explain variance ratio : 0.5249972003344449
+Weight :
+Term_Premium : -0.7071067811865492
+Risk_Premium : -0.7071067811865458
+--------------------
+
+--------------------
+id : 29121104
+corr_coef : -0.0006771342524383334
+explain variance ratio : 0.5249972003344449
+Weight :
+Term_Premium : -0.7071067811865492
+Risk_Premium : -0.7071067811865458
+--------------------
+
+--------------------
+id : 95866565
+corr_coef : -0.0006771342524383334
+explain variance ratio : 0.5249972003344449
+Weight :
+Term_Premium : -0.7071067811865492
+Risk_Premium : -0.7071067811865458
+--------------------
+
+--------------------
+id : 49469987
+corr_coef : -0.0006771342524383334
+explain variance ratio : 0.5249972003344449
+Weight :
+Term_Premium : -0.7071067811865492
+Risk_Premium : -0.7071067811865458
+--------------------
+
