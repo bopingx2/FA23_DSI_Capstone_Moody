@@ -14,8 +14,8 @@ Margaret Reed (mr4251)
 ### Data Gathering Checklist
 |                           |                                                   | Egypt     | Hungary   | Nigeria | Poland | Romania |
 |---------------------------|---------------------------------------------------|-----------|-----------|---------|--------|---------|
-| Bond Markets              | Term Premium                                      | ✓ GFD</br>***2013.5-2022.9*** | ✓ GFD</br>1999.1-2023.9 | ✓ Investing</br>Use 2 Yr</br>2008.2-2023.9 | ✓ GFD</br>2003.12-**2023.3** | ✓ GFD</br>2008.1-***2022.9*** |
-|                           | Risk Premium                                      | ✓ CEIC</br>***2013.5-2023.9*** | ✓ CEIC</br>1999.1-2023.9 | ✓ CEIC</br>2007.12-2023.9 | ✓ CEIC</br>1999.5-***2023.3*** | ✓ CEIC</br>2001.12-**2023.6** |
+| Bond Markets              | Term Premium                                      | ✓ GFD</br>***2010.8***-2023.9 | ✓ GFD</br>1999.1-2023.9 | ✓ Investing</br>Use 2 Yr</br>2008.2-2023.9 | ✓ GFD</br>2003.12-2023.9 | ✓ GFD</br>2008.1-2023.9 |
+|                           | Risk Premium                                      | ✓ CEIC</br>***2010.8***-2023.9 | ✓ CEIC</br>1999.1-2023.9 | ✓ CEIC</br>2008.3-2023.9 | ✓ CEIC</br>1999.5-2023.9 | ✓ CEIC</br>2001.12-2023.9 |
 | Equity Markets            | Stock Prices, mom% change                         | ✓ Bloomberg</br>2001.1-2023.9 | ✓ Bloomberg</br>2001.1-2023.9 | ✓ Bloomberg</br>2001.2-2023.9| ✓ Bloomberg</br>2001.1-2023.9 | ✓ Bloomberg</br>2003.2-2023.9|
 |                           | Stock Prices, mom24mma% change                    | ✓ Bloomberg</br>2002.12-2023.9 | ✓ Bloomberg</br>2002.12-2023.9 | ✓ Bloomberg</br>2003.1-2023.9 | ✓ Bloomberg</br>2002.12-2023.9 | ✓ Bloomberg</br>2005.1-2023.9 |
 |                           | Stock Market Volatility                           | ✓ Bloomberg</br>2001.2-2023.9 | ✓ Bloomberg</br>2001.2-2023.9 | ✓ Bloomberg</br>2001.2-2023.9| ✓ Bloomberg</br>2001.2-2023.9 | ✓ Bloomberg</br>2003.3-2023.9 |
@@ -31,7 +31,7 @@ Margaret Reed (mr4251)
 |                           | Portfolio Flows                                   | ✓ IFF</br>2000.3-**2023.6** | ✓ IFF</br>2014.4-**2023.7** | ✓ IFF</br>2005.3-2024.12 | ✓</br>IFF 2000.1-**2023.7** | ✓</br>IFF 2005.1-**2023.7** |
 |                           | Foreign Exchange Reserve (change % year over year)| ✓ CEIC</br>2005.12-2023.9 | ✓ CEIC</br>1999.1-2023.9 | ✓ CEIC</br>1961.1-**2023.6** | ✓ CEIC</br>1999.1-2023.9 | ✓ CEIC</br>2006.4-2023.9 |
 |                           | Foreign Exchange Reserve (Mil USD) / GDP          | ✓ CEIC</br>2004.12-***2023.4*** | ✓ GFD</br>1998.1-**2023.6** | ✓ GFD</br>2010.3-**2023.6** | ✓ GFD</br>2002.3-**2023.6** | ✓ GFD</br>2005.4-**2023.6** |
-|                           | Bank Lending, mo12m% change (total bank lending)   | ✓ CEIC</br>1997.04-2023.7      | ✓ CEIC</br>2006.10-2023.6      | Not Found                                  | ✓ CEIC</br>1997.12-2023.9      | ✓ CEIC</br>2008.01-2023.9     |
+|                           | Bank Lending, mo12m% change (total bank lending)   | ✓ CEIC</br>1997.04-2023.7 | ✓ CEIC</br>2006.10-2023.6 |  | ✓ CEIC</br>1997.12-2023.9 | ✓ CEIC</br>2008.01-2023.9 |
     
 
 
