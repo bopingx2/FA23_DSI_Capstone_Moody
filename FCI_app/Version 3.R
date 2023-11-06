@@ -11,27 +11,27 @@ library(DT)
 library(shinythemes)
 wd = getwd()
 
-egypt_data <- read_csv(paste0(wd, '/data/Egypt_DataFrame.csv')) %>%
+egypt_data <- read_csv(paste0(wd, '/../data/Egypt_DataFrame.csv')) %>%
   clean_names() %>%
   mutate(
     country = 'Egypt'
   )
-hungary_data <- read_csv(paste0(wd, '/data/Hungary_DataFrame.csv')) %>% 
+hungary_data <- read_csv(paste0(wd, '/../data/Hungary_DataFrame.csv')) %>% 
   clean_names() %>%
   mutate(
     country = 'Hungary'
   )
-nigeria_data <- read_csv(paste0(wd, '/data/Nigeria_DataFrame.csv')) %>% 
+nigeria_data <- read_csv(paste0(wd, '/../data/Nigeria_DataFrame.csv')) %>% 
   clean_names() %>%
   mutate(
     country = 'Nigeria'
   )
-poland_data <- read_csv(paste0(wd, '/data/Poland_DataFrame.csv')) %>% 
+poland_data <- read_csv(paste0(wd, '/../data/Poland_DataFrame.csv')) %>% 
   clean_names() %>%
   mutate(
     country = 'Poland'
   )
-romania_data <- read_csv(paste0(wd, '/data/Romania_DataFrame.csv')) %>% 
+romania_data <- read_csv(paste0(wd, '/../data/Romania_DataFrame.csv')) %>% 
   clean_names() %>%
   mutate(
     country = 'Romania'
@@ -59,7 +59,8 @@ ui <- dashboardPage(
   dashboardBody(
     tabsetPanel(
       tabPanel("Plot", plotlyOutput("explorePlot", height = "500px")),
-      tabPanel("Selected Data", DTOutput("selectedTable"))
+      tabPanel("Selected Data", DTOutput("selectedTable")),
+      tabPanel("Compare Countries", plotlyOutput("allCountriesPlot", height = "500px"))
     )
   )
 )
@@ -76,12 +77,20 @@ server <- function(input, output, session) {
       select(date, !!sym(input$var))  
   })
   
+  var_name <- reactive({
+    str_to_title(str_replace_all(as.character(input$var), "_", " "))
+  })
+  
   output$explorePlot <- renderPlotly({
     req(selected_data())
     
     p <- ggplot(selected_data(), aes(x = date, y = !!sym(input$var))) +
       geom_line() +
-      labs(title = paste("Time Series Plot for", input$country, "-", input$var)) +
+      labs(
+        title = paste(var_name(), "in", input$country, "over time"),
+        x = "Date",
+        y = var_name()
+        ) +
       theme_minimal()
     
     if(input$smooth) {
@@ -112,7 +121,11 @@ server <- function(input, output, session) {
     content = function(file) {
       p <- ggplot(selected_data(), aes(x = date, y = !!sym(input$var))) +
         geom_line() +
-        labs(title = paste("Time Series Plot for", input$country, "-", input$var)) +
+        labs(
+          title = paste("Time Series Plot for", input$country, "-", var_name()),
+          x = "Date",
+          y = var_name()
+          ) +
         theme_minimal()
       if(input$smooth) {
         p <- p + geom_smooth(se = FALSE)
@@ -147,6 +160,27 @@ server <- function(input, output, session) {
       write.csv(complete_data(), file, row.names = FALSE)
     }
   )
+  
+  output$allCountriesPlot <- renderPlotly({
+    req(selected_data())
+    
+    p <- ggplot(
+      combined_data, 
+      aes(x = date, y = !!sym(input$var), color = country)
+      ) +
+      geom_line() +
+      labs(
+        title = paste(var_name(), "over time")
+        ) +
+      theme_minimal()
+    
+    if(input$smooth) {
+      p <- p + geom_smooth(se = FALSE)
+    }
+    
+    ggplotly(p)
+  })
+  
 }
 
 shinyApp(ui = ui, server = server)
