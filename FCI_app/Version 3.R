@@ -55,7 +55,17 @@ ui <- dashboardPage(
     tabsetPanel(
       tabPanel("Plot", plotlyOutput("explorePlot", height = "500px")),
       tabPanel("Selected Data", DTOutput("selectedTable")),
-      tabPanel("Compare Countries", plotlyOutput("allCountriesPlot", height = "500px"))
+      tabPanel(
+        "Compare Countries", 
+        checkboxGroupInput(
+          "countries",
+          "Choose which countries to display:",
+          choices = c("Egypt", "Nigeria", "Hungary", "Romania", "Poland"),
+          selected = c("Egypt", "Nigeria", "Hungary", "Romania", "Poland"),
+          inline = T
+        ),
+        plotlyOutput("allCountriesPlot", height = "500px")
+        )
     )
   )
 )
@@ -160,7 +170,7 @@ server <- function(input, output, session) {
     req(selected_data())
     
     p <- ggplot(
-      combined_data, 
+      combined_data %>% filter(country %in% input$countries), 
       aes(x = date, y = !!sym(input$var), color = country)
       ) +
       geom_line() +
