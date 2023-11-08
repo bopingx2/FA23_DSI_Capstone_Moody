@@ -37,12 +37,7 @@ romania_data <- read_csv(paste0(wd, '/../data/Romania_DataFrame.csv')) %>%
     country = 'Romania'
   )
 combined_data <- bind_rows(egypt_data, hungary_data, nigeria_data, poland_data, 
-                           romania_data) %>%
-  mutate(
-    velocity_of_money_mo12m_percent_change = velocity_of_money_mo12m_percent_change*100,
-    broad_money_mo12m_percent_change = broad_money_mo12m_percent_change*100,
-    date = as.Date(paste0(date, "-01"), format = "%Y-%m-%d")
-  )
+                           romania_data)
 
 
 ui <- dashboardPage(
