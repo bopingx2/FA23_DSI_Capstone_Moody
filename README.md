@@ -31,7 +31,7 @@ Margaret Reed (mr4251)
 |                           | Portfolio Flows                                   | ✓ IFF</br>2000.3-**2023.6** | ✓ IFF</br>2014.4-**2023.7** | ✓ IFF</br>2005.3-2024.12 | ✓</br>IFF 2000.1-**2023.7** | ✓</br>IFF 2005.1-**2023.7** |
 |                           | Foreign Exchange Reserve (change % year over year)| ✓ CEIC</br>2005.12-2023.9 | ✓ CEIC</br>1999.1-2023.9 | ✓ CEIC</br>1961.1-**2023.6** | ✓ CEIC</br>1999.1-2023.9 | ✓ CEIC</br>2006.4-2023.9 |
 |                           | Foreign Exchange Reserve (Mil USD) / GDP          | ✓ CEIC</br>2004.12-***2023.4*** | ✓ GFD</br>1998.1-**2023.6** | ✓ GFD</br>2010.3-**2023.6** | ✓ GFD</br>2002.3-**2023.6** | ✓ GFD</br>2005.4-**2023.6** |
-|                           | Bank Lending, mo12m% change (total bank lending)   | ✓ CEIC</br>1997.04-2023.7 | ✓ CEIC</br>2006.10-2023.6 |  | ✓ CEIC</br>1997.12-2023.9 | ✓ CEIC</br>2008.01-2023.9 |
+|                           | Bank Lending, mo12m% change (CPI Adjusted)        | ✓ CEIC</br>1997.04-**2023.7** | ✓ CEIC</br>2007.10-**2023.6** |  | ✓ CEIC</br>1997.12-2023.9 | ✓ CEIC</br>2008.01-2023.9 |
     
 
 
@@ -44,4 +44,3 @@ Term pre different options select one</br>
 Repurchase avg, eop use one.</br>
 same sign</br>
 Comparing FCI: correlation and alignment</br>
-Send csv by **11/03**
