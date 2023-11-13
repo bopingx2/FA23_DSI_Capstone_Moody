@@ -1,0 +1,12 @@
+--------------------
+id : 8650563104
+corr_coef : -0.09718436543663037
+explain variance ratio : 0.46585183994762946
+Weight :
+Term_Premium : 0.5538303273382248
+Stock_Prices_mom24mma%_change : 0.2432558165448082
+One-Day_Repo_Rate_EOP : 0.599291315804674
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : 0.2740926070315601
+Foreign_Exchange_Reserve_change_yryr% : 0.44701424788176347
+--------------------
+
