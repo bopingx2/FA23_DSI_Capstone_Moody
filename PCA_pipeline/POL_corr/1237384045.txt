@@ -1,0 +1,13 @@
+--------------------
+id : 1237384045
+corr_coef : -0.20989027119864503
+explain variance ratio : 0.3736187733556395
+Weight :
+Term_Premium : 0.5617189238100598
+Stock_Prices_mom24mma%_change : 0.33695193716709204
+Stock_Market_Volatility : 0.000960430307263907
+One-Day_Repo_Rate_AVG : 0.55896118481932
+Portfolio_Flows : 0.15515446224987206
+Foreign_Exchange_Reserve_change_yryr% : 0.48417332325931906
+--------------------
+

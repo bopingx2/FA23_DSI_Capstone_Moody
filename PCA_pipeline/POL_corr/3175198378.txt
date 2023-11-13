@@ -1,0 +1,11 @@
+--------------------
+id : 3175198378
+corr_coef : -0.07647910666655897
+explain variance ratio : 0.30906609196310325
+Weight :
+Term_Premium : -0.15186873652933713
+Stock_Prices_mom%_change : -0.49708986112685755
+Current_Account_Balance_change_yryr% : -0.5407155461600632
+Portfolio_Flows : -0.661410806511874
+--------------------
+

@@ -1,0 +1,13 @@
+--------------------
+id : 8527604427
+corr_coef : -0.27924368698114016
+explain variance ratio : 0.3037503324087672
+Weight :
+Risk_Premium : -0.037144191032419734
+Stock_Market_Volatility : -0.5359864916702892
+Current_Account_Balance_over_GDP : -0.45103968107863757
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.16595017246343652
+Portfolio_Flows : -0.1975076442524947
+Bank_Lending_mo12m%_change : -0.6643442380522224
+--------------------
+

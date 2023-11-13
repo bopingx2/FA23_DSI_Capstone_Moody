@@ -1,0 +1,12 @@
+--------------------
+id : 6971176678
+corr_coef : 0.09117432839771498
+explain variance ratio : 0.4059469062093775
+Weight :
+Term_Premium : -0.28716255651008227
+Stock_Market_Volatility : -0.24071712839849854
+REER : -0.48190909328893994
+Bank_Lending_mo12m%_change : -0.5921211259492102
+Foreign_Exchange_Reserve_over_GDP : -0.5260695089474832
+--------------------
+
