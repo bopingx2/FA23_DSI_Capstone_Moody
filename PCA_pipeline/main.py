@@ -145,31 +145,31 @@ def PCA_module(df: pd.DataFrame):
     
 
 if __name__ == "__main__":
-    # ## empty outputs
-    # if os.path.exists("./PCA_pipeline/corr"):
-    #     shutil.rmtree("./PCA_pipeline/corr")
-    # if os.path.exists("./PCA_pipeline/fig"):
-    #     shutil.rmtree("./PCA_pipeline/fig")
-    # os.mkdir("./PCA_pipeline/fig")
-    # os.mkdir("./PCA_pipeline/corr")
-    # ##
+    ## empty outputs
+    if os.path.exists("./PCA_pipeline/corr"):
+        shutil.rmtree("./PCA_pipeline/corr")
+    if os.path.exists("./PCA_pipeline/fig"):
+        shutil.rmtree("./PCA_pipeline/fig")
+    os.mkdir("./PCA_pipeline/fig")
+    os.mkdir("./PCA_pipeline/corr")
+    ##
 
-    # country_df = pd.read_csv(base_dir + 'Poland_DataFrame.csv')
-    # country_comb = generate_combination('Poland')
-    # # PCA_module(country_df[country_comb[0]])
+    country_df = pd.read_csv(base_dir + 'Poland_DataFrame.csv')
+    country_comb = generate_combination('Poland')
+    # PCA_module(country_df[country_comb[0]])
 
 
-    # p = Pool(10) 
+    p = Pool(10) 
 
-    # for i in range(len(country_comb)):
-    #     p.apply_async(func=PCA_module, args=(country_df[country_comb[i]],))
-    #     if (i%1000 == 0): print(i//1000, "k", sep = "")
-    # p.close() 
-    # p.join()
-    combine_files = (os.listdir("./PCA_pipeline/corr"))
-    with open("./PCA_pipeline/corr/all.txt", "w") as outfile:
-        for name in combine_files:
-            if name.endswith("txt"):
-                with open("./PCA_pipeline/corr/"+name, "r") as readfile:
-                    shutil.copyfileobj(readfile, outfile)
+    for i in range(len(country_comb)):
+        p.apply_async(func=PCA_module, args=(country_df[country_comb[i]],))
+        if (i%1000 == 0): print(i//1000, "k", sep = "")
+    p.close() 
+    p.join()
+    # combine_files = (os.listdir("./PCA_pipeline/corr"))
+    # with open("./PCA_pipeline/corr/all.txt", "w") as outfile:
+    #     for name in combine_files:
+    #         if name.endswith("txt"):
+    #             with open("./PCA_pipeline/corr/"+name, "r") as readfile:
+    #                 shutil.copyfileobj(readfile, outfile)
 
