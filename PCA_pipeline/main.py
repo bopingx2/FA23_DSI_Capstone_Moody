@@ -12,8 +12,7 @@ import shutil
 from multiprocessing import Pool
 
 base_dir = str(Path().resolve()) + '/data/'
-with open("./PCA_pipeline/df_IMF_FCI_POL","rb") as temp:
-    df_IMF_FCI_POL = pickle.load(temp)
+
 
 def scale_series(series, mean, std):
     return (series - mean)/std
@@ -58,7 +57,7 @@ def generate_combination(country: str):
                     country_comb.append(['Date'] + b + e + m + p)
     return country_comb
 
-def PCA_module(df: pd.DataFrame):
+def PCA_module(df: pd.DataFrame, Country: str, Country_abbr: str, df_IMF = None):
     ''' Assert the names and the types of the columns. Assert the cov matrix is all positive. '''
     # assert (df.columns[0] == "Date")
     # assert (ptypes.is_datetime64_dtype(df["Date"]))
@@ -98,7 +97,7 @@ def PCA_module(df: pd.DataFrame):
     # df_transformed = pd.DataFrame(pca.transform(df.iloc[ :, 1:]))
     df_transformed.insert(0, "Date", df["Date"], True)
 
-    df_combined = df_transformed.merge(df_IMF_FCI_POL, how = 'left',on ="Date")
+    df_combined = df_transformed.merge(df_IMF, how = 'left',on ="Date")
     end_index = None
     for index in range(len(df_combined)):
         if df_combined.iloc[index, 0] == "2020-03":
@@ -117,7 +116,7 @@ def PCA_module(df: pd.DataFrame):
         if (pca.explained_variance_ratio_[i] > 0.3 and ((eigenvector < 0).all() or (eigenvector > 0).all())):
             # output the data combination and eigenvector and explained_variance_ratio
             decomp_id = str(random.randint(10**9, 10**10 - 1)) # random id
-            with open("./PCA_pipeline/POL_corr/"+decomp_id+".txt", "w") as f:
+            with open("./PCA_pipeline/Output/" + Country_abbr +"/corr/"+decomp_id+".txt", "w") as f:
                 print("-"*20, file = f)
                 print("id", ":", decomp_id, file = f)
                 print("corr_coef", ":", corr_coef[i], file = f)
@@ -139,7 +138,7 @@ def PCA_module(df: pd.DataFrame):
             ax.xaxis.set_major_locator(x_major_locator)
             plt.legend(loc = "best")
             plt.title("correlation : "+ str(round(corr_coef[i], 3)))
-            plt.savefig("./PCA_pipeline/POL_fig/"+decomp_id+".jpg")
+            plt.savefig("./PCA_pipeline/Output/" + Country_abbr +"/fig/"+decomp_id+".jpg")
             plt.close()
 
 
@@ -148,24 +147,30 @@ def PCA_module(df: pd.DataFrame):
     
 
 if __name__ == "__main__":
+    Country = "Poland" # Poland, Hungary
+    Country_abbr = "Pol" # Pol, Hun
+
     ## empty outputs
-    if os.path.exists("./PCA_pipeline/POL_corr"):
-        shutil.rmtree("./PCA_pipeline/POL_corr")
-    if os.path.exists("./PCA_pipeline/POL_fig"):
-        shutil.rmtree("./PCA_pipeline/POL_fig")
-    os.mkdir("./PCA_pipeline/POL_fig")
-    os.mkdir("./PCA_pipeline/POL_corr")
+    if os.path.exists("./PCA_pipeline/Output/" + Country_abbr):
+        shutil.rmtree("./PCA_pipeline/Output/" + Country_abbr)
+    os.mkdir("./PCA_pipeline/Output/" + Country_abbr)
+    os.mkdir("./PCA_pipeline/Output/" + Country_abbr +"/corr")
+    os.mkdir("./PCA_pipeline/Output/" + Country_abbr +"/fig")
     ##
 
-    country_df = pd.read_csv(base_dir + 'Poland_DataFrame.csv')
-    country_comb = generate_combination('Poland')
+    country_df = pd.read_csv(base_dir + Country +'_DataFrame.csv')
+    country_comb = generate_combination(Country)
     # PCA_module(country_df[country_comb[0]])
+
+
+    
+    df_IMF_FCI = pd.read_csv("./PCA_pipeline/IMF_FCI_"+Country +".csv")
 
 
     p = Pool(10) 
 
     for i in range(len(country_comb)):
-        p.apply_async(func=PCA_module, args=(country_df[country_comb[i]],))
+        p.apply_async(func=PCA_module, args=(country_df[country_comb[i]], Country, Country_abbr, df_IMF_FCI))
         if (i%1000 == 0): print(i//1000, "k", sep = "")
     p.close() 
     p.join()

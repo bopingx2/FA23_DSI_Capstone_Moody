@@ -1,0 +1,12 @@
+--------------------
+id : 1132057831
+corr_coef : -0.7342906830720628
+explain variance ratio : 0.34705548676792686
+Weight :
+Risk_Premium : -0.5572982590558653
+Stock_Prices_mom%_change : -0.21769251656993005
+Stock_Market_Volatility : -0.3204977063862902
+Current_Account_Balance_over_GDP : -0.6322449044074584
+Velocity_of_Money_mo12m%_change : -0.3735990092795803
+--------------------
+
