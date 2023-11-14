@@ -1,0 +1,13 @@
+--------------------
+id : 4026031300
+corr_coef : 0.08129155603332552
+explain variance ratio : 0.540248170118777
+Weight :
+Term_Premium : 0.4775431671107461
+Stock_Prices_mom24mma%_change : 0.1003266621036536
+REER : 0.4769939262417741
+One-Day_Repo_Rate_EOP : 0.4786642969719118
+Broad_Money_mo12m%_change : 0.38276904932622124
+Foreign_Exchange_Reserve_change_yryr% : 0.39841212886622923
+--------------------
+

@@ -1,0 +1,13 @@
+--------------------
+id : 4309095289
+corr_coef : -0.5959082509298077
+explain variance ratio : 0.3042018789354104
+Weight :
+Risk_Premium : -0.1916518413793302
+Stock_Prices_mom%_change : -0.4802444589756134
+Stock_Prices_mom24mma%_change : -0.49232884175585856
+Stock_Market_Volatility : -0.5317573883514795
+Current_Account_Balance_change_yryr% : -0.0481940431190267
+Bank_Lending_mo12m%_change : -0.4529443200172871
+--------------------
+
