@@ -1,0 +1,12 @@
+--------------------
+id : 2962738244
+corr_coef : 0.09547470515183756
+explain variance ratio : 0.34464845980765774
+Weight :
+Risk_Premium : 0.5112163391583665
+Stock_Prices_mom%_change : 0.016594723318096305
+REER : 0.4771141731869037
+Foreign_Exchange_Reserve_change_yryr% : 0.6092623159573837
+Portfolio_Flows : 0.373555840315658
+--------------------
+

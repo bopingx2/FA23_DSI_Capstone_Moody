@@ -1,0 +1,12 @@
+--------------------
+id : 8483062011
+corr_coef : 0.2939923969023741
+explain variance ratio : 0.4021841585561385
+Weight :
+Term_Premium : -0.6368276843623051
+Stock_Prices_mom%_change : -0.05872267632743988
+Stock_Market_Volatility : -0.19806764559486295
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.6413675566731428
+Foreign_Exchange_Reserve_change_yryr% : -0.37472524965675685
+--------------------
+

@@ -93,7 +93,7 @@ def PCA_module(df: pd.DataFrame, Country: str, Country_abbr: str, df_IMF = None)
     pca.fit(df_PCA_decomp)
 
     # TODO: flip sign
-    df_transformed = pd.DataFrame(np.negative(np.transpose(np.matmul(np.square(pca.components_),np.transpose(df.iloc[ :, 1:])))))
+    df_transformed = pd.DataFrame(np.transpose(np.matmul(np.square(pca.components_),np.transpose(df.iloc[ :, 1:]))))
     # df_transformed = pd.DataFrame(pca.transform(df.iloc[ :, 1:]))
     df_transformed.insert(0, "Date", df["Date"], True)
 
