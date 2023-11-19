@@ -93,7 +93,7 @@ def PCA_module(df: pd.DataFrame, Country: str, Country_abbr: str, df_IMF = None)
     pca.fit(df_PCA_decomp)
 
     # TODO: flip sign
-    df_transformed = pd.DataFrame(np.negative(np.transpose(np.matmul(np.square(pca.components_),np.transpose(df.iloc[ :, 1:])))))
+    df_transformed = pd.DataFrame(np.transpose(np.matmul(np.square(pca.components_),np.transpose(df.iloc[ :, 1:]))))
     # df_transformed = pd.DataFrame(pca.transform(df.iloc[ :, 1:]))
     df_transformed.insert(0, "Date", df["Date"], True)
 
@@ -113,7 +113,7 @@ def PCA_module(df: pd.DataFrame, Country: str, Country_abbr: str, df_IMF = None)
 
     for i in range(len(df_PCA_decomp.columns)):
         eigenvector = pca.components_[i]
-        if (pca.explained_variance_ratio_[i] > 0.3 and ((eigenvector < 0).all() or (eigenvector > 0).all())):
+        if (pca.explained_variance_ratio_[i] > 0.2 and ((eigenvector < 0).all() or (eigenvector > 0).all())):
             # output the data combination and eigenvector and explained_variance_ratio
             decomp_id = str(random.randint(10**9, 10**10 - 1)) # random id
             with open("./PCA_pipeline/Output/" + Country_abbr +"/corr/"+decomp_id+".txt", "w") as f:
