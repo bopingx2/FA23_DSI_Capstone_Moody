@@ -1,0 +1,11 @@
+--------------------
+id : 3439864902
+corr_coef : -0.591061618209998
+explain variance ratio : 0.509134099907868
+Weight :
+Risk_Premium : -0.573379958105256
+Stock_Prices_mom24mma%_change : -0.6381603680473644
+Current_Account_Balance_over_GDP : -0.5136855958236686
+Bank_Lending_mo12m%_change : -0.010671313890492529
+--------------------
+
