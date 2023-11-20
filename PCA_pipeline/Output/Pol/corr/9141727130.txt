@@ -1,0 +1,12 @@
+--------------------
+id : 9141727130
+corr_coef : -0.021034581885364445
+explain variance ratio : 0.22798686842351484
+Weight :
+Term_Premium : 0.09223712297556061
+Stock_Market_Volatility : 0.10745460340500092
+Current_Account_Balance_change_yryr% : 0.7007486552244314
+Broad_Money_mo12m%_change : 0.13728410496464313
+Portfolio_Flows : 0.6856020843590492
+--------------------
+

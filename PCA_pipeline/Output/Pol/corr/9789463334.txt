@@ -1,0 +1,14 @@
+--------------------
+id : 9789463334
+corr_coef : 0.6322993281446748
+explain variance ratio : 0.21291861746824428
+Weight :
+Risk_Premium : -0.30797896172515726
+Stock_Prices_mom%_change : -0.5984790681759038
+Stock_Prices_mom24mma%_change : -0.6833570854658813
+Current_Account_Balance_over_GDP : -0.05092401852644132
+One-Day_Repo_Rate_AVG : -0.014588924925291891
+Current_Account_Balance_change_yryr% : -0.21890442663859339
+Portfolio_Flows : -0.17108365625694424
+--------------------
+

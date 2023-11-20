@@ -1,0 +1,14 @@
+--------------------
+id : 8611531872
+corr_coef : 0.6525809297095184
+explain variance ratio : 0.2030347037381946
+Weight :
+Risk_Premium : -0.29429634295739177
+Stock_Prices_mom24mma%_change : -0.6812355465793607
+REER : -0.3574401440786254
+One-Day_Repo_Rate_AVG : -0.09161466824981873
+Current_Account_Balance_change_yryr% : -0.42542240355423744
+Portfolio_Flows : -0.16832200266787026
+Velocity_of_Money_mo12m%_change : -0.3222337203539778
+--------------------
+

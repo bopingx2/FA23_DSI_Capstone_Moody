@@ -1,0 +1,13 @@
+--------------------
+id : 1031901847
+corr_coef : 0.3535361617233257
+explain variance ratio : 0.2527632353876745
+Weight :
+Term_Premium : -0.08728503485627657
+Stock_Prices_mom24mma%_change : -0.34183987441798136
+Stock_Market_Volatility : -0.6737865586084844
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.35320328926598693
+One-Day_Repo_Rate_AVG : -0.19704690508561765
+Bank_Lending_mo12m%_change : -0.5078961016137445
+--------------------
+

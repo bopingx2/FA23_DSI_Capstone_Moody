@@ -1,0 +1,13 @@
+--------------------
+id : 5102548714
+corr_coef : 0.6465897145350717
+explain variance ratio : 0.2347920829297611
+Weight :
+Risk_Premium : -0.31960770870029365
+Stock_Prices_mom24mma%_change : -0.6817983297221853
+REER : -0.41020275310348375
+One-Day_Repo_Rate_AVG : -0.13691854069328344
+Current_Account_Balance_change_yryr% : -0.4180387346039885
+Velocity_of_Money_mo12m%_change : -0.2668943256399955
+--------------------
+

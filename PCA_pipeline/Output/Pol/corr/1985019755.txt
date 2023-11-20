@@ -1,0 +1,13 @@
+--------------------
+id : 1985019755
+corr_coef : -0.4266238245795803
+explain variance ratio : 0.21885131120912427
+Weight :
+Term_Premium : -0.1863904587723224
+Stock_Prices_mom%_change : -0.08520819490752722
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.5775441051436649
+Current_Account_Balance_change_yryr% : -0.3614857763853548
+Broad_Money_mo12m%_change : -0.23845714989904632
+Portfolio_Flows : -0.6609895522216269
+--------------------
+

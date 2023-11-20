@@ -1,0 +1,14 @@
+--------------------
+id : 6240032434
+corr_coef : 0.6091980383242458
+explain variance ratio : 0.22379718743093005
+Weight :
+Risk_Premium : -0.17559573944054763
+Stock_Prices_mom%_change : -0.5637449402662871
+Stock_Prices_mom24mma%_change : -0.6358018819971393
+One-Day_Repo_Rate_AVG : -0.021034346522058833
+Current_Account_Balance_change_yryr% : -0.20808149524604042
+Portfolio_Flows : -0.29722582417053356
+Bank_Lending_mo12m%_change : -0.339161027407474
+--------------------
+

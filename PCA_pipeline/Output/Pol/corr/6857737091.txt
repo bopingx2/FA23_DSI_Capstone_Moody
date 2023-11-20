@@ -1,0 +1,14 @@
+--------------------
+id : 6857737091
+corr_coef : 0.4774178216537949
+explain variance ratio : 0.21791519364717155
+Weight :
+Term_Premium : -0.23110096442362332
+Stock_Prices_mom%_change : -0.5384011937200852
+Stock_Prices_mom24mma%_change : -0.5936658984602485
+Stock_Market_Volatility : -0.29246673348947017
+REER : -0.2801881103395889
+Broad_Money_mo12m%_change : -0.10377901649512346
+Portfolio_Flows : -0.3598125181400442
+--------------------
+

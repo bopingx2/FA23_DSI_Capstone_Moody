@@ -1,0 +1,12 @@
+--------------------
+id : 9788661765
+corr_coef : 0.7489881386996331
+explain variance ratio : 0.22856539579837895
+Weight :
+Term_Premium : -0.13252200211496645
+Stock_Prices_mom24mma%_change : -0.8204366161707273
+One-Day_Repo_Rate_AVG : -0.0019560322557492724
+Foreign_Exchange_Reserve_over_GDP : -0.009796989363438376
+Bank_Lending_mo12m%_change : -0.5560772165257221
+--------------------
+

@@ -1,0 +1,11 @@
+--------------------
+id : 6371320228
+corr_coef : 0.1343028381992125
+explain variance ratio : 0.2541155631296833
+Weight :
+Term_Premium : -0.09304016345402603
+Stock_Prices_mom%_change : -0.9657225677558893
+One-Day_Repo_Rate_AVG : -0.16233481727926574
+Bank_Lending_mo12m%_change : -0.17991902959478118
+--------------------
+

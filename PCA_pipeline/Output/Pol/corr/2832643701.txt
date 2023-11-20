@@ -1,0 +1,12 @@
+--------------------
+id : 2832643701
+corr_coef : 0.33322726663408425
+explain variance ratio : 0.2069115890393815
+Weight :
+Risk_Premium : 0.4046946035597757
+Stock_Prices_mom%_change : 0.5728151212578428
+REER : 0.042850422740345166
+Current_Account_Balance_change_yryr% : 0.6969088791278278
+Broad_Money_mo12m%_change : 0.14348160220644257
+--------------------
+

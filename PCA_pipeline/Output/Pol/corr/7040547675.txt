@@ -1,0 +1,14 @@
+--------------------
+id : 7040547675
+corr_coef : 0.48250173617463066
+explain variance ratio : 0.2401075266146852
+Weight :
+Risk_Premium : -0.04581655552131211
+Stock_Prices_mom%_change : -0.5832480787441907
+Stock_Prices_mom24mma%_change : -0.5189429535826575
+Stock_Market_Volatility : -0.5256479043463842
+Current_Account_Balance_over_GDP : -0.034957180505748295
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : -0.019173469470696047
+Portfolio_Flows : -0.3324535863306028
+--------------------
+

@@ -1,0 +1,13 @@
+--------------------
+id : 1831807966
+corr_coef : 0.6031655145428747
+explain variance ratio : 0.21056294605787604
+Weight :
+Term_Premium : -0.03650229886515482
+Risk_Premium : -0.05796024059588753
+Stock_Prices_mom24mma%_change : -0.6567004476285833
+One-Day_Repo_Rate_EOP : -0.06741526373418212
+Portfolio_Flows : -0.530342171308226
+Bank_Lending_mo12m%_change : -0.5274894106233519
+--------------------
+

@@ -1,0 +1,11 @@
+--------------------
+id : 6408618876
+corr_coef : 0.2050173912208827
+explain variance ratio : 0.205587971328986
+Weight :
+Term_Premium : -0.23006928112579395
+Stock_Market_Volatility : -0.9134502581566062
+REER : -0.33313483166047086
+Broad_Money_mo12m%_change : -0.04120601522156544
+--------------------
+

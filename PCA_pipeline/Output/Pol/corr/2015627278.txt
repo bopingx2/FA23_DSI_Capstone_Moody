@@ -1,0 +1,12 @@
+--------------------
+id : 2015627278
+corr_coef : 0.19989074856467334
+explain variance ratio : 0.2903107272334406
+Weight :
+Term_Premium : -0.4850886612494901
+Stock_Prices_mom24mma%_change : -0.3386784979975761
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : -0.3881841231328577
+Current_Account_Balance_change_yryr% : -0.5239634122806055
+Portfolio_Flows : -0.47408996494349315
+--------------------
+

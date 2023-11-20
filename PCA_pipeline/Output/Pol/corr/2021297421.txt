@@ -1,0 +1,13 @@
+--------------------
+id : 2021297421
+corr_coef : 0.2994224823803944
+explain variance ratio : 0.23348205497818977
+Weight :
+Term_Premium : -0.23916933950479344
+Stock_Prices_mom%_change : -0.5497384192245149
+Stock_Market_Volatility : -0.637858011490595
+One-Day_Repo_Rate_AVG : -0.31327359761463386
+Current_Account_Balance_change_yryr% : -0.26671869181788915
+Bank_Lending_mo12m%_change : -0.2538575331148851
+--------------------
+

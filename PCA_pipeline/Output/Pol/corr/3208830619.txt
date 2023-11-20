@@ -1,0 +1,13 @@
+--------------------
+id : 3208830619
+corr_coef : 0.2037132331145818
+explain variance ratio : 0.2538398428985639
+Weight :
+Risk_Premium : -0.06835486428581923
+Stock_Prices_mom%_change : -0.17983203978613094
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : -0.01438626451351267
+Foreign_Exchange_Reserve_over_GDP : -0.6551202538780664
+Portfolio_Flows : -0.19451386769667328
+Bank_Lending_mo12m%_change : -0.7041043201263524
+--------------------
+

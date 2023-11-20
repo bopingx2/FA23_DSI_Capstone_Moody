@@ -1,0 +1,14 @@
+--------------------
+id : 5644593524
+corr_coef : 0.18582547295278404
+explain variance ratio : 0.2320107276914347
+Weight :
+Term_Premium : -0.1655492931814622
+Stock_Prices_mom%_change : -0.44644285217985785
+Stock_Market_Volatility : -0.5275441111247894
+One-Day_Repo_Rate_EOP : -0.31763635644673205
+Current_Account_Balance_change_yryr% : -0.273395899305943
+Portfolio_Flows : -0.5169447109588452
+Bank_Lending_mo12m%_change : -0.2282748676482014
+--------------------
+

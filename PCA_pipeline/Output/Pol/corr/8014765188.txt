@@ -1,0 +1,12 @@
+--------------------
+id : 8014765188
+corr_coef : 0.43854632308528024
+explain variance ratio : 0.22008287786306702
+Weight :
+Term_Premium : -0.36569031113469147
+Stock_Market_Volatility : -0.6763410639667674
+REER : -0.05722861709810836
+Bank_Lending_mo12m%_change : -0.38881451092344654
+Foreign_Exchange_Reserve_change_yryr% : -0.5043624916812447
+--------------------
+

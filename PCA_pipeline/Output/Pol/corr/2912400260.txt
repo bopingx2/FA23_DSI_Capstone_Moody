@@ -1,0 +1,11 @@
+--------------------
+id : 2912400260
+corr_coef : 0.18285008896992036
+explain variance ratio : 0.46995444775784845
+Weight :
+Term_Premium : 0.6445788944881252
+Stock_Prices_mom24mma%_change : 0.3628439916658162
+One-Day_Repo_Rate_EOP : 0.6519773384520396
+Portfolio_Flows : 0.1666968405143855
+--------------------
+

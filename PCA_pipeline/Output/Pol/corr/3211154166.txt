@@ -1,0 +1,14 @@
+--------------------
+id : 3211154166
+corr_coef : 0.5793220399125109
+explain variance ratio : 0.2212640353434647
+Weight :
+Term_Premium : -0.08589839532920528
+Risk_Premium : -0.1617807383708826
+Stock_Prices_mom%_change : -0.5848418867810633
+Stock_Prices_mom24mma%_change : -0.6547105744090321
+One-Day_Repo_Rate_AVG : -0.05156845608293378
+Portfolio_Flows : -0.3143036057875709
+Bank_Lending_mo12m%_change : -0.3071097968505004
+--------------------
+

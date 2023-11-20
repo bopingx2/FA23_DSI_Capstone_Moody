@@ -1,0 +1,12 @@
+--------------------
+id : 9706077875
+corr_coef : 0.27303492295556564
+explain variance ratio : 0.20650593552083174
+Weight :
+Risk_Premium : 0.3495473832401732
+Stock_Prices_mom%_change : 0.6174327515371457
+One-Day_Repo_Rate_AVG : 0.020898754061549178
+Current_Account_Balance_change_yryr% : 0.6785101612235408
+Broad_Money_mo12m%_change : 0.18915767865539013
+--------------------
+

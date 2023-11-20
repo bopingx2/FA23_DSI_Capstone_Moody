@@ -1,0 +1,15 @@
+--------------------
+id : 1039491420
+corr_coef : 0.7525586771049795
+explain variance ratio : 0.20827133529383604
+Weight :
+Term_Premium : -0.1854910105125027
+Risk_Premium : -0.43811887278339845
+Stock_Prices_mom%_change : -0.31325902680892265
+Stock_Prices_mom24mma%_change : -0.6936291940719955
+Current_Account_Balance_change_yryr% : -0.17473509262919823
+Bank_Lending_mo12m%_change : -0.03798606722671521
+Foreign_Exchange_Reserve_change_yryr% : -0.3415267998457358
+Velocity_of_Money_mo12m%_change : -0.21395423031914917
+--------------------
+

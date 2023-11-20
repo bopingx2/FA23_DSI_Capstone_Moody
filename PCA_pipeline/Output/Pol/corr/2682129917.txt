@@ -1,0 +1,11 @@
+--------------------
+id : 2682129917
+corr_coef : 0.273930616113932
+explain variance ratio : 0.24983007063959858
+Weight :
+Term_Premium : -0.06914161442302146
+Stock_Market_Volatility : -0.9831334366116995
+One-Day_Repo_Rate_AVG : -0.16295148285687588
+Foreign_Exchange_Reserve_over_GDP : -0.04598801154424241
+--------------------
+

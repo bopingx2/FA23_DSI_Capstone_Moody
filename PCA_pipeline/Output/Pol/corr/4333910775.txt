@@ -1,0 +1,14 @@
+--------------------
+id : 4333910775
+corr_coef : 0.11751049275639947
+explain variance ratio : 0.22481778879278477
+Weight :
+Term_Premium : -0.05796663063504876
+Stock_Prices_mom%_change : -0.3690674543584828
+Stock_Market_Volatility : -0.6355615053772563
+One-Day_Repo_Rate_EOP : -0.24410402848176255
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : -0.47581663228122556
+Bank_Lending_mo12m%_change : -0.4126258827975191
+Foreign_Exchange_Reserve_change_yryr% : -0.015565773924223324
+--------------------
+

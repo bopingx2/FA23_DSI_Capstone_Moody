@@ -1,0 +1,11 @@
+--------------------
+id : 6463790284
+corr_coef : 0.11158569482791122
+explain variance ratio : 0.25022957503146387
+Weight :
+Risk_Premium : -0.16176621958475135
+Stock_Prices_mom%_change : -0.9622907503767593
+One-Day_Repo_Rate_EOP : -0.07063382998661757
+Broad_Money_mo12m%_change : -0.2069759986133976
+--------------------
+

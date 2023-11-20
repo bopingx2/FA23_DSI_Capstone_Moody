@@ -1,0 +1,15 @@
+--------------------
+id : 2715200595
+corr_coef : 0.5209618130428517
+explain variance ratio : 0.22536041085313063
+Weight :
+Risk_Premium : -0.014734940656571544
+Stock_Prices_mom%_change : -0.4789746285401501
+Stock_Prices_mom24mma%_change : -0.44857180278960035
+Stock_Market_Volatility : -0.5829571750045357
+One-Day_Repo_Rate_AVG : -0.06729908165481048
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : -0.11485847388199855
+Current_Account_Balance_change_yryr% : -0.08324688049511486
+Bank_Lending_mo12m%_change : -0.4523922833838354
+--------------------
+

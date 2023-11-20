@@ -1,0 +1,14 @@
+--------------------
+id : 1078469277
+corr_coef : 0.4134788016989418
+explain variance ratio : 0.20501231392032715
+Weight :
+Term_Premium : -0.062208374515159204
+Stock_Prices_mom%_change : -0.6265556138582333
+Stock_Prices_mom24mma%_change : -0.616176548138412
+One-Day_Repo_Rate_AVG : -0.17267137665453547
+Portfolio_Flows : -0.4386175742899101
+Bank_Lending_mo12m%_change : -0.033577858006284
+Velocity_of_Money_mo12m%_change : -0.023587900862916015
+--------------------
+

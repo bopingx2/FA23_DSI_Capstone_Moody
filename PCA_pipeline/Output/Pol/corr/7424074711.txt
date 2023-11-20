@@ -1,0 +1,14 @@
+--------------------
+id : 7424074711
+corr_coef : -0.15225341879803336
+explain variance ratio : 0.226770302919602
+Weight :
+Term_Premium : -0.17192930531366102
+Stock_Market_Volatility : -0.40921447498720465
+REER : -0.11865987708464701
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.5631039841011268
+Portfolio_Flows : -0.5782403183131756
+Bank_Lending_mo12m%_change : -0.2239541401005578
+Foreign_Exchange_Reserve_change_yryr% : -0.29546614273703276
+--------------------
+

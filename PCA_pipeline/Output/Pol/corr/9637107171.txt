@@ -1,0 +1,14 @@
+--------------------
+id : 9637107171
+corr_coef : 0.2448570707405518
+explain variance ratio : 0.2108389083527189
+Weight :
+Term_Premium : -0.3597605326986921
+Stock_Prices_mom%_change : -0.35569255039816844
+Stock_Market_Volatility : -0.3479908244254737
+Current_Account_Balance_change_yryr% : -0.4007019997417638
+Portfolio_Flows : -0.5133783066288512
+Bank_Lending_mo12m%_change : -0.047597890398892576
+Foreign_Exchange_Reserve_change_yryr% : -0.443365106131164
+--------------------
+

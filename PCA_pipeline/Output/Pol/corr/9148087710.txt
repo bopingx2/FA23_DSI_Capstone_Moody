@@ -1,0 +1,12 @@
+--------------------
+id : 9148087710
+corr_coef : 0.11920206993150963
+explain variance ratio : 0.20400429209605253
+Weight :
+Risk_Premium : 0.14776183506214774
+Stock_Prices_mom%_change : 0.39813258630941195
+One-Day_Repo_Rate_EOP : 0.0731356153766061
+Current_Account_Balance_change_yryr% : 0.8986618642648465
+Velocity_of_Money_mo12m%_change : 0.08194461115388245
+--------------------
+

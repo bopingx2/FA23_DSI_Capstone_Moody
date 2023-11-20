@@ -1,0 +1,13 @@
+--------------------
+id : 7044383732
+corr_coef : 0.19289819041186318
+explain variance ratio : 0.24339278876833428
+Weight :
+Term_Premium : -0.10952801681059202
+Stock_Market_Volatility : -0.5794999198510155
+One-Day_Repo_Rate_EOP : -0.27610320736466154
+Current_Account_Balance_change_yryr% : -0.3154123493653476
+Portfolio_Flows : -0.5933294195223614
+Bank_Lending_mo12m%_change : -0.3527403083094439
+--------------------
+

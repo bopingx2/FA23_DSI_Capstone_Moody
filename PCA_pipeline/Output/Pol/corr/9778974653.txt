@@ -1,0 +1,12 @@
+--------------------
+id : 9778974653
+corr_coef : 0.11161978210292384
+explain variance ratio : 0.20019393415239445
+Weight :
+Risk_Premium : -0.16442021601412277
+Stock_Prices_mom%_change : -0.9605877040296681
+Current_Account_Balance_over_GDP : -0.0027678995198765224
+One-Day_Repo_Rate_AVG : -0.07212060427936601
+Broad_Money_mo12m%_change : -0.21219852168077394
+--------------------
+

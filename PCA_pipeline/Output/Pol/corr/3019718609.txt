@@ -1,0 +1,14 @@
+--------------------
+id : 3019718609
+corr_coef : -0.015675947954303045
+explain variance ratio : 0.23564332557061582
+Weight :
+Term_Premium : -0.41119805547216537
+Stock_Prices_mom%_change : -0.1371489467651764
+Stock_Market_Volatility : -0.22647809827681398
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.4618071563797496
+Current_Account_Balance_change_yryr% : -0.35556148369998747
+Portfolio_Flows : -0.4802519220614215
+Foreign_Exchange_Reserve_change_yryr% : -0.4364427448816787
+--------------------
+

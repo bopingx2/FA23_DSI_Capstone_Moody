@@ -1,0 +1,14 @@
+--------------------
+id : 3822888643
+corr_coef : 0.716244126706109
+explain variance ratio : 0.23901325836750112
+Weight :
+Risk_Premium : -0.37348858627018927
+Stock_Prices_mom%_change : -0.2854223154596987
+Stock_Prices_mom24mma%_change : -0.6861273741268108
+REER : -0.21348377546556857
+Bank_Lending_mo12m%_change : -0.1230953241666611
+Foreign_Exchange_Reserve_change_yryr% : -0.3816919070948105
+Velocity_of_Money_mo12m%_change : -0.3191443420726203
+--------------------
+

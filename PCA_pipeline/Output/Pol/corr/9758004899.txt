@@ -1,0 +1,12 @@
+--------------------
+id : 9758004899
+corr_coef : 0.303885710767368
+explain variance ratio : 0.25175790635853723
+Weight :
+Term_Premium : -0.2622534385767092
+Stock_Prices_mom%_change : -0.6449879304394259
+Stock_Market_Volatility : -0.5990358529066392
+Current_Account_Balance_change_yryr% : -0.3255707542024975
+Foreign_Exchange_Reserve_change_yryr% : -0.22444026929807065
+--------------------
+

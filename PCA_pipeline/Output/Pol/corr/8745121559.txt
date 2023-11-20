@@ -1,0 +1,12 @@
+--------------------
+id : 8745121559
+corr_coef : 0.13424222616835205
+explain variance ratio : 0.20329373460308992
+Weight :
+Term_Premium : -0.09528303880273939
+Stock_Prices_mom%_change : -0.9654371204592969
+Current_Account_Balance_over_GDP : -0.0025011356310064396
+One-Day_Repo_Rate_AVG : -0.1636159905473539
+Bank_Lending_mo12m%_change : -0.17909735038112792
+--------------------
+
