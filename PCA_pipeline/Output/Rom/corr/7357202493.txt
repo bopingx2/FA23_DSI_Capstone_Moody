@@ -1,0 +1,13 @@
+--------------------
+id : 7357202493
+explain variance ratio : 0.20823471297680973
+Weight :
+Risk_Premium : 0.1358171352541109
+Stock_Prices_mom%_change : 0.41380399603209006
+Stock_Prices_mom24mma%_change : 0.7039564138766293
+Current_Account_Balance_change_yryr% : 0.024764309823341716
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : 0.15937543172102883
+Portfolio_Flows : 0.029965153451979167
+Broad_Money_mo12m%_change : 0.5365199123075525
+--------------------
+

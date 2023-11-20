@@ -1,0 +1,15 @@
+--------------------
+id : 7367004603
+explain variance ratio : 0.25892759230181145
+Weight :
+Term_Premium : -0.3239537043610769
+Stock_Prices_mom%_change : -0.2923035076543731
+Stock_Market_Volatility : -0.08237008953610203
+Current_Account_Balance_change_yryr% : -0.05877054914565094
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : -0.01619767316297155
+Current_Account_Balance_over_GDP : -0.4887562642799711
+Foreign_Exchange_Reserve_change_yryr% : -0.3847815465181502
+Broad_Money_mo12m%_change : -0.4680234220029988
+Portfolio_Flows : -0.4394610735588718
+--------------------
+

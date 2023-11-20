@@ -1,0 +1,14 @@
+--------------------
+id : 2020892844
+explain variance ratio : 0.2286374845105658
+Weight :
+Term_Premium : -0.28570112722515895
+Stock_Market_Volatility : -0.004725359229511894
+Current_Account_Balance_change_yryr% : -0.12683291888391496
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : -0.012600350123074588
+Current_Account_Balance_over_GDP : -0.578721644811733
+One-Day_Repo_Rate_AVG : -0.011136310009233846
+Foreign_Exchange_Reserve_change_yryr% : -0.5558599476677424
+Portfolio_Flows : -0.5080198202345876
+--------------------
+

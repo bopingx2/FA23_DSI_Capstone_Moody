@@ -1,0 +1,14 @@
+--------------------
+id : 6507052970
+explain variance ratio : 0.353552829539352
+Weight :
+Term_Premium : -0.22714661125390515
+Stock_Prices_mom%_change : -0.12483142172135397
+Stock_Prices_mom24mma%_change : -0.39428157413495346
+One-Day_Repo_Rate_AVG : -0.519207264516396
+REER : -0.26042696330760773
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.5062539971136896
+Foreign_Exchange_Reserve_change_yryr% : -0.3585782903951481
+Portfolio_Flows : -0.23472044385617558
+--------------------
+

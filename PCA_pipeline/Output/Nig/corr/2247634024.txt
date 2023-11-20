@@ -1,0 +1,13 @@
+--------------------
+id : 2247634024
+explain variance ratio : 0.3612810077125608
+Weight :
+Term_Premium : -0.2223636433960977
+Stock_Prices_mom%_change : -0.05893724173861414
+Stock_Market_Volatility : -0.16110305704793487
+REER : -0.3723874739456951
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.6026294128084837
+One-Day_Repo_Rate_EOP : -0.6038506365923898
+Foreign_Exchange_Reserve_change_yryr% : -0.2337870513845446
+--------------------
+

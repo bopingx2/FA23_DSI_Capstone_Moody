@@ -1,0 +1,16 @@
+--------------------
+id : 9656854477
+explain variance ratio : 0.26694832248507266
+Weight :
+Term_Premium : -0.2510456159173812
+Risk_Premium : -0.006119490805047922
+Stock_Prices_mom24mma%_change : -0.4818553729115602
+Current_Account_Balance_change_yryr% : -0.07512938417151116
+Current_Account_Balance_over_GDP : -0.46129600212851374
+One-Day_Repo_Rate_AVG : -0.04829203124240346
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.06410290859910649
+Foreign_Exchange_Reserve_change_yryr% : -0.43536688932816864
+Broad_Money_mo12m%_change : -0.3514364448933807
+Portfolio_Flows : -0.40843900146350337
+--------------------
+

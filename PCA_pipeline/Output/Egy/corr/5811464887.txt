@@ -1,0 +1,12 @@
+--------------------
+id : 5811464887
+explain variance ratio : 0.40599670981127456
+Weight :
+Term_Premium : 0.21590353839010484
+Stock_Prices_mom%_change : 0.18484340555992074
+Stock_Prices_mom24mma%_change : 0.4774637525648272
+One-Day_Repo_Rate_AVG : 0.5308198452277783
+Broad_Money_mo12m%_change : 0.5086311856176521
+Foreign_Exchange_Reserve_over_GDP : 0.3882931256768474
+--------------------
+

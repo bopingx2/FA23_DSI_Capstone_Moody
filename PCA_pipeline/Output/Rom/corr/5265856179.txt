@@ -1,0 +1,10 @@
+--------------------
+id : 5265856179
+explain variance ratio : 0.28111103840649254
+Weight :
+Risk_Premium : -0.23637632354082594
+Stock_Prices_mom%_change : -0.634789663545529
+Current_Account_Balance_change_yryr% : -0.014163140654443674
+Portfolio_Flows : -0.7355050796370335
+--------------------
+

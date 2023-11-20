@@ -1,0 +1,13 @@
+--------------------
+id : 1501762196
+explain variance ratio : 0.31724309162646264
+Weight :
+Risk_Premium : -0.4040771812793983
+Stock_Prices_mom%_change : -0.31263344098538215
+Current_Account_Balance_over_GDP : -0.5932997592354429
+Velocity_of_Money_mo12m%_change : -0.2041242985998574
+Bank_Lending_mo12m%_change : -0.5574192721756338
+Portfolio_Flows : -0.1850996857698345
+Foreign_Exchange_Reserve_over_GDP : -0.018234332845292966
+--------------------
+

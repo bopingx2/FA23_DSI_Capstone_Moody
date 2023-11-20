@@ -1,0 +1,12 @@
+--------------------
+id : 9228337783
+explain variance ratio : 0.22932434791853706
+Weight :
+Risk_Premium : 0.08559362627177278
+Stock_Prices_mom%_change : 0.5625548944714279
+Stock_Prices_mom24mma%_change : 0.69662149401635
+REER : 0.2118392006637203
+One-Day_Repo_Rate_EOP : 0.3582486590217532
+Portfolio_Flows : 0.1330648988035107
+--------------------
+

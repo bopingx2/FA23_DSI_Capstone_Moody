@@ -1,0 +1,12 @@
+--------------------
+id : 5520674069
+explain variance ratio : 0.3146132805101552
+Weight :
+Risk_Premium : 0.23600798737431603
+Stock_Prices_mom24mma%_change : 0.4604537806915413
+REER : 0.5633998557196628
+Foreign_Exchange_Reserve_change_yryr% : 0.633157370906412
+Foreign_Exchange_Reserve_over_GDP : 0.025663729864064316
+Broad_Money_mo12m%_change : 0.11539612191836585
+--------------------
+

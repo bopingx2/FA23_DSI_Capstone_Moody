@@ -1,0 +1,13 @@
+--------------------
+id : 9713228518
+explain variance ratio : 0.3905696052476843
+Weight :
+Term_Premium : -0.22613344217402473
+Stock_Prices_mom%_change : -0.1002527405217225
+Stock_Prices_mom24mma%_change : -0.3662470648780007
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : -0.5421609124956547
+REER : -0.2953156756918396
+One-Day_Repo_Rate_EOP : -0.5570154288908935
+Foreign_Exchange_Reserve_change_yryr% : -0.3365414542767453
+--------------------
+

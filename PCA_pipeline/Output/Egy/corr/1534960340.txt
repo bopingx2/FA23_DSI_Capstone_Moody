@@ -1,0 +1,12 @@
+--------------------
+id : 1534960340
+explain variance ratio : 0.21965299730493273
+Weight :
+Term_Premium : -0.3839030530823675
+Stock_Market_Volatility : -0.13675739415482202
+Current_Account_Balance_over_GDP : -0.6332518314626018
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.40617611587691504
+Bank_Lending_mo12m%_change : -0.3085011168056953
+Foreign_Exchange_Reserve_change_yryr% : -0.4156392699782606
+--------------------
+

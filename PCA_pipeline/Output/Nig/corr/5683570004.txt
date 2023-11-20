@@ -1,0 +1,14 @@
+--------------------
+id : 5683570004
+explain variance ratio : 0.29263021712042914
+Weight :
+Term_Premium : 0.25107534977560997
+Stock_Prices_mom%_change : 0.20378191957480696
+Stock_Prices_mom24mma%_change : 0.5591843420503296
+REER : 0.0480157519600225
+One-Day_Repo_Rate_EOP : 0.3576560694570327
+Foreign_Exchange_Reserve_change_yryr% : 0.5242674782087283
+Broad_Money_mo12m%_change : 0.18622790072686884
+Portfolio_Flows : 0.3781353903339219
+--------------------
+

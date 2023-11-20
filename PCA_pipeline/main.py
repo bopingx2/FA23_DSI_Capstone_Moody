@@ -97,7 +97,10 @@ def PCA_module(df: pd.DataFrame, Country: str, Country_abbr: str, df_IMF = None)
     # df_transformed = pd.DataFrame(pca.transform(df.iloc[ :, 1:]))
     df_transformed.insert(0, "Date", df["Date"], True)
 
-    df_combined = df_transformed.merge(df_IMF, how = 'left',on ="Date")
+    if df_IMF is None:
+        df_combined=    df_transformed
+    else:
+        df_combined = df_transformed.merge(df_IMF, how = 'left',on ="Date")
     end_index = None
     for index in range(len(df_combined)):
         if df_combined.iloc[index, 0] == "2020-03":
@@ -119,7 +122,8 @@ def PCA_module(df: pd.DataFrame, Country: str, Country_abbr: str, df_IMF = None)
             with open("./PCA_pipeline/Output/" + Country_abbr +"/corr/"+decomp_id+".txt", "w") as f:
                 print("-"*20, file = f)
                 print("id", ":", decomp_id, file = f)
-                print("corr_coef", ":", corr_coef[i], file = f)
+                if df_IMF is not None:
+                    print("corr_coef", ":", corr_coef[i], file = f)
                 print("explain variance ratio", ":", pca.explained_variance_ratio_[i], file = f)
                 print("Weight", ":", file = f)
                 for name, weight in zip(df_PCA_decomp.columns, eigenvector):
@@ -131,13 +135,14 @@ def PCA_module(df: pd.DataFrame, Country: str, Country_abbr: str, df_IMF = None)
             
             
             plt.plot(df_combined["Date"], df_combined.iloc[:,1+i], "-", color = "r", label = "PCA")
-            plt.plot(df_combined["Date"], df_combined["IMF_FCI"], "-", color = "g", label = "IMF FCI")
+            if df_IMF is not None:
+                plt.plot(df_combined["Date"], df_combined["IMF_FCI"], "-", color = "g", label = "IMF FCI")
+                plt.title("correlation : "+ str(round(corr_coef[i], 3)))
             plt.xlabel("Date")
             x_major_locator = plt.MultipleLocator(24)
             ax = plt.gca()
             ax.xaxis.set_major_locator(x_major_locator)
             plt.legend(loc = "best")
-            plt.title("correlation : "+ str(round(corr_coef[i], 3)))
             plt.savefig("./PCA_pipeline/Output/" + Country_abbr +"/fig/"+decomp_id+".jpg")
             plt.close()
 
@@ -147,8 +152,8 @@ def PCA_module(df: pd.DataFrame, Country: str, Country_abbr: str, df_IMF = None)
     
 
 if __name__ == "__main__":
-    Country = "Poland" # Poland, Hungary
-    Country_abbr = "Pol" # Pol, Hun
+    Country = "Egypt" # Poland, Hungary
+    Country_abbr = "Egy" # Pol, Hun
 
     ## empty outputs
     if os.path.exists("./PCA_pipeline/Output/" + Country_abbr):
@@ -163,8 +168,9 @@ if __name__ == "__main__":
     # PCA_module(country_df[country_comb[0]])
 
 
-    
-    df_IMF_FCI = pd.read_csv("./PCA_pipeline/IMF_FCI_"+Country +".csv")
+    # Only poland has IMF_FCI
+    # df_IMF_FCI = pd.read_csv("./PCA_pipeline/IMF_FCI_"+Country +".csv")
+    df_IMF_FCI=None
 
 
     p = Pool(10) 

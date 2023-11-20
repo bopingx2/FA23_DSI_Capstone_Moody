@@ -1,0 +1,12 @@
+--------------------
+id : 8225127815
+explain variance ratio : 0.21540810458850404
+Weight :
+Term_Premium : -0.5231120749614404
+Risk_Premium : -0.20426585271108183
+Stock_Prices_mom%_change : -0.09285569774181315
+Current_Account_Balance_over_GDP : -0.16649746770947138
+Broad_Money_mo12m%_change : -0.3832235796011707
+Foreign_Exchange_Reserve_over_GDP : -0.7081139167723157
+--------------------
+

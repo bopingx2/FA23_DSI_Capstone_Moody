@@ -1,0 +1,13 @@
+--------------------
+id : 8387060052
+explain variance ratio : 0.2089941038921392
+Weight :
+Risk_Premium : 0.1517302299116537
+Stock_Prices_mom%_change : 0.4152075140247924
+Stock_Prices_mom24mma%_change : 0.7090553825886327
+Current_Account_Balance_change_yryr% : 0.024182398648603456
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : 0.154634697743441
+Portfolio_Flows : 0.03751336679766548
+Broad_Money_mo12m%_change : 0.5252782036324136
+--------------------
+

@@ -1,0 +1,13 @@
+--------------------
+id : 5148648237
+explain variance ratio : 0.21134858637128617
+Weight :
+Term_Premium : -0.21536257788876162
+Stock_Market_Volatility : -0.09213276792243752
+Current_Account_Balance_change_yryr% : -0.1788670090133876
+One-Day_Repo_Rate_AVG : -0.72304269186015
+REER : -0.587726510379584
+Broad_Money_mo12m%_change : -0.07614937699717596
+Portfolio_Flows : -0.1978008931584223
+--------------------
+

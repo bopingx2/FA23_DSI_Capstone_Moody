@@ -1,0 +1,12 @@
+--------------------
+id : 7525762803
+explain variance ratio : 0.23113412737696706
+Weight :
+Risk_Premium : 0.12373889331213646
+Stock_Prices_mom%_change : 0.6196938812771049
+Stock_Prices_mom24mma%_change : 0.6992268670595109
+One-Day_Repo_Rate_EOP : 0.24111527167656843
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : 0.08675171436400803
+Portfolio_Flows : 0.21468007357691132
+--------------------
+

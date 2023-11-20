@@ -1,0 +1,13 @@
+--------------------
+id : 3782839608
+explain variance ratio : 0.25246086331487205
+Weight :
+Term_Premium : -0.5532400297751446
+Stock_Prices_mom%_change : -0.2987266169880053
+Stock_Market_Volatility : -0.10354621673177168
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : -0.2785759706832971
+Current_Account_Balance_over_GDP : -0.3343823905405185
+One-Day_Repo_Rate_AVG : -0.22157915733533845
+Broad_Money_mo12m%_change : -0.596198441164235
+--------------------
+

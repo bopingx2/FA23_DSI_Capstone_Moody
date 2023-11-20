@@ -1,0 +1,10 @@
+--------------------
+id : 2720998051
+explain variance ratio : 0.21497493958743114
+Weight :
+Term_Premium : 0.19417312990984562
+Stock_Prices_mom%_change : 0.8990075762352753
+REER : 0.3919974942624172
+Broad_Money_mo12m%_change : 0.020497267734410296
+--------------------
+

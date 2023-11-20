@@ -1,0 +1,13 @@
+--------------------
+id : 9167164717
+explain variance ratio : 0.33153116511502523
+Weight :
+Term_Premium : -0.32520160364035083
+Stock_Prices_mom%_change : -0.2985079333584634
+Current_Account_Balance_change_yryr% : -0.05903707504226613
+Current_Account_Balance_over_GDP : -0.48967323732218215
+Foreign_Exchange_Reserve_change_yryr% : -0.39188427451021507
+Broad_Money_mo12m%_change : -0.45865632846781773
+Portfolio_Flows : -0.44489635071631595
+--------------------
+

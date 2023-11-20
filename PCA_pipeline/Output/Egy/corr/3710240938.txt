@@ -1,0 +1,13 @@
+--------------------
+id : 3710240938
+explain variance ratio : 0.22533448968004904
+Weight :
+Term_Premium : -0.17063385113046695
+Stock_Prices_mom24mma%_change : -0.3573968591436234
+Current_Account_Balance_over_GDP : -0.633974402766226
+Bank_Lending_mo12m%_change : -0.4057861123451919
+Broad_Money_mo12m%_change : -0.012247805446598592
+Foreign_Exchange_Reserve_over_GDP : -0.43080180699982545
+Portfolio_Flows : -0.30137261975015106
+--------------------
+

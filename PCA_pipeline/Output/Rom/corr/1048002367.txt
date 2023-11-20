@@ -1,0 +1,11 @@
+--------------------
+id : 1048002367
+explain variance ratio : 0.21013893562661104
+Weight :
+Risk_Premium : -0.09458023396947922
+Stock_Market_Volatility : -0.6692428488779284
+REER : -0.16902929964358349
+Velocity_of_Money_mo12m%_change : -0.45034491305692115
+Foreign_Exchange_Reserve_over_GDP : -0.5583790323013449
+--------------------
+

@@ -1,0 +1,14 @@
+--------------------
+id : 4882070911
+explain variance ratio : 0.2894868848312044
+Weight :
+Term_Premium : -0.27662550235286476
+Stock_Prices_mom%_change : -0.23350190718609942
+Stock_Prices_mom24mma%_change : -0.5472956579322756
+Stock_Market_Volatility : -0.10423265794830347
+REER : -0.12748741865309177
+One-Day_Repo_Rate_EOP : -0.41146282192993966
+Foreign_Exchange_Reserve_change_yryr% : -0.4764257460513473
+Portfolio_Flows : -0.3821282760645017
+--------------------
+

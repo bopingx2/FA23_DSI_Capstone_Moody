@@ -1,0 +1,11 @@
+--------------------
+id : 9997010742
+explain variance ratio : 0.20018943566979744
+Weight :
+Risk_Premium : -0.6188632614848771
+Stock_Prices_mom%_change : -0.3815804922773659
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.1108979715727767
+Bank_Lending_mo12m%_change : -0.23294933960505748
+Portfolio_Flows : -0.6362710401835644
+--------------------
+

@@ -1,0 +1,12 @@
+--------------------
+id : 9783806330
+explain variance ratio : 0.24078753696528857
+Weight :
+Term_Premium : -0.04038140722484889
+Stock_Prices_mom%_change : -0.41430519765748214
+Stock_Prices_mom24mma%_change : -0.07087797560097286
+Stock_Market_Volatility : -0.30962747677871305
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.48607007666227203
+Foreign_Exchange_Reserve_over_GDP : -0.6996881904937551
+--------------------
+

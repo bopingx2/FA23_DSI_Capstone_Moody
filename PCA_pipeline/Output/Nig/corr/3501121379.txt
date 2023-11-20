@@ -1,0 +1,14 @@
+--------------------
+id : 3501121379
+explain variance ratio : 0.2810111964801847
+Weight :
+Term_Premium : -0.1723015896650014
+Stock_Prices_mom%_change : -0.14925136207375955
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : -0.5989914367930671
+REER : -0.08024816346246738
+One-Day_Repo_Rate_EOP : -0.6147153027634622
+Foreign_Exchange_Reserve_change_yryr% : -0.42406700135989317
+Portfolio_Flows : -0.15002331080226525
+Foreign_Exchange_Reserve_over_GDP : -0.050901524039071
+--------------------
+

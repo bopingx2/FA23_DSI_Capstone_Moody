@@ -1,0 +1,12 @@
+--------------------
+id : 5193720617
+explain variance ratio : 0.2216467953412284
+Weight :
+Risk_Premium : -0.031099393444545195
+Stock_Market_Volatility : -0.506488537428157
+Current_Account_Balance_over_GDP : -0.2856840437179315
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : -0.36002640595096685
+Bank_Lending_mo12m%_change : -0.08758359301935265
+Portfolio_Flows : -0.7235999707007237
+--------------------
+

@@ -1,0 +1,10 @@
+--------------------
+id : 1025604731
+explain variance ratio : 0.47423791737836596
+Weight :
+Term_Premium : 0.22197879668675083
+Stock_Prices_mom24mma%_change : 0.5617131176124978
+One-Day_Repo_Rate_AVG : 0.554769430858211
+Portfolio_Flows : 0.5722190716052792
+--------------------
+

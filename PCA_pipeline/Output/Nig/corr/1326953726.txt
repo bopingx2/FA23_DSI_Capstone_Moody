@@ -1,0 +1,15 @@
+--------------------
+id : 1326953726
+explain variance ratio : 0.28164990910758686
+Weight :
+Term_Premium : -0.31680119129968826
+Stock_Prices_mom%_change : -0.09238961038167737
+Stock_Market_Volatility : -0.058473726882678365
+Current_Account_Balance_change_yryr% : -0.04561289611006424
+One-Day_Repo_Rate_AVG : -0.5315062179539347
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.5311515702043361
+Foreign_Exchange_Reserve_change_yryr% : -0.4404739467645556
+Broad_Money_mo12m%_change : -0.24037678896549414
+Portfolio_Flows : -0.26302529032697525
+--------------------
+

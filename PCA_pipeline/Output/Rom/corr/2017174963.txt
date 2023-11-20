@@ -1,0 +1,13 @@
+--------------------
+id : 2017174963
+explain variance ratio : 0.26325737176101854
+Weight :
+Risk_Premium : -0.4179012749559681
+Stock_Prices_mom%_change : -0.3204489240849215
+Stock_Prices_mom24mma%_change : -0.2559808528684234
+Stock_Market_Volatility : -0.538210166100868
+Current_Account_Balance_over_GDP : -0.5397058370844362
+Velocity_of_Money_mo12m%_change : -0.03769876658928892
+Portfolio_Flows : -0.2734429445571033
+--------------------
+

@@ -1,0 +1,11 @@
+--------------------
+id : 1736470441
+explain variance ratio : 0.20402427936830378
+Weight :
+Term_Premium : 0.10788877820652489
+Stock_Prices_mom24mma%_change : 0.2640885853164215
+REER : 0.47632031962750454
+Portfolio_Flows : 0.8295842484362004
+Broad_Money_mo12m%_change : 0.05938146595674497
+--------------------
+

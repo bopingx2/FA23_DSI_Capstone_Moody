@@ -1,0 +1,12 @@
+--------------------
+id : 6030531879
+explain variance ratio : 0.23462841604617393
+Weight :
+Term_Premium : -0.6097184324871295
+Stock_Prices_mom%_change : -0.29540945902886584
+Stock_Market_Volatility : -0.04091155485630915
+Current_Account_Balance_change_yryr% : -0.07576882817556871
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.5062128104347329
+Portfolio_Flows : -0.5266028907152144
+--------------------
+

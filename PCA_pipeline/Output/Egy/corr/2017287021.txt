@@ -1,0 +1,13 @@
+--------------------
+id : 2017287021
+explain variance ratio : 0.24902073587153042
+Weight :
+Risk_Premium : -0.41538253356300275
+Stock_Prices_mom24mma%_change : -0.42768673028267046
+Current_Account_Balance_over_GDP : -0.5754069239471549
+Bank_Lending_mo12m%_change : -0.3463366614178745
+Foreign_Exchange_Reserve_change_yryr% : -0.30978839922149654
+Velocity_of_Money_mo12m%_change : -0.02856432902452493
+Portfolio_Flows : -0.3109894326141225
+--------------------
+

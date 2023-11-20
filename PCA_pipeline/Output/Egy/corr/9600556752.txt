@@ -1,0 +1,12 @@
+--------------------
+id : 9600556752
+explain variance ratio : 0.20962159409092374
+Weight :
+Risk_Premium : -0.13885149032707989
+Stock_Prices_mom%_change : -0.19810048048771378
+Stock_Market_Volatility : -0.6820516846007534
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.0813663406216518
+Bank_Lending_mo12m%_change : -0.1202003774245059
+Portfolio_Flows : -0.6746950056719024
+--------------------
+

@@ -1,0 +1,14 @@
+--------------------
+id : 9397326630
+explain variance ratio : 0.21080432390505457
+Weight :
+Risk_Premium : -0.24378368653339716
+Stock_Prices_mom%_change : -0.23388638175762616
+Stock_Prices_mom24mma%_change : -0.5222105264231397
+Stock_Market_Volatility : -0.30870340299137
+One-Day_Repo_Rate_AVG : -0.18629819210535026
+Current_Account_Balance_over_GDP : -0.45074838801700695
+Bank_Lending_mo12m%_change : -0.20835695983016428
+Portfolio_Flows : -0.4863859591842744
+--------------------
+

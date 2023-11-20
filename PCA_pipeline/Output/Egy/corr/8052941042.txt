@@ -1,0 +1,12 @@
+--------------------
+id : 8052941042
+explain variance ratio : 0.21219240202152642
+Weight :
+Risk_Premium : 0.3517917833572611
+Stock_Market_Volatility : 0.21078491451302697
+Current_Account_Balance_over_GDP : 0.547696417918589
+Bank_Lending_mo12m%_change : 0.1428507076328169
+Foreign_Exchange_Reserve_change_yryr% : 0.6125315448712984
+Broad_Money_mo12m%_change : 0.36910659251980804
+--------------------
+

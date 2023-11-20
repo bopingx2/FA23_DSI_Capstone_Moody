@@ -1,0 +1,12 @@
+--------------------
+id : 9829030835
+explain variance ratio : 0.29896792289540863
+Weight :
+Term_Premium : -0.41233438880628764
+Stock_Prices_mom24mma%_change : -0.6141477672252432
+Stock_Market_Volatility : -0.004993954203522152
+Current_Account_Balance_change_yryr% : -0.16651643047238465
+One-Day_Repo_Rate_AVG : -0.4311966829181641
+Portfolio_Flows : -0.48899860047296073
+--------------------
+

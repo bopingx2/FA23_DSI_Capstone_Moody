@@ -1,0 +1,16 @@
+--------------------
+id : 3513805145
+explain variance ratio : 0.2638752972807826
+Weight :
+Term_Premium : -0.24683847614267354
+Stock_Prices_mom%_change : -0.04752394775486801
+Stock_Market_Volatility : -0.03517327796555929
+Current_Account_Balance_change_yryr% : -0.05562709749893758
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : -0.5672508464405028
+REER : -0.2592972835770543
+One-Day_Repo_Rate_EOP : -0.5709144290070635
+Foreign_Exchange_Reserve_change_yryr% : -0.3981354764314686
+Broad_Money_mo12m%_change : -0.142332976523867
+Portfolio_Flows : -0.19687123842891052
+--------------------
+

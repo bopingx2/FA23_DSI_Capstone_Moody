@@ -1,0 +1,12 @@
+--------------------
+id : 1337934790
+explain variance ratio : 0.3860550653145954
+Weight :
+Term_Premium : -0.18469345924112257
+Risk_Premium : -0.1153731624028721
+Stock_Prices_mom%_change : -0.3401216560590197
+Stock_Prices_mom24mma%_change : -0.5714729738326654
+Current_Account_Balance_over_GDP : -0.5296139405344165
+Foreign_Exchange_Reserve_change_yryr% : -0.4793978856449357
+--------------------
+

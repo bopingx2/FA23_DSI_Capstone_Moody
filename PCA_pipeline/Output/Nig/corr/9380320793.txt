@@ -1,0 +1,14 @@
+--------------------
+id : 9380320793
+explain variance ratio : 0.2750879664871198
+Weight :
+Term_Premium : -0.3717775283367151
+Stock_Market_Volatility : -0.08087619515689315
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : -0.09410111096043317
+Current_Account_Balance_over_GDP : -0.46623811879268967
+One-Day_Repo_Rate_EOP : -0.0760153849214697
+Foreign_Exchange_Reserve_change_yryr% : -0.4159761739023462
+Broad_Money_mo12m%_change : -0.5020546410085402
+Portfolio_Flows : -0.4451226004417712
+--------------------
+

@@ -1,0 +1,12 @@
+--------------------
+id : 1123700228
+explain variance ratio : 0.25668683707455625
+Weight :
+Risk_Premium : -0.6602684315465106
+Stock_Prices_mom%_change : -0.20550785691535012
+Stock_Prices_mom24mma%_change : -0.5394571740614337
+Current_Account_Balance_change_yryr% : -0.37777369596116706
+REER : -0.26296880469406747
+Velocity_of_Money_mo12m%_change : -0.13759548975324642
+--------------------
+

@@ -1,0 +1,13 @@
+--------------------
+id : 9288148188
+explain variance ratio : 0.206534021407853
+Weight :
+Term_Premium : 0.07657788837623791
+Risk_Premium : 0.08535919859866242
+Stock_Prices_mom24mma%_change : 0.34567247543528734
+REER : 0.48771657375249994
+Velocity_of_Money_mo12m%_change : 0.18155677387232733
+Foreign_Exchange_Reserve_change_yryr% : 0.649898433380607
+Portfolio_Flows : 0.4173270681258277
+--------------------
+

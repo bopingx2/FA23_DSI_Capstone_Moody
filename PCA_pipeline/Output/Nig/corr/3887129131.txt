@@ -1,0 +1,15 @@
+--------------------
+id : 3887129131
+explain variance ratio : 0.22120948890481779
+Weight :
+Term_Premium : -0.26207746103059754
+Risk_Premium : -0.024303399693651584
+Stock_Prices_mom%_change : -0.37355645929563314
+Current_Account_Balance_change_yryr% : -0.09600339601903093
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : -0.030185932656421638
+Current_Account_Balance_over_GDP : -0.5315037493760032
+One-Day_Repo_Rate_AVG : -0.024750744127444865
+Foreign_Exchange_Reserve_change_yryr% : -0.516622924294659
+Portfolio_Flows : -0.48067077868505187
+--------------------
+

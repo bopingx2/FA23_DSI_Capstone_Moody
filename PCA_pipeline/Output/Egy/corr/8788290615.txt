@@ -1,0 +1,16 @@
+--------------------
+id : 8788290615
+explain variance ratio : 0.20191028398453137
+Weight :
+Term_Premium : -0.1301874434058265
+Risk_Premium : -0.33656320720667404
+Stock_Market_Volatility : -0.05684763087212576
+Current_Account_Balance_over_GDP : -0.4413220001117796
+One-Day_Repo_Rate_EOP : -0.3081028147293882
+Bank_Lending_mo12m%_change : -0.33304296688081186
+Foreign_Exchange_Reserve_change_yryr% : -0.21252700487323287
+Velocity_of_Money_mo12m%_change : -0.26408620787504433
+Foreign_Exchange_Reserve_over_GDP : -0.5424090708580909
+Portfolio_Flows : -0.23836497402824094
+--------------------
+

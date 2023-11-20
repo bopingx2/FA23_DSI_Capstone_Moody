@@ -1,0 +1,12 @@
+--------------------
+id : 5827751129
+explain variance ratio : 0.29653575696930734
+Weight :
+Term_Premium : -0.4632298128795796
+Risk_Premium : -0.10029058614533626
+Stock_Market_Volatility : -0.2910196891040184
+Current_Account_Balance_change_yryr% : -0.058474962087607066
+Current_Account_Balance_over_GDP : -0.5464110064323221
+Broad_Money_mo12m%_change : -0.6234446007484907
+--------------------
+
