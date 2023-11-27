@@ -11,33 +11,39 @@ library(DT)
 library(shinythemes)
 wd = getwd()
 
-egypt_data <- read_csv(paste0(wd, '/../FCI_app/data1/Egypt_DataFrame.csv')) %>%
+egypt_data <- read_csv(paste0(wd, '/../FCI_app/data/Egypt_DataFrame.csv')) %>%
   clean_names() %>%
   mutate(
     country = 'Egypt'
   )
-hungary_data <- read_csv(paste0(wd, '/../FCI_app/data1/Hungary_DataFrame.csv')) %>% 
+hungary_data <- read_csv(paste0(wd, '/../FCI_app/data/Hungary_DataFrame.csv')) %>% 
   clean_names() %>%
   mutate(
     country = 'Hungary'
   )
-nigeria_data <- read_csv(paste0(wd, '/../FCI_app/data1/Nigeria_DataFrame.csv')) %>% 
+nigeria_data <- read_csv(paste0(wd, '/../FCI_app/data/Nigeria_DataFrame.csv')) %>% 
   clean_names() %>%
   mutate(
     country = 'Nigeria'
   )
-poland_data <- read_csv(paste0(wd, '/../FCI_app/data1/Poland_DataFrame.csv')) %>% 
+poland_data <- read_csv(paste0(wd, '/../FCI_app/data/Poland_DataFrame.csv')) %>% 
   clean_names() %>%
   mutate(
     country = 'Poland'
   )
-romania_data <- read_csv(paste0(wd, '/../FCI_app/data1/Romania_DataFrame.csv')) %>% 
+romania_data <- read_csv(paste0(wd, '/../FCI_app/data/Romania_DataFrame.csv')) %>% 
   clean_names() %>%
   mutate(
     country = 'Romania'
   )
+
+hungary_fci <- read_csv(paste0(wd, "/../FCI_app/data/hungary_fci.csv")) %>%
+  mutate(country = 'Hungary')
+
 combined_data <- bind_rows(egypt_data, hungary_data, nigeria_data, poland_data, 
                            romania_data)
+
+combined_fci <- bind_rows(hungary_fci)
 
 
 ui <- dashboardPage(
@@ -66,7 +72,8 @@ ui <- dashboardPage(
           inline = T
         ),
         plotlyOutput("allCountriesPlot", height = "500px")
-      )
+      ),
+      tabPanel("FCI plot", plotOutput("fciPlot"))
     )
   )
 )
@@ -230,6 +237,20 @@ server <- function(input, output, session) {
     }
     
     ggplotly(p)
+  })
+  
+  output$fciPlot <- renderPlot({
+    ggplot(
+      combined_fci %>% filter(country == input$country),
+      aes(x = date, y = fci)
+    ) +
+      geom_line() +
+      labs(
+        title = paste("Custom FCI over time for", input$country),
+        x = "Date",
+        y = "FCI"
+      ) +
+      theme_minimal()
   })
   
 }

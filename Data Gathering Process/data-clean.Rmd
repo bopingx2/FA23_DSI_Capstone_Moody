@@ -1,0 +1,31 @@
+---
+title: "Data Cleaning"
+author: "Margaret Reed"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(janitor)
+```
+
+```{r}
+read_csv("../FCI_app/data/Egypt_DataFrame.csv")
+```
+```{r}
+hugary_fci <- read_csv("../FCI_app/data/hungary_fci.csv") 
+```
+```{r}
+hungary_fci <- hugary_fci %>%
+  clean_names() %>%
+  mutate(
+    date = as.Date(paste0(date, "-01"), format = "%Y-%m-%d")
+  )
+write_csv(hungary_fci, "../FCI_app/data/hungary_fci.csv")
+```
+
