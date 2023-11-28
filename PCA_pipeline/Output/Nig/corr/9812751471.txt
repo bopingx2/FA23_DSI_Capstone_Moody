@@ -1,0 +1,11 @@
+--------------------
+id : 9812751471
+explain variance ratio : 0.24482437817734795
+Weight :
+Risk_Premium : -0.7222681258411793
+Stock_Prices_mom%_change : -0.006132448487394027
+Current_Account_Balance_change_yryr% : -0.6334918582020546
+Portfolio_Flows : -0.2490010761958228
+Velocity_of_Money_mo12m%_change : -0.12238332040948052
+--------------------
+

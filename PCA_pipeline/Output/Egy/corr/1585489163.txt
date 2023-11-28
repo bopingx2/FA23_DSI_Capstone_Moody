@@ -1,0 +1,13 @@
+--------------------
+id : 1585489163
+explain variance ratio : 0.21491026389107723
+Weight :
+Term_Premium : 0.22625422284263844
+Stock_Prices_mom24mma%_change : 0.43709458470330004
+Current_Account_Balance_over_GDP : 0.6162983620205251
+One-Day_Repo_Rate_AVG : 0.31951001177620986
+Velocity_of_Money_mo12m%_change : 0.1611887581348878
+Bank_Lending_mo12m%_change : 0.364588092010486
+Portfolio_Flows : 0.3419659916272277
+--------------------
+

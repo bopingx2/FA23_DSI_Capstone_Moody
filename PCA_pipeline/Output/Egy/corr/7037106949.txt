@@ -1,0 +1,13 @@
+--------------------
+id : 7037106949
+explain variance ratio : 0.2389098016675339
+Weight :
+Term_Premium : -0.15643846891685484
+Risk_Premium : -0.4828111350194877
+Stock_Prices_mom24mma%_change : -0.10707987606391164
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : -0.15096387488139137
+Current_Account_Balance_over_GDP : -0.49452146495907384
+Velocity_of_Money_mo12m%_change : -0.40131264959814705
+Foreign_Exchange_Reserve_over_GDP : -0.5500553607904609
+--------------------
+

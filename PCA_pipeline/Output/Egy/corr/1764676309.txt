@@ -1,0 +1,10 @@
+--------------------
+id : 1764676309
+explain variance ratio : 0.24367729428718474
+Weight :
+Term_Premium : -0.893272079530607
+Stock_Market_Volatility : -0.30558524332182624
+One-Day_Repo_Rate_AVG : -0.11471952160138182
+Bank_Lending_mo12m%_change : -0.3090664691592324
+--------------------
+

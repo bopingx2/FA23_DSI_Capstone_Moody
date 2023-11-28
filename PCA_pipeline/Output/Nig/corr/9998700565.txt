@@ -1,0 +1,13 @@
+--------------------
+id : 9998700565
+explain variance ratio : 0.2779903471154405
+Weight :
+Term_Premium : -0.43751335343591263
+Stock_Prices_mom%_change : -0.24256059390079399
+Stock_Market_Volatility : -0.18087814940538688
+Current_Account_Balance_change_yryr% : -0.059009692550765394
+Broad_Money_mo12m%_change : -0.5529606731104968
+Portfolio_Flows : -0.5025571473295617
+Foreign_Exchange_Reserve_change_yryr% : -0.3939773886477008
+--------------------
+

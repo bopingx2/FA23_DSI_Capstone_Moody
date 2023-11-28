@@ -1,0 +1,12 @@
+--------------------
+id : 8321686183
+explain variance ratio : 0.311950160436995
+Weight :
+Term_Premium : -0.3052516217569219
+Stock_Prices_mom24mma%_change : -0.5869596375991025
+REER : -0.31095715301154186
+Current_Account_Balance_change_yryr% : -0.17844353152099493
+One-Day_Repo_Rate_EOP : -0.5261440512773039
+Portfolio_Flows : -0.39615126353336005
+--------------------
+

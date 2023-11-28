@@ -1,0 +1,14 @@
+--------------------
+id : 1584204355
+explain variance ratio : 0.20370786148851056
+Weight :
+Risk_Premium : -0.391987214687985
+Stock_Prices_mom%_change : -0.16889322020057976
+Stock_Prices_mom24mma%_change : -0.48449582078782943
+Current_Account_Balance_over_GDP : -0.5782475617654845
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.12398457849996958
+Bank_Lending_mo12m%_change : -0.33692517396379695
+Broad_Money_mo12m%_change : -0.09077973250503643
+Portfolio_Flows : -0.3340403452470946
+--------------------
+

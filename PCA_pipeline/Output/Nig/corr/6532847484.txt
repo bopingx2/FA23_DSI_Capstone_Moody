@@ -1,0 +1,10 @@
+--------------------
+id : 6532847484
+explain variance ratio : 0.29980085412834756
+Weight :
+Term_Premium : -0.6688810925064631
+Stock_Market_Volatility : -0.13586032419878558
+Current_Account_Balance_change_yryr% : -0.20687123607742117
+Portfolio_Flows : -0.7009595909036139
+--------------------
+

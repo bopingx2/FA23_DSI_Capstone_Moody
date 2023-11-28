@@ -1,0 +1,13 @@
+--------------------
+id : 2839154913
+explain variance ratio : 0.20899410389213915
+Weight :
+Risk_Premium : 0.15173022991165325
+Stock_Prices_mom%_change : 0.41520751402479283
+Stock_Prices_mom24mma%_change : 0.7090553825886323
+Current_Account_Balance_change_yryr% : 0.02418239864860257
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : 0.15463469774344113
+Broad_Money_mo12m%_change : 0.5252782036324138
+Portfolio_Flows : 0.03751336679766517
+--------------------
+

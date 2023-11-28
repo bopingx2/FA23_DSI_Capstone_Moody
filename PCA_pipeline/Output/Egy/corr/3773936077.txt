@@ -1,0 +1,14 @@
+--------------------
+id : 3773936077
+explain variance ratio : 0.20682693432386612
+Weight :
+Term_Premium : -0.13661130237432975
+Risk_Premium : -0.2264196880651567
+Stock_Prices_mom24mma%_change : -0.5196558191231109
+Stock_Market_Volatility : -0.2833322085557736
+Current_Account_Balance_over_GDP : -0.4582461464282202
+One-Day_Repo_Rate_AVG : -0.2601074516119177
+Bank_Lending_mo12m%_change : -0.1976561840973198
+Portfolio_Flows : -0.5128730661227873
+--------------------
+

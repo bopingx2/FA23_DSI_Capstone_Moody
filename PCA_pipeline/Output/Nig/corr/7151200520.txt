@@ -1,0 +1,13 @@
+--------------------
+id : 7151200520
+explain variance ratio : 0.36770850565407187
+Weight :
+Term_Premium : -0.18078192515550734
+Stock_Market_Volatility : -0.011334346656619587
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.5952813477878597
+REER : -0.3356114161138555
+Current_Account_Balance_change_yryr% : -0.05497359927433764
+One-Day_Repo_Rate_EOP : -0.6035143796983333
+Foreign_Exchange_Reserve_change_yryr% : -0.3646132462665319
+--------------------
+

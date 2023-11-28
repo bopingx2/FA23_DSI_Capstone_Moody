@@ -1,0 +1,12 @@
+--------------------
+id : 4835685120
+explain variance ratio : 0.31464228439325614
+Weight :
+Term_Premium : -0.4627648140752264
+Stock_Market_Volatility : -0.20929088455101674
+Current_Account_Balance_change_yryr% : -0.06606235227050875
+Broad_Money_mo12m%_change : -0.5774686875654459
+Portfolio_Flows : -0.5030062742145813
+Foreign_Exchange_Reserve_change_yryr% : -0.38883983989872833
+--------------------
+

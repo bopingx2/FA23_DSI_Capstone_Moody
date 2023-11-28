@@ -1,0 +1,12 @@
+--------------------
+id : 5067098309
+explain variance ratio : 0.24413289343940361
+Weight :
+Term_Premium : -0.3154716843095593
+Stock_Market_Volatility : -0.10079714381546134
+REER : -0.5462762553913654
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : -0.7496251088043642
+Current_Account_Balance_change_yryr% : -0.12442416094033919
+Broad_Money_mo12m%_change : -0.12033548694155413
+--------------------
+

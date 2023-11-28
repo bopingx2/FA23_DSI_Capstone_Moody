@@ -1,0 +1,13 @@
+--------------------
+id : 5519540483
+explain variance ratio : 0.2021518661594472
+Weight :
+Risk_Premium : -0.5321469940116809
+Stock_Prices_mom%_change : -0.3984527740349153
+Stock_Market_Volatility : -0.43789568231184783
+REER : -0.06101685831080214
+Foreign_Exchange_Reserve_change_yryr% : -0.10449423913381058
+Portfolio_Flows : -0.41616693060110116
+Velocity_of_Money_mo12m%_change : -0.42245155687325603
+--------------------
+

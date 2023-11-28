@@ -1,0 +1,12 @@
+--------------------
+id : 9511385195
+explain variance ratio : 0.2045569422376796
+Weight :
+Risk_Premium : -0.041855446280536404
+Stock_Prices_mom%_change : -0.2533934598767053
+Current_Account_Balance_change_yryr% : -0.3822316530650283
+Foreign_Exchange_Reserve_change_yryr% : -0.5460172754320869
+Bank_Lending_mo12m%_change : -0.04001077762407759
+Portfolio_Flows : -0.6987153298069129
+--------------------
+

@@ -1,0 +1,12 @@
+--------------------
+id : 8625821394
+explain variance ratio : 0.22876217613723818
+Weight :
+Term_Premium : -0.036779826765075754
+Stock_Prices_mom%_change : -0.5744093108133307
+Stock_Market_Volatility : -0.4213787503164904
+One-Day_Repo_Rate_AVG : -0.3692357311205781
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.47794105220663896
+Bank_Lending_mo12m%_change : -0.3554974855821938
+--------------------
+

@@ -1,0 +1,11 @@
+--------------------
+id : 1404024008
+explain variance ratio : 0.30396418156065114
+Weight :
+Risk_Premium : 0.3328965300469866
+Stock_Prices_mom24mma%_change : 0.09292825871827881
+REER : 0.6205584382267288
+Portfolio_Flows : 0.05975576919097771
+Velocity_of_Money_mo12m%_change : 0.7013420790229697
+--------------------
+

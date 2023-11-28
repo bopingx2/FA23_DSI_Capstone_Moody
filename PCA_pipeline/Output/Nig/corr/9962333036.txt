@@ -1,0 +1,13 @@
+--------------------
+id : 9962333036
+explain variance ratio : 0.28304962202521805
+Weight :
+Term_Premium : 0.16041999130605183
+Stock_Prices_mom%_change : 0.27837025125876325
+One-Day_Repo_Rate_AVG : 0.2263921665314328
+Current_Account_Balance_change_yryr% : 0.11218070293613325
+Portfolio_Flows : 0.4136889385010392
+Foreign_Exchange_Reserve_over_GDP : 0.510766053565938
+Foreign_Exchange_Reserve_change_yryr% : 0.6331800747907493
+--------------------
+

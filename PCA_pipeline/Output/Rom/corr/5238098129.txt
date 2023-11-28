@@ -1,0 +1,10 @@
+--------------------
+id : 5238098129
+explain variance ratio : 0.21501554128772968
+Weight :
+Term_Premium : 0.20883347523838694
+Stock_Prices_mom%_change : 0.8750073648535283
+REER : 0.4359785681325273
+Bank_Lending_mo12m%_change : 0.0259495510761536
+--------------------
+

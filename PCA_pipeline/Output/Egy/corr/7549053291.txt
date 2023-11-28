@@ -1,0 +1,12 @@
+--------------------
+id : 7549053291
+explain variance ratio : 0.21107321694919057
+Weight :
+Risk_Premium : -0.21369943424988813
+Stock_Market_Volatility : -0.6977368240000293
+One-Day_Repo_Rate_AVG : -0.02734386720499371
+Bank_Lending_mo12m%_change : -0.15862647915970918
+Broad_Money_mo12m%_change : -0.11932226091140369
+Portfolio_Flows : -0.6537186147894909
+--------------------
+

@@ -1,0 +1,11 @@
+--------------------
+id : 4549225446
+explain variance ratio : 0.24138970911506902
+Weight :
+Risk_Premium : 0.8339680495561519
+Stock_Prices_mom%_change : 0.15111636190256306
+Current_Account_Balance_over_GDP : 0.4838819870993535
+REER : 0.14143624700433607
+Velocity_of_Money_mo12m%_change : 0.1658769064063772
+--------------------
+

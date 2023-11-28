@@ -1,0 +1,12 @@
+--------------------
+id : 9805403518
+explain variance ratio : 0.2143096872676795
+Weight :
+Term_Premium : -0.10958267546018788
+Stock_Market_Volatility : -0.21675144601564617
+Current_Account_Balance_over_GDP : -0.020058806586543035
+One-Day_Repo_Rate_AVG : -0.44494458526043573
+Bank_Lending_mo12m%_change : -0.27746503407383744
+Foreign_Exchange_Reserve_over_GDP : -0.8158710456201151
+--------------------
+

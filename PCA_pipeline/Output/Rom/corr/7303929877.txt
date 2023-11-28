@@ -1,0 +1,13 @@
+--------------------
+id : 7303929877
+explain variance ratio : 0.20147884691115803
+Weight :
+Risk_Premium : -0.6798271984515953
+Stock_Prices_mom24mma%_change : -0.6913093607808217
+Current_Account_Balance_change_yryr% : -0.03999154552966162
+REER : -0.029207485101948365
+Broad_Money_mo12m%_change : -0.08847007071134749
+Portfolio_Flows : -0.20424905739126847
+Velocity_of_Money_mo12m%_change : -0.08904670788717123
+--------------------
+

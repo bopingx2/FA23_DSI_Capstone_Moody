@@ -1,0 +1,11 @@
+--------------------
+id : 2735241511
+explain variance ratio : 0.214606833095416
+Weight :
+Term_Premium : 0.0125062501649752
+Stock_Prices_mom%_change : 0.7448895048180637
+REER : 0.25992865235137175
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : 0.4947571703928578
+Bank_Lending_mo12m%_change : 0.3641917864949215
+--------------------
+

@@ -1,0 +1,15 @@
+--------------------
+id : 2001129105
+explain variance ratio : 0.20613971846004778
+Weight :
+Risk_Premium : -0.37310301310525235
+Stock_Prices_mom24mma%_change : -0.35894378864999327
+Stock_Market_Volatility : -0.33190393221218
+Current_Account_Balance_over_GDP : -0.5569837007165999
+One-Day_Repo_Rate_EOP : -0.046195601328206395
+Foreign_Exchange_Reserve_change_yryr% : -0.25330105341236947
+Bank_Lending_mo12m%_change : -0.37141781339473584
+Broad_Money_mo12m%_change : -0.02960020780355024
+Portfolio_Flows : -0.3262508443953429
+--------------------
+

@@ -1,0 +1,12 @@
+--------------------
+id : 1494794896
+explain variance ratio : 0.2945266259900627
+Weight :
+Term_Premium : -0.34895228674678935
+Stock_Market_Volatility : -0.059914421981342
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.12099219121711102
+Broad_Money_mo12m%_change : -0.44900215735096005
+Foreign_Exchange_Reserve_over_GDP : -0.5440328106425826
+Foreign_Exchange_Reserve_change_yryr% : -0.6020206117034752
+--------------------
+

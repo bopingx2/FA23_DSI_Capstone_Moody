@@ -1,0 +1,15 @@
+--------------------
+id : 7075933111
+explain variance ratio : 0.29196609250396516
+Weight :
+Term_Premium : -0.23530481293112548
+Stock_Market_Volatility : -0.03540750681818394
+One-Day_Repo_Rate_AVG : -0.5749387666355444
+REER : -0.2727179297172938
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : -0.5714785830651624
+Current_Account_Balance_change_yryr% : -0.05681271339437898
+Broad_Money_mo12m%_change : -0.1296640478268694
+Portfolio_Flows : -0.18819251460020794
+Foreign_Exchange_Reserve_change_yryr% : -0.3954790206153598
+--------------------
+

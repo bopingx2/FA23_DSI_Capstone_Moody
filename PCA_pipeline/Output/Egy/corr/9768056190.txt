@@ -1,0 +1,13 @@
+--------------------
+id : 9768056190
+explain variance ratio : 0.21071764556143505
+Weight :
+Term_Premium : -0.15763164649462968
+Stock_Prices_mom24mma%_change : -0.4600250515413468
+Current_Account_Balance_over_GDP : -0.7088518853176822
+Foreign_Exchange_Reserve_change_yryr% : -0.29946489663726095
+Velocity_of_Money_mo12m%_change : -0.042400736020575036
+Bank_Lending_mo12m%_change : -0.4074689172019542
+Broad_Money_mo12m%_change : -0.05958402001003457
+--------------------
+

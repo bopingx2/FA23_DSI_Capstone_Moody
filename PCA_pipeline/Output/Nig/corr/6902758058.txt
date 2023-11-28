@@ -1,0 +1,14 @@
+--------------------
+id : 6902758058
+explain variance ratio : 0.3428957001526827
+Weight :
+Risk_Premium : -0.08081335328687266
+Stock_Prices_mom%_change : -0.29516255744653436
+Stock_Prices_mom24mma%_change : -0.500205987573657
+Current_Account_Balance_over_GDP : -0.4761298869989534
+Current_Account_Balance_change_yryr% : -0.10442664716144745
+Broad_Money_mo12m%_change : -0.29212699985081847
+Portfolio_Flows : -0.4007321092840921
+Foreign_Exchange_Reserve_change_yryr% : -0.4154674899718164
+--------------------
+

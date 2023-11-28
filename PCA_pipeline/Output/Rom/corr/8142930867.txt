@@ -1,0 +1,11 @@
+--------------------
+id : 8142930867
+explain variance ratio : 0.39437565244584116
+Weight :
+Risk_Premium : -0.5072070323701252
+Stock_Prices_mom24mma%_change : -0.6160023574298138
+Current_Account_Balance_change_yryr% : -0.052054024887051215
+Foreign_Exchange_Reserve_change_yryr% : -0.35861842459283033
+Velocity_of_Money_mo12m%_change : -0.48162778781006493
+--------------------
+

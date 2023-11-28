@@ -1,0 +1,10 @@
+--------------------
+id : 5720377828
+explain variance ratio : 0.23871440033014407
+Weight :
+Term_Premium : 0.1736472349926679
+Stock_Market_Volatility : 0.008109238723717228
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : 0.1901461510437702
+Portfolio_Flows : 0.9662428883412094
+--------------------
+

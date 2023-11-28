@@ -1,0 +1,11 @@
+--------------------
+id : 8385483956
+explain variance ratio : 0.21993776998724957
+Weight :
+Term_Premium : 0.23099068876547288
+Risk_Premium : 0.0998242038231683
+Stock_Prices_mom24mma%_change : 0.21781473197121937
+REER : 0.6502395640465316
+Velocity_of_Money_mo12m%_change : 0.6829521812832913
+--------------------
+

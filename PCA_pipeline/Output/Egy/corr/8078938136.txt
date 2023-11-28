@@ -1,0 +1,12 @@
+--------------------
+id : 8078938136
+explain variance ratio : 0.21882767214663493
+Weight :
+Risk_Premium : -0.13281974302168836
+Stock_Prices_mom%_change : -0.19576444040466195
+Stock_Market_Volatility : -0.5595857389245719
+Current_Account_Balance_over_GDP : -0.3278252093996778
+One-Day_Repo_Rate_AVG : -0.2161122664819664
+Portfolio_Flows : -0.6904528375544761
+--------------------
+

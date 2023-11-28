@@ -1,0 +1,13 @@
+--------------------
+id : 5129277773
+explain variance ratio : 0.29984019440385296
+Weight :
+Term_Premium : -0.3191190760952308
+Stock_Prices_mom%_change : -0.024366292702654224
+Stock_Market_Volatility : -0.019271218278039938
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.6647526410805648
+One-Day_Repo_Rate_AVG : -0.6567917147270905
+Current_Account_Balance_change_yryr% : -0.027953430539837166
+Portfolio_Flows : -0.1521351194216943
+--------------------
+

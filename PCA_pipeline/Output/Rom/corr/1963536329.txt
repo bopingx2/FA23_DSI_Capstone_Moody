@@ -1,0 +1,13 @@
+--------------------
+id : 1963536329
+explain variance ratio : 0.40021966090791317
+Weight :
+Risk_Premium : -0.39802010304982033
+Stock_Prices_mom%_change : -0.23730109763160567
+Stock_Prices_mom24mma%_change : -0.4964523495732878
+Current_Account_Balance_over_GDP : -0.4803839752300223
+Bank_Lending_mo12m%_change : -0.4842257871470059
+Portfolio_Flows : -0.16762134046139313
+Velocity_of_Money_mo12m%_change : -0.2132204513178706
+--------------------
+

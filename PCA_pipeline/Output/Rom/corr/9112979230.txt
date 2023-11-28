@@ -1,0 +1,11 @@
+--------------------
+id : 9112979230
+explain variance ratio : 0.20861576879770258
+Weight :
+Term_Premium : -0.07528494881527696
+Stock_Market_Volatility : -0.011971105160521394
+Current_Account_Balance_change_yryr% : -0.7668506470242883
+REER : -0.13604161381298502
+Portfolio_Flows : -0.6225926706866254
+--------------------
+

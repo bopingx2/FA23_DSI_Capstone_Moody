@@ -1,0 +1,14 @@
+--------------------
+id : 3560236064
+explain variance ratio : 0.25303305567663964
+Weight :
+Term_Premium : -0.3362855638494465
+Stock_Prices_mom24mma%_change : -0.4848277750635578
+Stock_Market_Volatility : -0.007841194147105976
+One-Day_Repo_Rate_AVG : -0.006253883945628841
+Current_Account_Balance_change_yryr% : -0.10841389666324869
+Broad_Money_mo12m%_change : -0.4730200946918284
+Portfolio_Flows : -0.5224188869286106
+Foreign_Exchange_Reserve_over_GDP : -0.3785899844047874
+--------------------
+

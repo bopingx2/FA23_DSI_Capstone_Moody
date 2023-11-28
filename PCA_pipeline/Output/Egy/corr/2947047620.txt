@@ -1,0 +1,14 @@
+--------------------
+id : 2947047620
+explain variance ratio : 0.49368888676432043
+Weight :
+Term_Premium : 0.12440127648515044
+Stock_Prices_mom%_change : 0.06690055244609072
+One-Day_Repo_Rate_AVG : 0.45118288052074923
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : 0.4635343328359182
+Foreign_Exchange_Reserve_change_yryr% : 0.43409828294346264
+Foreign_Exchange_Reserve_over_GDP : 0.33882504694448234
+Broad_Money_mo12m%_change : 0.38610638461515956
+Portfolio_Flows : 0.33060050993101775
+--------------------
+

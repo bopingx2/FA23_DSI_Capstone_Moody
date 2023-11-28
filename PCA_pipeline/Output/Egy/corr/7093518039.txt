@@ -1,0 +1,11 @@
+--------------------
+id : 7093518039
+explain variance ratio : 0.5066292417253982
+Weight :
+Term_Premium : 0.1506672842311118
+Stock_Prices_mom24mma%_change : 0.5063975218002928
+One-Day_Repo_Rate_AVG : 0.452797161783449
+Broad_Money_mo12m%_change : 0.5428494059155287
+Portfolio_Flows : 0.47026606528108567
+--------------------
+

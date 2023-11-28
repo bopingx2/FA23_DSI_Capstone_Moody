@@ -1,0 +1,10 @@
+--------------------
+id : 5603174749
+explain variance ratio : 0.2521839952293829
+Weight :
+Term_Premium : 0.009104066219563417
+Stock_Market_Volatility : 0.0506823767266012
+REER : 0.3228991675884204
+Velocity_of_Money_mo12m%_change : 0.9450315022465219
+--------------------
+

@@ -1,0 +1,12 @@
+--------------------
+id : 7927046167
+explain variance ratio : 0.24226961114189946
+Weight :
+Risk_Premium : -0.5040077400989862
+Stock_Market_Volatility : -0.280148830853574
+Current_Account_Balance_over_GDP : -0.09807459627323095
+REER : -0.35136852933457063
+Portfolio_Flows : -0.2407350603668545
+Velocity_of_Money_mo12m%_change : -0.6902615383758239
+--------------------
+

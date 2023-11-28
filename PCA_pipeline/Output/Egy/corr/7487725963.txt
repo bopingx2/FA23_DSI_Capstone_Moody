@@ -1,0 +1,11 @@
+--------------------
+id : 7487725963
+explain variance ratio : 0.22534979447737066
+Weight :
+Term_Premium : -0.734637384394446
+Stock_Prices_mom%_change : -0.20429956322835324
+One-Day_Repo_Rate_EOP : -0.40214271753706843
+Velocity_of_Money_mo12m%_change : -0.44993962308127067
+Bank_Lending_mo12m%_change : -0.233249163402952
+--------------------
+

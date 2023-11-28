@@ -1,0 +1,11 @@
+--------------------
+id : 2497868608
+explain variance ratio : 0.2946061769694759
+Weight :
+Risk_Premium : -0.7321318421618491
+Stock_Prices_mom24mma%_change : -0.44353917187819203
+REER : -0.406190401490398
+Portfolio_Flows : -0.14999623336532725
+Velocity_of_Money_mo12m%_change : -0.28242956009523545
+--------------------
+

@@ -1,0 +1,12 @@
+--------------------
+id : 2279663634
+explain variance ratio : 0.22403369008960775
+Weight :
+Term_Premium : -0.03973291633612904
+Risk_Premium : -0.17397010408095143
+Stock_Prices_mom24mma%_change : -0.421888465370052
+REER : -0.5442326211237276
+Foreign_Exchange_Reserve_change_yryr% : -0.6706231716283454
+Velocity_of_Money_mo12m%_change : -0.21033600931159885
+--------------------
+

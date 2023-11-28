@@ -1,0 +1,11 @@
+--------------------
+id : 7160179091
+explain variance ratio : 0.23025728606488274
+Weight :
+Term_Premium : 0.2492499074541038
+Stock_Prices_mom24mma%_change : 0.17694269949786354
+REER : 0.5939449484939089
+Portfolio_Flows : 0.456572386744203
+Velocity_of_Money_mo12m%_change : 0.587653655267964
+--------------------
+

@@ -1,0 +1,11 @@
+--------------------
+id : 7046449832
+explain variance ratio : 0.48772361909831785
+Weight :
+Risk_Premium : -0.39992354760840254
+Stock_Market_Volatility : -0.25123719886594154
+Current_Account_Balance_over_GDP : -0.5021394903889014
+Velocity_of_Money_mo12m%_change : -0.4098961124353028
+Bank_Lending_mo12m%_change : -0.5973124267723761
+--------------------
+

@@ -1,0 +1,12 @@
+--------------------
+id : 9080287953
+explain variance ratio : 0.23489186333153
+Weight :
+Term_Premium : -0.09531969483644193
+Risk_Premium : -0.5444962672326701
+Stock_Prices_mom24mma%_change : -0.4405434116802488
+Current_Account_Balance_over_GDP : -0.6365582707016476
+Velocity_of_Money_mo12m%_change : -0.10938463749452162
+Portfolio_Flows : -0.28842337327724016
+--------------------
+

@@ -1,0 +1,12 @@
+--------------------
+id : 9819244360
+explain variance ratio : 0.21145788898324186
+Weight :
+Risk_Premium : -0.22144696652649198
+Stock_Market_Volatility : -0.697132461035153
+One-Day_Repo_Rate_EOP : -0.05635425910823494
+Bank_Lending_mo12m%_change : -0.17731090247927067
+Broad_Money_mo12m%_change : -0.10428669921242795
+Portfolio_Flows : -0.6476703625278915
+--------------------
+

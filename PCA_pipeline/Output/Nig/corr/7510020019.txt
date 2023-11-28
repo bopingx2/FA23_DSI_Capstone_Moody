@@ -1,0 +1,14 @@
+--------------------
+id : 7510020019
+explain variance ratio : 0.20617300011422884
+Weight :
+Term_Premium : -0.4613833342170514
+Stock_Prices_mom24mma%_change : -0.4852138426554753
+Stock_Market_Volatility : -0.06875999605786585
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.0010836037070645066
+One-Day_Repo_Rate_AVG : -0.018526304853826364
+Current_Account_Balance_change_yryr% : -0.12992658345165006
+Broad_Money_mo12m%_change : -0.5677793893704338
+Foreign_Exchange_Reserve_over_GDP : -0.4553748549212758
+--------------------
+

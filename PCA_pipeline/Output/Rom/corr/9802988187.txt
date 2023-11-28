@@ -1,0 +1,10 @@
+--------------------
+id : 9802988187
+explain variance ratio : 0.22926813140973984
+Weight :
+Term_Premium : -0.2446442005157302
+Stock_Market_Volatility : -0.5424784929305475
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.7104101663601794
+Bank_Lending_mo12m%_change : -0.37574418876933263
+--------------------
+

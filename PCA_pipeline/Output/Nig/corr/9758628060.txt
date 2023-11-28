@@ -1,0 +1,11 @@
+--------------------
+id : 9758628060
+explain variance ratio : 0.39547231612553707
+Weight :
+Term_Premium : -0.2635853397527569
+Stock_Prices_mom24mma%_change : -0.6060880104903793
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.330915822259389
+Broad_Money_mo12m%_change : -0.2858112254787526
+Foreign_Exchange_Reserve_change_yryr% : -0.609907168490389
+--------------------
+

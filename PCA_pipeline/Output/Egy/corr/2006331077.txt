@@ -1,0 +1,14 @@
+--------------------
+id : 2006331077
+explain variance ratio : 0.20646760116551482
+Weight :
+Risk_Premium : -0.37353049197829824
+Stock_Prices_mom%_change : -0.13555560171335945
+Stock_Prices_mom24mma%_change : -0.48858170010220375
+Current_Account_Balance_over_GDP : -0.5950608972447607
+One-Day_Repo_Rate_EOP : -0.15547080664157664
+Foreign_Exchange_Reserve_change_yryr% : -0.35108916157727305
+Velocity_of_Money_mo12m%_change : -0.007488031240325911
+Bank_Lending_mo12m%_change : -0.31905996238232126
+--------------------
+

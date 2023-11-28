@@ -1,0 +1,13 @@
+--------------------
+id : 7252488502
+explain variance ratio : 0.2882909722357353
+Weight :
+Term_Premium : -0.43921174508318184
+Stock_Market_Volatility : -0.15788048570147684
+One-Day_Repo_Rate_AVG : -0.3584633692041579
+Current_Account_Balance_change_yryr% : -0.07166516787885763
+Broad_Money_mo12m%_change : -0.47571364393942883
+Portfolio_Flows : -0.44716628147548526
+Foreign_Exchange_Reserve_change_yryr% : -0.4714591790904145
+--------------------
+

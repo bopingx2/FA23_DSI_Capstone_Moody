@@ -1,0 +1,11 @@
+--------------------
+id : 5965665107
+explain variance ratio : 0.22642941086777754
+Weight :
+Term_Premium : -0.09814856856014353
+Stock_Market_Volatility : -0.08053455311653268
+REER : -0.365803321171133
+Current_Account_Balance_change_yryr% : -0.6907699851640734
+Foreign_Exchange_Reserve_change_yryr% : -0.6106601362955583
+--------------------
+

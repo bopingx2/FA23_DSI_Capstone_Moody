@@ -1,0 +1,13 @@
+--------------------
+id : 2102448403
+explain variance ratio : 0.25937619039372917
+Weight :
+Term_Premium : -0.3757340829499595
+Stock_Prices_mom%_change : -0.21041668429887173
+Stock_Market_Volatility : -0.02200240062787022
+Current_Account_Balance_change_yryr% : -0.11125881570106055
+One-Day_Repo_Rate_EOP : -0.4992000731911507
+Portfolio_Flows : -0.43510195931975115
+Foreign_Exchange_Reserve_change_yryr% : -0.6026372541553446
+--------------------
+
