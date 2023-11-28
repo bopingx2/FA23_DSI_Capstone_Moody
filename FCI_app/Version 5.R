@@ -53,14 +53,12 @@ ui <- dashboardPage(
     varSelectInput("var", "Choose variable", combined_data %>% select(-date, -country)),
     dateRangeInput("dateRange", "Select Date Range", start = min(combined_data$date), end = max(combined_data$date)),
     prettyCheckbox("smooth", "Apply smooth line"),
-    downloadButton("downloadData", "Download Selected Data"),
-    downloadButton("downloadPlot", "Download Plot"),
     actionButton("showData", "Show Complete Data")
   ),
   dashboardBody(
     tabsetPanel(
-      tabPanel("Plot", plotlyOutput("explorePlot", height = "500px")),
-      tabPanel("Selected Data", DTOutput("selectedTable")),
+      tabPanel("Plot", plotlyOutput("explorePlot", height = "500px"),downloadButton("downloadPlot", "Download Plot")),
+      tabPanel("Selected Data", DTOutput("selectedTable"),downloadButton("downloadData", "Download Selected Data")),
       tabPanel("Data Summary", DTOutput("summaryTable"), plotOutput("summaryPlot")),
       tabPanel(
         "Compare Countries", 
@@ -71,9 +69,14 @@ ui <- dashboardPage(
           selected = c("Egypt", "Nigeria", "Hungary", "Romania", "Poland"),
           inline = T
         ),
-        plotlyOutput("allCountriesPlot", height = "500px")
+        plotlyOutput("allCountriesPlot", height = "500px"),
+        downloadButton("downloadAllCountriesPlot", "Download Compare Countries Plot")
       ),
-      tabPanel("FCI plot", plotOutput("fciPlot"))
+      tabPanel("FCI plot", 
+               plotOutput("fciPlot"),
+               downloadButton("downloadFciPlot", "Download FCI Plot")
+      )
+      
     )
   )
 )
@@ -99,7 +102,7 @@ server <- function(input, output, session) {
     }
   })
   
-
+  
   observeEvent(input$dateRange, {
     if(is.null(input$dateRange)) {
       showModal(modalDialog(
@@ -239,8 +242,35 @@ server <- function(input, output, session) {
     ggplotly(p)
   })
   
+  output$downloadAllCountriesPlot <- downloadHandler(
+    filename = function() {
+      paste("compare_countries_plot.png", sep = "_")
+    },
+    content = function(file) {
+      p <- ggplot(
+        combined_data %>% filter(country %in% input$countries), 
+        aes(x = date, y = !!sym(input$var), color = country)
+      ) +
+        geom_line() +
+        labs(
+          title = paste(var_name(), "over time"),
+          x = "Date",
+          y = var_name()
+        ) +
+        theme_minimal()
+      
+      if(input$smooth) {
+        p <- p + geom_smooth(se = FALSE)
+      }
+      
+      ggsave(file, plot = p, device = "png", width = 10, height = 6)
+    }
+  )
+  
+  
   output$fciPlot <- renderPlot({
-    ggplot(
+    req(input$country)
+    p <- ggplot(
       combined_fci %>% filter(country == input$country),
       aes(x = date, y = fci)
     ) +
@@ -251,7 +281,39 @@ server <- function(input, output, session) {
         y = "FCI"
       ) +
       theme_minimal()
+    
+    if(input$smooth) {
+      p <- p + geom_smooth(se = FALSE)
+    }
+    
+    p
   })
+  
+  output$downloadFciPlot <- downloadHandler(
+    filename = function() {
+      paste(input$country, "fci_plot.png", sep = "_")
+    },
+    content = function(file) {
+      p <- ggplot(
+        combined_fci %>% filter(country == input$country),
+        aes(x = date, y = fci)
+      ) +
+        geom_line() +
+        labs(
+          title = paste("Custom FCI over time for", input$country),
+          x = "Date",
+          y = "FCI"
+        ) +
+        theme_minimal()
+      
+      if(input$smooth) {
+        p <- p + geom_smooth(se = FALSE)
+      }
+      
+      ggsave(file, plot = p, device = "png", width = 10, height = 6)
+    }
+  )
+  
   
 }
 
