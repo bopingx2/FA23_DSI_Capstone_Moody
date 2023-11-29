@@ -1,0 +1,12 @@
+--------------------
+id : 4174230757
+explain variance ratio : 0.2270719486656828
+Weight :
+Risk_Premium : -0.06174945778869667
+Stock_Prices_mom24mma%_change : -0.22896955882452405
+Current_Account_Balance_change_yryr% : -0.2954850837684247
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.04349779075963142
+Broad_Money_mo12m%_change : -0.5016868727736994
+Foreign_Exchange_Reserve_change_yryr% : -0.776444933495254
+--------------------
+

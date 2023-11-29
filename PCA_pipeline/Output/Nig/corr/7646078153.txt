@@ -1,0 +1,14 @@
+--------------------
+id : 7646078153
+explain variance ratio : 0.31239518437130764
+Weight :
+Term_Premium : 0.3089358985567346
+Stock_Prices_mom24mma%_change : 0.512868692413972
+One-Day_Repo_Rate_AVG : 0.3684653815972651
+REER : 0.06601209276698994
+Current_Account_Balance_change_yryr% : 0.10586510804638755
+Broad_Money_mo12m%_change : 0.2924075820390734
+Portfolio_Flows : 0.39691802204347304
+Foreign_Exchange_Reserve_change_yryr% : 0.4971382601841414
+--------------------
+

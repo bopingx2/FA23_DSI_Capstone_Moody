@@ -1,0 +1,12 @@
+--------------------
+id : 9603133849
+explain variance ratio : 0.2045569422376795
+Weight :
+Risk_Premium : -0.04185544628053759
+Stock_Prices_mom%_change : -0.25339345987670536
+Current_Account_Balance_change_yryr% : -0.3822316530650278
+Bank_Lending_mo12m%_change : -0.04001077762407776
+Foreign_Exchange_Reserve_change_yryr% : -0.5460172754320858
+Portfolio_Flows : -0.6987153298069141
+--------------------
+

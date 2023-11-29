@@ -1,0 +1,13 @@
+--------------------
+id : 5125033437
+explain variance ratio : 0.21069405755596396
+Weight :
+Risk_Premium : -0.6205307848805074
+Stock_Prices_mom%_change : -0.2119386677799721
+Stock_Prices_mom24mma%_change : -0.5601584546049629
+REER : -0.2521315612451742
+Current_Account_Balance_over_GDP : -0.008720360277097716
+Portfolio_Flows : -0.2339634877333852
+Velocity_of_Money_mo12m%_change : -0.37129606703835333
+--------------------
+

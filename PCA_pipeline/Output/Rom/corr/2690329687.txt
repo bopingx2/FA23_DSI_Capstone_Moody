@@ -1,0 +1,11 @@
+--------------------
+id : 2690329687
+explain variance ratio : 0.2940348380223006
+Weight :
+Risk_Premium : 0.25167285300823
+Stock_Prices_mom24mma%_change : 0.5155214269439172
+One-Day_Repo_Rate_AVG : 0.22437726080011672
+Broad_Money_mo12m%_change : 0.2250904339869089
+Foreign_Exchange_Reserve_change_yryr% : 0.7549089844370827
+--------------------
+

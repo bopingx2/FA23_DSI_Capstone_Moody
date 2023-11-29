@@ -1,0 +1,13 @@
+--------------------
+id : 1612709070
+explain variance ratio : 0.3473200380342139
+Weight :
+Term_Premium : -0.3077388965085752
+Stock_Market_Volatility : -0.04888990573312024
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.5833705447483803
+One-Day_Repo_Rate_EOP : -0.5899982330229327
+Current_Account_Balance_change_yryr% : -0.03929103649754022
+Broad_Money_mo12m%_change : -0.17975141177137055
+Foreign_Exchange_Reserve_change_yryr% : -0.42500951243476337
+--------------------
+

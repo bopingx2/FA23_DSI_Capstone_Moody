@@ -1,0 +1,11 @@
+--------------------
+id : 6789571874
+explain variance ratio : 0.20019162995894452
+Weight :
+Risk_Premium : -0.6156177274897527
+Stock_Prices_mom%_change : -0.403056787290338
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : -0.09929542585647766
+Portfolio_Flows : -0.6283806132204846
+Bank_Lending_mo12m%_change : -0.23203073751590025
+--------------------
+

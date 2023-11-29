@@ -1,0 +1,14 @@
+--------------------
+id : 9781270971
+explain variance ratio : 0.36406760790741904
+Weight :
+Term_Premium : -0.24849962433192557
+Stock_Prices_mom%_change : -0.11307582837330432
+Stock_Prices_mom24mma%_change : -0.4446953023086908
+One-Day_Repo_Rate_EOP : -0.4755997652888836
+Current_Account_Balance_change_yryr% : -0.07266793143709015
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : -0.4759858432810489
+Portfolio_Flows : -0.2597118724327541
+Foreign_Exchange_Reserve_change_yryr% : -0.44968804427122394
+--------------------
+

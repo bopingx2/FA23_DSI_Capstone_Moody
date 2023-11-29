@@ -1,0 +1,13 @@
+--------------------
+id : 8042398732
+explain variance ratio : 0.2709198701761436
+Weight :
+Risk_Premium : -0.3025571724294843
+Stock_Prices_mom%_change : -0.07175399528203197
+Stock_Prices_mom24mma%_change : -0.5234880833350978
+Current_Account_Balance_change_yryr% : -0.08266035362287268
+REER : -0.5162966722202946
+Broad_Money_mo12m%_change : -0.040125754862717106
+Foreign_Exchange_Reserve_change_yryr% : -0.5952022212396176
+--------------------
+

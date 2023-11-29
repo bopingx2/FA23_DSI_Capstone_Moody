@@ -1,0 +1,11 @@
+--------------------
+id : 9906609391
+explain variance ratio : 0.2401009509475184
+Weight :
+Risk_Premium : 0.11645488315563086
+Stock_Prices_mom24mma%_change : 0.583342747501424
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : 0.12215319185578455
+REER : 0.6406459598819437
+Foreign_Exchange_Reserve_over_GDP : 0.4698945104308895
+--------------------
+

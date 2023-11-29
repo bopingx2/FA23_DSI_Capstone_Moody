@@ -1,0 +1,15 @@
+--------------------
+id : 4966562437
+explain variance ratio : 0.32775487595424874
+Weight :
+Term_Premium : -0.13348575078415312
+Stock_Prices_mom%_change : -0.24883317597173793
+Stock_Prices_mom24mma%_change : -0.48198017777332836
+One-Day_Repo_Rate_EOP : -0.008166982909108972
+Current_Account_Balance_change_yryr% : -0.10809482932308201
+Current_Account_Balance_over_GDP : -0.43950859372805035
+Portfolio_Flows : -0.346217885917675
+Foreign_Exchange_Reserve_change_yryr% : -0.46175975668090574
+Foreign_Exchange_Reserve_over_GDP : -0.38723483829667593
+--------------------
+

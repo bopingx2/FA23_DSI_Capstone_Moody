@@ -1,0 +1,13 @@
+--------------------
+id : 8873571020
+explain variance ratio : 0.3505964391643121
+Weight :
+Term_Premium : -0.27835584624981813
+Stock_Prices_mom%_change : -0.06984427388490377
+One-Day_Repo_Rate_AVG : -0.5801846116830316
+Current_Account_Balance_change_yryr% : -0.050133967486870226
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : -0.5761034752034419
+Portfolio_Flows : -0.21387760533797193
+Foreign_Exchange_Reserve_change_yryr% : -0.4481889754642412
+--------------------
+

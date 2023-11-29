@@ -1,0 +1,11 @@
+--------------------
+id : 5747083681
+explain variance ratio : 0.22918300541550055
+Weight :
+Risk_Premium : -0.45556109744389744
+Stock_Prices_mom%_change : -0.1360258984380418
+One-Day_Repo_Rate_EOP : -0.28584649319731126
+Current_Account_Balance_over_GDP : -0.5974329305337587
+Portfolio_Flows : -0.579074017108763
+--------------------
+

@@ -1,0 +1,12 @@
+--------------------
+id : 7382622036
+explain variance ratio : 0.22372737403450044
+Weight :
+Term_Premium : -0.20372133924425226
+Stock_Market_Volatility : -0.4783524607878825
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : -0.3743336521920564
+Current_Account_Balance_over_GDP : -0.3537364744138664
+Portfolio_Flows : -0.6667497541492199
+Bank_Lending_mo12m%_change : -0.14094725269569755
+--------------------
+

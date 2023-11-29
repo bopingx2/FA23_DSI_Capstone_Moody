@@ -1,0 +1,16 @@
+--------------------
+id : 9905027662
+explain variance ratio : 0.21268133628622501
+Weight :
+Risk_Premium : -0.34743560498356696
+Stock_Prices_mom24mma%_change : -0.09336626155100064
+Stock_Market_Volatility : -0.02923995783371198
+One-Day_Repo_Rate_AVG : -0.24691515480488282
+Current_Account_Balance_over_GDP : -0.476708772537882
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.20252618308024617
+Foreign_Exchange_Reserve_change_yryr% : -0.08244332157213764
+Foreign_Exchange_Reserve_over_GDP : -0.4754049598304458
+Bank_Lending_mo12m%_change : -0.4214389983198344
+Velocity_of_Money_mo12m%_change : -0.3606431168503968
+--------------------
+

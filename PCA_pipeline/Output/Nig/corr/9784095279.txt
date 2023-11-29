@@ -1,0 +1,15 @@
+--------------------
+id : 9784095279
+explain variance ratio : 0.2498720835021173
+Weight :
+Term_Premium : -0.18675688396320472
+Stock_Prices_mom%_change : -0.19114910424531656
+One-Day_Repo_Rate_AVG : -0.5617320774507439
+REER : -0.002902055120044933
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.5354518074014757
+Current_Account_Balance_over_GDP : -0.03256998632322178
+Portfolio_Flows : -0.21961972932234164
+Foreign_Exchange_Reserve_change_yryr% : -0.5014977807616978
+Foreign_Exchange_Reserve_over_GDP : -0.15978186944203054
+--------------------
+

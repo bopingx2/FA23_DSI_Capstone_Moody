@@ -1,0 +1,13 @@
+--------------------
+id : 6331903634
+explain variance ratio : 0.42657061060618806
+Weight :
+Term_Premium : 0.13553911640232474
+Stock_Prices_mom24mma%_change : 0.40500245630158505
+One-Day_Repo_Rate_EOP : 0.4801874372118761
+Current_Account_Balance_over_GDP : 0.0077454288635751545
+Foreign_Exchange_Reserve_change_yryr% : 0.508214181678105
+Foreign_Exchange_Reserve_over_GDP : 0.38858516784080743
+Portfolio_Flows : 0.4215235517329413
+--------------------
+

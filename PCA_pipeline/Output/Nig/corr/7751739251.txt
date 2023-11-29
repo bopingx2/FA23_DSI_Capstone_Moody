@@ -1,0 +1,11 @@
+--------------------
+id : 7751739251
+explain variance ratio : 0.27535987830108866
+Weight :
+Term_Premium : -0.6145024447307423
+Stock_Prices_mom%_change : -0.3053362521324773
+One-Day_Repo_Rate_EOP : -0.47287136884478675
+Current_Account_Balance_change_yryr% : -0.10268014629481047
+Portfolio_Flows : -0.5431445246316734
+--------------------
+

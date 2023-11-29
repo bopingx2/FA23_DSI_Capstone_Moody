@@ -1,0 +1,15 @@
+--------------------
+id : 9720317992
+explain variance ratio : 0.29397226443508134
+Weight :
+Term_Premium : -0.26100478801839117
+Stock_Prices_mom%_change : -0.07465865354718004
+Stock_Prices_mom24mma%_change : -0.4077485924795425
+REER : -0.28204719774923
+One-Day_Repo_Rate_EOP : -0.5424378614589422
+Current_Account_Balance_change_yryr% : -0.07199307199597837
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : -0.5551330311892019
+Broad_Money_mo12m%_change : -0.1480085094508966
+Portfolio_Flows : -0.22581411051570446
+--------------------
+

@@ -1,0 +1,12 @@
+--------------------
+id : 2002030764
+explain variance ratio : 0.23543674507323806
+Weight :
+Term_Premium : 0.3420865881455411
+Stock_Market_Volatility : 0.15653087410145433
+One-Day_Repo_Rate_EOP : 0.381998201554827
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : 0.3555686131620729
+Current_Account_Balance_over_GDP : 0.6290822041983323
+Bank_Lending_mo12m%_change : 0.4363241540045921
+--------------------
+

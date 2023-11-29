@@ -1,0 +1,11 @@
+--------------------
+id : 8078072113
+explain variance ratio : 0.2061510359672425
+Weight :
+Term_Premium : 0.21659272831606521
+Stock_Prices_mom%_change : 0.24268071470947553
+Stock_Prices_mom24mma%_change : 0.14770590887315596
+REER : 0.5263212502491066
+Portfolio_Flows : 0.7715974123653306
+--------------------
+

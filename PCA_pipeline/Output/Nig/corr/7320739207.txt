@@ -1,0 +1,13 @@
+--------------------
+id : 7320739207
+explain variance ratio : 0.309544904457651
+Weight :
+Term_Premium : -0.31697332903656433
+Stock_Prices_mom%_change : -0.34534969478724853
+Stock_Prices_mom24mma%_change : -0.49153232366370914
+One-Day_Repo_Rate_AVG : -0.030944739474657618
+Broad_Money_mo12m%_change : -0.4321095912331477
+Portfolio_Flows : -0.4990084850110291
+Foreign_Exchange_Reserve_over_GDP : -0.3193301237493146
+--------------------
+

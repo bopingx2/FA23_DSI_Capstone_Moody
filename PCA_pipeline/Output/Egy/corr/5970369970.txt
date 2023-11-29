@@ -1,0 +1,14 @@
+--------------------
+id : 5970369970
+explain variance ratio : 0.20087634559556466
+Weight :
+Term_Premium : -0.07344442860449274
+Stock_Prices_mom24mma%_change : -0.40036918082857603
+Stock_Market_Volatility : -0.43764912534239997
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : -0.12222531518164106
+Current_Account_Balance_over_GDP : -0.5723441747679018
+Portfolio_Flows : -0.4090582094722197
+Bank_Lending_mo12m%_change : -0.36001132127011637
+Broad_Money_mo12m%_change : -0.05761966500572149
+--------------------
+

@@ -1,0 +1,12 @@
+--------------------
+id : 3659366854
+explain variance ratio : 0.20253709526601135
+Weight :
+Risk_Premium : 0.6074020913860737
+Stock_Prices_mom24mma%_change : 0.4657044402080983
+One-Day_Repo_Rate_AVG : 0.14954673337779803
+Portfolio_Flows : 0.47444071426984846
+Bank_Lending_mo12m%_change : 0.36066816294733356
+Velocity_of_Money_mo12m%_change : 0.19142187222370133
+--------------------
+

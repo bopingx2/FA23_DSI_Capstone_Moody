@@ -1,0 +1,14 @@
+--------------------
+id : 1488824150
+explain variance ratio : 0.2140271150126218
+Weight :
+Risk_Premium : -0.3037857019111919
+Stock_Prices_mom%_change : -0.207364237556196
+Stock_Prices_mom24mma%_change : -0.49294276334350595
+Stock_Market_Volatility : -0.35107606420987664
+Current_Account_Balance_over_GDP : -0.47261182857746153
+Portfolio_Flows : -0.43768762545792234
+Bank_Lending_mo12m%_change : -0.24448870227130476
+Broad_Money_mo12m%_change : -0.15414352394635494
+--------------------
+

@@ -1,0 +1,12 @@
+--------------------
+id : 2679993017
+explain variance ratio : 0.21023662319313455
+Weight :
+Risk_Premium : -0.14993119242990288
+Stock_Prices_mom%_change : -0.18043659158617043
+Stock_Market_Volatility : -0.6831134658364094
+One-Day_Repo_Rate_EOP : -0.10179772394178042
+Portfolio_Flows : -0.6699936542210149
+Bank_Lending_mo12m%_change : -0.13807604227427162
+--------------------
+

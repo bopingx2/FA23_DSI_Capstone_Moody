@@ -1,0 +1,11 @@
+--------------------
+id : 9758827358
+explain variance ratio : 0.40506212721908375
+Weight :
+Term_Premium : 0.1572792460780699
+Stock_Market_Volatility : 0.037716990006441686
+Current_Account_Balance_over_GDP : 0.5325883790108694
+Foreign_Exchange_Reserve_change_yryr% : 0.5927971720711298
+Foreign_Exchange_Reserve_over_GDP : 0.5820496531611493
+--------------------
+

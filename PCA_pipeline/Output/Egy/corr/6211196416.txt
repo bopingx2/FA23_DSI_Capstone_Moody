@@ -1,0 +1,14 @@
+--------------------
+id : 6211196416
+explain variance ratio : 0.2072065946316906
+Weight :
+Term_Premium : -0.13148014556499368
+Risk_Premium : -0.22502399094797704
+Stock_Prices_mom24mma%_change : -0.5138716243473849
+Stock_Market_Volatility : -0.29884617032817834
+One-Day_Repo_Rate_EOP : -0.2551963147693442
+Current_Account_Balance_over_GDP : -0.4573667435025979
+Portfolio_Flows : -0.5134240844632988
+Bank_Lending_mo12m%_change : -0.20196610445768637
+--------------------
+

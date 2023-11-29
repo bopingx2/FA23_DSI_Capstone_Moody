@@ -1,0 +1,10 @@
+--------------------
+id : 3056884880
+explain variance ratio : 0.20033386356193944
+Weight :
+Term_Premium : 0.3452974718198045
+Stock_Prices_mom%_change : 0.8892440669260173
+Current_Account_Balance_change_yryr% : 0.16186373545561517
+Broad_Money_mo12m%_change : 0.2526158675461275
+--------------------
+

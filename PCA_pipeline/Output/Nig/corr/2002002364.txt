@@ -1,0 +1,12 @@
+--------------------
+id : 2002002364
+explain variance ratio : 0.35172167971764984
+Weight :
+Term_Premium : -0.3595085064181673
+Stock_Market_Volatility : -0.0689255243679503
+One-Day_Repo_Rate_AVG : -0.6379532889828488
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.6483279764650609
+Current_Account_Balance_change_yryr% : -0.0164064946496537
+Broad_Money_mo12m%_change : -0.19601063452164708
+--------------------
+

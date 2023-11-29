@@ -1,0 +1,12 @@
+--------------------
+id : 8241462301
+explain variance ratio : 0.21119398382389168
+Weight :
+Risk_Premium : -0.21817281771870975
+Stock_Market_Volatility : -0.6981892020417263
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.03627240974733992
+Portfolio_Flows : -0.6503602224054464
+Bank_Lending_mo12m%_change : -0.16626408539479426
+Broad_Money_mo12m%_change : -0.11403774407057976
+--------------------
+

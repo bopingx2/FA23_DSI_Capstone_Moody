@@ -1,0 +1,12 @@
+--------------------
+id : 9937129711
+explain variance ratio : 0.22095647341218286
+Weight :
+Term_Premium : -0.23502167898340173
+Stock_Market_Volatility : -0.4144960805584289
+One-Day_Repo_Rate_AVG : -0.41499532629170244
+Current_Account_Balance_over_GDP : -0.3649846372463568
+Portfolio_Flows : -0.6706328392514554
+Bank_Lending_mo12m%_change : -0.13332103456410177
+--------------------
+

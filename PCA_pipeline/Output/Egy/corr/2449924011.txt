@@ -1,0 +1,12 @@
+--------------------
+id : 2449924011
+explain variance ratio : 0.2399097261709302
+Weight :
+Risk_Premium : 0.6431095122593796
+Stock_Market_Volatility : 0.04336314357643667
+One-Day_Repo_Rate_EOP : 0.1374822366303092
+Foreign_Exchange_Reserve_change_yryr% : 0.09713275004163206
+Foreign_Exchange_Reserve_over_GDP : 0.5885789581771974
+Bank_Lending_mo12m%_change : 0.4580048760572252
+--------------------
+

@@ -1,0 +1,14 @@
+--------------------
+id : 2752492372
+explain variance ratio : 0.206826934323866
+Weight :
+Term_Premium : -0.1366113023743288
+Risk_Premium : -0.2264196880651568
+Stock_Prices_mom24mma%_change : -0.519655819123111
+Stock_Market_Volatility : -0.2833322085557757
+One-Day_Repo_Rate_AVG : -0.2601074516119167
+Current_Account_Balance_over_GDP : -0.4582461464282195
+Portfolio_Flows : -0.5128730661227884
+Bank_Lending_mo12m%_change : -0.19765618409731872
+--------------------
+

@@ -1,0 +1,14 @@
+--------------------
+id : 3380539361
+explain variance ratio : 0.20101914749006128
+Weight :
+Risk_Premium : -0.3278768465637485
+Stock_Prices_mom%_change : -0.2190108686081546
+Stock_Prices_mom24mma%_change : -0.5313587530365957
+One-Day_Repo_Rate_AVG : -0.20813484264261936
+Current_Account_Balance_over_GDP : -0.5315823098033657
+Portfolio_Flows : -0.40226682475078746
+Bank_Lending_mo12m%_change : -0.27230136848427416
+Velocity_of_Money_mo12m%_change : -0.01795522484038604
+--------------------
+

@@ -1,0 +1,12 @@
+--------------------
+id : 6627462733
+explain variance ratio : 0.29373142180281464
+Weight :
+Term_Premium : -0.4211855579865029
+Stock_Market_Volatility : -0.027135475807233522
+Current_Account_Balance_change_yryr% : -0.11148754677597705
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : -0.525407529069123
+Portfolio_Flows : -0.4388859042408315
+Foreign_Exchange_Reserve_change_yryr% : -0.5837490985572271
+--------------------
+

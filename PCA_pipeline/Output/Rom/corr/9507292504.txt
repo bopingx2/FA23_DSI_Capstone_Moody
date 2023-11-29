@@ -1,0 +1,10 @@
+--------------------
+id : 9507292504
+explain variance ratio : 0.2167552588721616
+Weight :
+Risk_Premium : -0.020741826704336695
+Stock_Prices_mom%_change : -0.7240621900893995
+Current_Account_Balance_change_yryr% : -0.13301807184055978
+Velocity_of_Money_mo12m%_change : -0.676468708863706
+--------------------
+

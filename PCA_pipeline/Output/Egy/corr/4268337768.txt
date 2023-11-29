@@ -1,0 +1,11 @@
+--------------------
+id : 4268337768
+explain variance ratio : 0.22689993054022348
+Weight :
+Term_Premium : -0.7228680267358978
+Stock_Prices_mom%_change : -0.17009378446760282
+One-Day_Repo_Rate_AVG : -0.4416735849169302
+Bank_Lending_mo12m%_change : -0.22127790091051264
+Velocity_of_Money_mo12m%_change : -0.4522062088955704
+--------------------
+

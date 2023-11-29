@@ -140,7 +140,8 @@ def PCA_module(df: pd.DataFrame, Country: str, Country_abbr: str, df_IMF = None)
                 plt.title("correlation : "+ str(round(corr_coef[i], 3)))
             else:
                 plt.title("number of eigenvectors: " + str(i+1) + 
-                          "\nexplained variance ratio:" + str(round(pca.explained_variance_ratio_[i], 3)))
+                          ", No. series:" + str(len(df.columns)-1) + "\n explained variance ratio:" + str(round(pca.explained_variance_ratio_[i], 3))
+                                                              )
             plt.xlabel("Date")
             x_major_locator = plt.MultipleLocator(24)
             ax = plt.gca()
@@ -155,8 +156,8 @@ def PCA_module(df: pd.DataFrame, Country: str, Country_abbr: str, df_IMF = None)
     
 
 if __name__ == "__main__":
-    Country = "Romania" # Poland, Hungary
-    Country_abbr = "Rom" # Pol, Hun
+    Country = "Egypt" # Poland, Hungary
+    Country_abbr = "Egy" # Pol, Hun
 
     ## empty outputs
     if os.path.exists("./PCA_pipeline/Output/" + Country_abbr):

@@ -1,0 +1,14 @@
+--------------------
+id : 8533386429
+explain variance ratio : 0.23180027300041883
+Weight :
+Term_Premium : -0.5121363753245988
+Stock_Prices_mom%_change : -0.22757432481962525
+Stock_Prices_mom24mma%_change : -0.5081085897917241
+Stock_Market_Volatility : -0.14473930334758944
+REER : -0.03976041289095483
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.4352260794443595
+Current_Account_Balance_change_yryr% : -0.0855822651188859
+Broad_Money_mo12m%_change : -0.45659117384586856
+--------------------
+

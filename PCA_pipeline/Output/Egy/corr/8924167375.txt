@@ -1,0 +1,12 @@
+--------------------
+id : 8924167375
+explain variance ratio : 0.22396140304773118
+Weight :
+Risk_Premium : -0.2739286521354261
+Stock_Market_Volatility : -0.5927462170650803
+One-Day_Repo_Rate_EOP : -0.1083472233163616
+Current_Account_Balance_over_GDP : -0.42399792136075887
+Portfolio_Flows : -0.6044959300095687
+Broad_Money_mo12m%_change : -0.12917557113309946
+--------------------
+

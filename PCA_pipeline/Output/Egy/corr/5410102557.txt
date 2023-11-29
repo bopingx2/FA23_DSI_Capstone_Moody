@@ -1,0 +1,12 @@
+--------------------
+id : 5410102557
+explain variance ratio : 0.224593784945017
+Weight :
+Risk_Premium : -0.3155545308318525
+Stock_Market_Volatility : -0.5514312070242963
+One-Day_Repo_Rate_AVG : -0.1360620104600066
+Current_Account_Balance_over_GDP : -0.5096052733259799
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.12676346678472478
+Portfolio_Flows : -0.5496085699730952
+--------------------
+

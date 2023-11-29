@@ -1,0 +1,13 @@
+--------------------
+id : 8840718679
+explain variance ratio : 0.23509239560972872
+Weight :
+Term_Premium : -0.48713797529902914
+Risk_Premium : -0.06634656599174571
+Stock_Prices_mom24mma%_change : -0.5054293491293463
+One-Day_Repo_Rate_EOP : -0.04452021052015187
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : -0.031994770543808615
+Broad_Money_mo12m%_change : -0.5517751430133124
+Foreign_Exchange_Reserve_over_GDP : -0.4420117377480834
+--------------------
+

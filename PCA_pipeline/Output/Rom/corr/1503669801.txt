@@ -1,0 +1,13 @@
+--------------------
+id : 1503669801
+explain variance ratio : 0.289321534755439
+Weight :
+Risk_Premium : -0.5106586279310927
+Stock_Prices_mom24mma%_change : -0.6220538981566064
+Stock_Market_Volatility : -0.15945312437064593
+Current_Account_Balance_change_yryr% : -0.048788871952759646
+Foreign_Exchange_Reserve_change_yryr% : -0.29930491445131746
+Portfolio_Flows : -0.18643978946813897
+Velocity_of_Money_mo12m%_change : -0.447356495088745
+--------------------
+

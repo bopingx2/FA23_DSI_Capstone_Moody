@@ -1,0 +1,12 @@
+--------------------
+id : 4432640836
+explain variance ratio : 0.20864957959165953
+Weight :
+Risk_Premium : -0.4745000237826703
+Stock_Market_Volatility : -0.3101099681709306
+One-Day_Repo_Rate_EOP : -0.13579003881890767
+Current_Account_Balance_over_GDP : -0.6683676266927163
+Foreign_Exchange_Reserve_change_yryr% : -0.43605174463360424
+Broad_Money_mo12m%_change : -0.15292544595313506
+--------------------
+

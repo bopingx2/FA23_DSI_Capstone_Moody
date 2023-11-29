@@ -1,0 +1,13 @@
+--------------------
+id : 2000169198
+explain variance ratio : 0.27103693441557763
+Weight :
+Term_Premium : -0.2953034692837212
+Stock_Prices_mom%_change : -0.263530078940708
+One-Day_Repo_Rate_EOP : -0.26430029694718493
+Current_Account_Balance_change_yryr% : -0.07521388793385922
+Broad_Money_mo12m%_change : -0.36951920906672375
+Foreign_Exchange_Reserve_change_yryr% : -0.6166095289998871
+Foreign_Exchange_Reserve_over_GDP : -0.5010830524925439
+--------------------
+

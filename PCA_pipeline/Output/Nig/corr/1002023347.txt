@@ -1,0 +1,12 @@
+--------------------
+id : 1002023347
+explain variance ratio : 0.30057991638450693
+Weight :
+Term_Premium : -0.4033460155809514
+Stock_Prices_mom%_change : -0.22520956775237322
+Current_Account_Balance_change_yryr% : -0.10149465310885901
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : -0.4878070410494314
+Portfolio_Flows : -0.4525692245638957
+Foreign_Exchange_Reserve_change_yryr% : -0.5775091907305938
+--------------------
+

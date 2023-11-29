@@ -1,0 +1,12 @@
+--------------------
+id : 1217595521
+explain variance ratio : 0.2895758143075372
+Weight :
+Term_Premium : -0.4803912527362177
+Stock_Prices_mom%_change : -0.3101175081732592
+Stock_Market_Volatility : -0.2655517122619744
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.4841921534760596
+Portfolio_Flows : -0.4704574202664331
+Foreign_Exchange_Reserve_change_yryr% : -0.3830945545973458
+--------------------
+

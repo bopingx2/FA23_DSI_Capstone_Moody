@@ -1,0 +1,11 @@
+--------------------
+id : 4783498606
+explain variance ratio : 0.20495355741150628
+Weight :
+Term_Premium : 0.16289855470195505
+Stock_Prices_mom%_change : 0.39077696767467096
+REER : 0.3433695552127628
+Broad_Money_mo12m%_change : 0.06703852694990858
+Portfolio_Flows : 0.8356797274484873
+--------------------
+

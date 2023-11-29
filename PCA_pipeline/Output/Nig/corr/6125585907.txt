@@ -1,0 +1,12 @@
+--------------------
+id : 6125585907
+explain variance ratio : 0.3485719882477794
+Weight :
+Term_Premium : -0.40000204256201644
+Risk_Premium : -0.04987673159481232
+Stock_Prices_mom%_change : -0.30573977483621656
+Current_Account_Balance_over_GDP : -0.49159113767015844
+Broad_Money_mo12m%_change : -0.5374180673909765
+Portfolio_Flows : -0.46211886120417284
+--------------------
+

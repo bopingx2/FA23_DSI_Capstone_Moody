@@ -1,0 +1,13 @@
+--------------------
+id : 1525037528
+explain variance ratio : 0.3321642821570535
+Weight :
+Term_Premium : -0.3288253877973178
+Stock_Prices_mom%_change : -0.29294689971638943
+Stock_Market_Volatility : -0.08380459580031462
+Current_Account_Balance_over_GDP : -0.4898298406024577
+Broad_Money_mo12m%_change : -0.47081129498246915
+Portfolio_Flows : -0.43938945849910394
+Foreign_Exchange_Reserve_change_yryr% : -0.3799646345930224
+--------------------
+

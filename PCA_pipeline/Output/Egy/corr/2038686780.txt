@@ -1,0 +1,13 @@
+--------------------
+id : 2038686780
+explain variance ratio : 0.22968209646146068
+Weight :
+Risk_Premium : -0.33509592331732285
+Stock_Prices_mom%_change : -0.21686499852024965
+Stock_Prices_mom24mma%_change : -0.5286288590530354
+One-Day_Repo_Rate_AVG : -0.19655747530747075
+Current_Account_Balance_over_GDP : -0.5368618713700225
+Portfolio_Flows : -0.3965056690170572
+Bank_Lending_mo12m%_change : -0.2777761119613704
+--------------------
+

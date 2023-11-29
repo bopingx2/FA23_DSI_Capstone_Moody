@@ -1,0 +1,12 @@
+--------------------
+id : 2348164793
+explain variance ratio : 0.2111534594009568
+Weight :
+Risk_Premium : -0.22904001536151272
+Stock_Market_Volatility : -0.6780542735604664
+One-Day_Repo_Rate_EOP : -0.11968865126272826
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.0984645887134144
+Portfolio_Flows : -0.6369532568834234
+Bank_Lending_mo12m%_change : -0.24094184680871433
+--------------------
+

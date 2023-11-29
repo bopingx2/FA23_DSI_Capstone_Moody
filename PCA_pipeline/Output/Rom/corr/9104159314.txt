@@ -1,0 +1,11 @@
+--------------------
+id : 9104159314
+explain variance ratio : 0.2016169086431002
+Weight :
+Term_Premium : -0.05665460477868134
+Stock_Market_Volatility : -0.5751523953984686
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : -0.5559279599411291
+REER : -0.37212429573000083
+Bank_Lending_mo12m%_change : -0.467394469060044
+--------------------
+

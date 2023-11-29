@@ -1,0 +1,12 @@
+--------------------
+id : 4005745861
+explain variance ratio : 0.20391682624690324
+Weight :
+Risk_Premium : 0.18491087603145662
+Stock_Prices_mom%_change : 0.157737612303964
+One-Day_Repo_Rate_AVG : 0.5051632677147602
+Current_Account_Balance_over_GDP : 0.4809800777313259
+Portfolio_Flows : 0.6463817801271127
+Bank_Lending_mo12m%_change : 0.1912737454198579
+--------------------
+

@@ -1,0 +1,11 @@
+--------------------
+id : 9758671520
+explain variance ratio : 0.2006823321601408
+Weight :
+Risk_Premium : -0.6284866379287684
+Stock_Prices_mom%_change : -0.2489447514899309
+One-Day_Repo_Rate_AVG : -0.1773280323111467
+Portfolio_Flows : -0.6673956354915601
+Bank_Lending_mo12m%_change : -0.25723314586981927
+--------------------
+

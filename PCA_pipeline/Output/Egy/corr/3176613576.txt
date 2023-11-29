@@ -1,0 +1,12 @@
+--------------------
+id : 3176613576
+explain variance ratio : 0.2415551145073078
+Weight :
+Risk_Premium : -0.5911237586678746
+Stock_Market_Volatility : -0.2007749767532397
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : -0.12838217490536108
+Foreign_Exchange_Reserve_over_GDP : -0.569557839434858
+Portfolio_Flows : -0.3145932259166781
+Bank_Lending_mo12m%_change : -0.4128136353856359
+--------------------
+

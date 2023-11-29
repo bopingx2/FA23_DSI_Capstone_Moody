@@ -1,0 +1,15 @@
+--------------------
+id : 6486061013
+explain variance ratio : 0.24160204927282442
+Weight :
+Term_Premium : -0.27916993976669513
+Stock_Prices_mom%_change : -0.2717428743752156
+Stock_Market_Volatility : -0.008717571732379963
+One-Day_Repo_Rate_AVG : -0.1641443383780475
+Current_Account_Balance_change_yryr% : -0.07344353065371778
+Broad_Money_mo12m%_change : -0.40189256603928153
+Portfolio_Flows : -0.44468450265332476
+Foreign_Exchange_Reserve_change_yryr% : -0.5235388424732581
+Foreign_Exchange_Reserve_over_GDP : -0.4271437483654447
+--------------------
+

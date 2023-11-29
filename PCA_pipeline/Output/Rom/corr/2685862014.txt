@@ -1,0 +1,13 @@
+--------------------
+id : 2685862014
+explain variance ratio : 0.21398809378773073
+Weight :
+Risk_Premium : -0.5780278762502634
+Stock_Prices_mom%_change : -0.0811070263219803
+Stock_Prices_mom24mma%_change : -0.37582926561626256
+Stock_Market_Volatility : -0.15932405541018743
+REER : -0.3693126305888085
+Portfolio_Flows : -0.21428077225636588
+Velocity_of_Money_mo12m%_change : -0.5571046262252707
+--------------------
+

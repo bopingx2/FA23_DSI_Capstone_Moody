@@ -1,0 +1,12 @@
+--------------------
+id : 2412462464
+explain variance ratio : 0.20189992007980997
+Weight :
+Risk_Premium : -0.1353380187873466
+Stock_Market_Volatility : -0.12408149346733924
+Current_Account_Balance_change_yryr% : -0.4605616034594792
+Bank_Lending_mo12m%_change : -0.05497928858643934
+Foreign_Exchange_Reserve_change_yryr% : -0.5342720946256235
+Portfolio_Flows : -0.6824229039234692
+--------------------
+

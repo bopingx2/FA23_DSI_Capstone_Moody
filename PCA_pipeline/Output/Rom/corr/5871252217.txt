@@ -1,0 +1,13 @@
+--------------------
+id : 5871252217
+explain variance ratio : 0.21000127846269842
+Weight :
+Risk_Premium : -0.6330068667227136
+Stock_Prices_mom%_change : -0.10626113014873073
+Stock_Prices_mom24mma%_change : -0.43468107996420413
+Stock_Market_Volatility : -0.18227571884679225
+REER : -0.32328031036396254
+Current_Account_Balance_over_GDP : -0.027724955005345275
+Velocity_of_Money_mo12m%_change : -0.5104507495756831
+--------------------
+

@@ -1,0 +1,12 @@
+--------------------
+id : 5742649792
+explain variance ratio : 0.23037514207477014
+Weight :
+Risk_Premium : 0.09132079792818681
+Stock_Prices_mom%_change : 0.5607303508922021
+Stock_Prices_mom24mma%_change : 0.699546547162567
+One-Day_Repo_Rate_AVG : 0.3583963764305734
+REER : 0.20342708769795384
+Portfolio_Flows : 0.1343356659981339
+--------------------
+

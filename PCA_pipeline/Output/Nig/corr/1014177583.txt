@@ -1,0 +1,11 @@
+--------------------
+id : 1014177583
+explain variance ratio : 0.44099160196747295
+Weight :
+Term_Premium : -0.3685080184212547
+Stock_Market_Volatility : -0.22048263084112774
+One-Day_Repo_Rate_EOP : -0.6165656849512187
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : -0.6340356917325527
+Portfolio_Flows : -0.1828517093342954
+--------------------
+

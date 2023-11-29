@@ -1,0 +1,11 @@
+--------------------
+id : 8139023757
+explain variance ratio : 0.30520267403537044
+Weight :
+Term_Premium : -0.3219735840482569
+Stock_Prices_mom%_change : -0.16052137859118687
+One-Day_Repo_Rate_AVG : -0.7082532504400232
+REER : -0.5452511066084093
+Portfolio_Flows : -0.2676648317836171
+--------------------
+

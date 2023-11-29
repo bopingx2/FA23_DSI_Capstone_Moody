@@ -1,0 +1,12 @@
+--------------------
+id : 9880893563
+explain variance ratio : 0.43699013826888383
+Weight :
+Term_Premium : 0.1581959109660457
+Stock_Prices_mom%_change : 0.2292481066847757
+Stock_Prices_mom24mma%_change : 0.5085481425683223
+One-Day_Repo_Rate_AVG : 0.4278551527381039
+Portfolio_Flows : 0.4516225324853467
+Broad_Money_mo12m%_change : 0.5260942904578549
+--------------------
+

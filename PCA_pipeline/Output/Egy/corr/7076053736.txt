@@ -1,0 +1,13 @@
+--------------------
+id : 7076053736
+explain variance ratio : 0.2442015868211676
+Weight :
+Risk_Premium : 0.394012279751754
+Stock_Prices_mom24mma%_change : 0.05378217507074384
+One-Day_Repo_Rate_EOP : 0.32226628163574533
+Foreign_Exchange_Reserve_over_GDP : 0.6275146820282694
+Portfolio_Flows : 0.18303881138976152
+Bank_Lending_mo12m%_change : 0.3447863626253619
+Velocity_of_Money_mo12m%_change : 0.4380076783364779
+--------------------
+

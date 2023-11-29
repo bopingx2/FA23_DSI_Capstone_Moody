@@ -1,0 +1,14 @@
+--------------------
+id : 7003078516
+explain variance ratio : 0.2006703510168726
+Weight :
+Risk_Premium : -0.3299620034249555
+Stock_Prices_mom%_change : -0.22283521473670984
+Stock_Prices_mom24mma%_change : -0.5315602557568087
+One-Day_Repo_Rate_EOP : -0.1957704856270639
+Current_Account_Balance_over_GDP : -0.5322456093303638
+Portfolio_Flows : -0.4020636716827319
+Bank_Lending_mo12m%_change : -0.27460903146442184
+Velocity_of_Money_mo12m%_change : -0.015376928362228079
+--------------------
+

@@ -1,0 +1,13 @@
+--------------------
+id : 2733705211
+explain variance ratio : 0.33699271777385875
+Weight :
+Term_Premium : -0.28934649657837835
+Stock_Prices_mom24mma%_change : -0.45971930889246826
+One-Day_Repo_Rate_AVG : -0.34171426890998136
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : -0.35183951250629336
+Current_Account_Balance_over_GDP : -0.31521676731870973
+Broad_Money_mo12m%_change : -0.30130056532225635
+Foreign_Exchange_Reserve_change_yryr% : -0.5236730246532963
+--------------------
+

@@ -1,0 +1,14 @@
+--------------------
+id : 8011377173
+explain variance ratio : 0.30416027789392885
+Weight :
+Term_Premium : 0.2525298904808588
+Stock_Prices_mom%_change : 0.1886260101111874
+Stock_Prices_mom24mma%_change : 0.5500970284366745
+REER : 0.13990249056099452
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : 0.4099071637451248
+Current_Account_Balance_change_yryr% : 0.11638273808441713
+Portfolio_Flows : 0.3733012112958944
+Foreign_Exchange_Reserve_change_yryr% : 0.5074907055253829
+--------------------
+

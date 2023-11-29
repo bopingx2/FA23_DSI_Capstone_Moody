@@ -1,0 +1,12 @@
+--------------------
+id : 6198485000
+explain variance ratio : 0.396371669503249
+Weight :
+Term_Premium : -0.338986051670594
+Stock_Prices_mom%_change : -0.16932579673527293
+Stock_Prices_mom24mma%_change : -0.39752859724015677
+One-Day_Repo_Rate_AVG : -0.5557977582050377
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.5623535462362084
+Portfolio_Flows : -0.27062074332695635
+--------------------
+

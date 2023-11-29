@@ -1,0 +1,12 @@
+--------------------
+id : 1031615709
+explain variance ratio : 0.29065629351111383
+Weight :
+Term_Premium : -0.35383454010169446
+Stock_Market_Volatility : -0.2092116598387509
+REER : -0.3266589529293463
+One-Day_Repo_Rate_EOP : -0.6412914310500812
+Portfolio_Flows : -0.35501531446714274
+Foreign_Exchange_Reserve_change_yryr% : -0.4324753808544184
+--------------------
+
