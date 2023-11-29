@@ -18,7 +18,8 @@ library(janitor)
 read_csv("../FCI_app/data/Egypt_DataFrame.csv")
 ```
 ```{r}
-hugary_fci <- read_csv("../FCI_app/data/hungary_fci.csv") 
+hungary_fci <- read_csv("../FCI_app/data/hungary_fci.csv") 
+poland_fci <- read_csv("../FCI_app/data/poland_fci.csv") 
 ```
 ```{r}
 hungary_fci <- hugary_fci %>%
@@ -28,4 +29,45 @@ hungary_fci <- hugary_fci %>%
   )
 write_csv(hungary_fci, "../FCI_app/data/hungary_fci.csv")
 ```
+
+```{r}
+poland_fci <- poland_fci %>%
+  clean_names() %>%
+  mutate(
+    date = as.Date(paste0(date, "-01"), format = "%Y-%m-%d")
+  )
+write_csv(poland_fci, "../FCI_app/data/poland_fci.csv")
+```
+
+```{r}
+imf_fci_hungary_raw <- read_csv("../PCA-module/IMF_FCI_Hungary.csv") %>%
+  clean_names()
+
+imf_fci_hungary <- imf_fci_hungary_raw %>%
+  clean_names() %>%
+  mutate(
+    date = as.Date(paste0(date, "-01"), format = "%Y-%m-%d")
+  )
+
+
+hungary_fci <- right_join(imf_fci_hungary, hungary_fci)
+write_csv(hungary_fci, "../FCI_app/data/hungary_fci.csv")
+```
+
+
+```{r}
+imf_fci_poland_raw <- read_csv("../PCA-module/IMF_FCI_Poland.csv") %>%
+  clean_names()
+
+imf_fci_poland <- imf_fci_poland_raw %>%
+  clean_names() %>%
+  mutate(
+    date = as.Date(paste0(date, "-01"), format = "%Y-%m-%d")
+  )
+
+
+poland_fci <- right_join(imf_fci_poland, poland_fci)
+write_csv(poland_fci, "../FCI_app/data/poland_fci.csv")
+```
+
 

@@ -39,11 +39,13 @@ romania_data <- read_csv(paste0(wd, '/../FCI_app/data/Romania_DataFrame.csv')) %
 
 hungary_fci <- read_csv(paste0(wd, "/../FCI_app/data/hungary_fci.csv")) %>%
   mutate(country = 'Hungary')
+poland_fci <- read_csv(paste0(wd, "/../FCI_app/data/poland_fci.csv")) %>%
+  mutate(country = 'Poland')
 
 combined_data <- bind_rows(egypt_data, hungary_data, nigeria_data, poland_data, 
                            romania_data)
 
-combined_fci <- bind_rows(hungary_fci)
+combined_fci <- bind_rows(hungary_fci, poland_fci)
 
 
 ui <- dashboardPage(
@@ -242,9 +244,13 @@ server <- function(input, output, session) {
   output$fciPlot <- renderPlot({
     ggplot(
       combined_fci %>% filter(country == input$country),
-      aes(x = date, y = fci)
+      aes(x = date, y = fci, color = "Custom")
     ) +
       geom_line() +
+      geom_line(aes(y = imf_fci, color = "IMF")) +
+      scale_color_manual(name='FCI',
+                         breaks=c('Custom', 'IMF'),
+                         values=c('Custom'='black', 'IMF'='red')) +
       labs(
         title = paste("Custom FCI over time for", input$country),
         x = "Date",
