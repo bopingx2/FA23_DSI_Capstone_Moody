@@ -13,35 +13,35 @@ library(see)
 
 wd = getwd()
 
-egypt_data <- read_csv(paste0(wd, '/../FCI_app/data/Egypt_DataFrame.csv')) %>%
+egypt_data <- read_csv('data/Egypt_DataFrame.csv') %>%
   clean_names() %>%
   mutate(
     country = 'Egypt'
   )
-hungary_data <- read_csv(paste0(wd, '/../FCI_app/data/Hungary_DataFrame.csv')) %>% 
+hungary_data <- read_csv('data/Hungary_DataFrame.csv') %>% 
   clean_names() %>%
   mutate(
     country = 'Hungary'
   )
-nigeria_data <- read_csv(paste0(wd, '/../FCI_app/data/Nigeria_DataFrame.csv')) %>% 
+nigeria_data <- read_csv('data/Nigeria_DataFrame.csv') %>% 
   clean_names() %>%
   mutate(
     country = 'Nigeria'
   )
-poland_data <- read_csv(paste0(wd, '/../FCI_app/data/Poland_DataFrame.csv')) %>% 
+poland_data <- read_csv('data/Poland_DataFrame.csv') %>% 
   clean_names() %>%
   mutate(
     country = 'Poland'
   )
-romania_data <- read_csv(paste0(wd, '/../FCI_app/data/Romania_DataFrame.csv')) %>% 
+romania_data <- read_csv('data/Romania_DataFrame.csv') %>% 
   clean_names() %>%
   mutate(
     country = 'Romania'
   )
 
-hungary_fci <- read_csv(paste0(wd, "/../FCI_app/data/hungary_fci.csv")) %>%
+hungary_fci <- read_csv("data/hungary_fci.csv") %>%
   mutate(country = 'Hungary')
-poland_fci <- read_csv(paste0(wd, "/../FCI_app/data/poland_fci.csv")) %>%
+poland_fci <- read_csv("data/poland_fci.csv") %>%
   mutate(country = 'Poland')
 
 combined_data <- bind_rows(egypt_data, hungary_data, nigeria_data, poland_data, 
