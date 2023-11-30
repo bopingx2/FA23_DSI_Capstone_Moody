@@ -76,7 +76,8 @@ ui <- dashboardPage(
         plotlyOutput("allCountriesPlot", height = "500px"),
         downloadButton("downloadAllCountriesPlot", "Download Compare Countries Plot")
       ),
-      tabPanel("FCI plot", 
+      tabPanel("FCI plot",
+               prettyCheckbox("imf", "Show IMF FCI"),
                plotOutput("fciPlot"),
                downloadButton("downloadFciPlot", "Download FCI Plot")
       )
@@ -159,10 +160,17 @@ server <- function(input, output, session) {
   
   output$summaryPlot <- renderPlot({
     req(selected_data())
-    ggplot(selected_data(), aes(x = "", y = !!sym(input$var))) +
+    ggplot(
+      selected_data(), 
+      aes(x = !!sym(input$var))
+      ) +
       geom_boxplot() +
-      labs(title = paste("Distribution of", input$var, "in", input$country),
-           y = var_name())
+      labs(
+        title = paste("Distribution of", input$var, "in", input$country),
+        y = NULL,
+        x = var_name(),
+        ) +
+      theme_minimal()
   })
   
   output$selectedTable <- renderDT({
@@ -280,10 +288,11 @@ server <- function(input, output, session) {
       aes(x = date, y = fci, color = "Custom")
     ) +
       geom_line() +
-      geom_line(aes(y = imf_fci, color = "IMF")) +
-      scale_color_manual(name='FCI',
-                         breaks=c('Custom', 'IMF'),
-                         values=c('Custom'='black', 'IMF'='red')) +
+      scale_color_manual(
+        name='FCI',
+        breaks=c('Custom', 'IMF'),
+        values=c('Custom'='black', 'IMF'='red')
+        ) +
       labs(
         title = paste("Custom FCI over time for", input$country),
         x = "Date",
@@ -293,6 +302,10 @@ server <- function(input, output, session) {
     
     if(input$smooth) {
       p <- p + geom_smooth(se = FALSE)
+    }
+    
+    if(input$imf){
+      p <- p + geom_line(aes(y = imf_fci, color = "IMF")) 
     }
     
     p
