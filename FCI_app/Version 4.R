@@ -9,6 +9,7 @@ library(plotly)
 library(shinydashboard)
 library(DT)
 library(shinythemes)
+
 wd = getwd()
 
 egypt_data <- read_csv(paste0(wd, '/../FCI_app/data/Egypt_DataFrame.csv')) %>%
