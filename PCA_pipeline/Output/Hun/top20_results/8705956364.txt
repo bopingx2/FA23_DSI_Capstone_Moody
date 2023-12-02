@@ -1,0 +1,12 @@
+--------------------
+id : 8705956364
+corr_coef : 0.24011857325016012
+explain variance ratio : 0.4554792550971907
+Weight :
+Term_Premium : -0.367431460266636
+Stock_Market_Volatility : -0.13013809387840114
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.5804886821824642
+Bank_Lending_mo12m%_change : -0.4889555586010483
+Foreign_Exchange_Reserve_over_GDP : -0.5215491828190576
+--------------------
+
