@@ -1,0 +1,13 @@
+--------------------
+id : 8567522020
+corr_coef : 0.8475705857724118
+explain variance ratio : 0.24280528131695253
+Weight :
+Term_Premium : -0.31612413976959375
+Risk_Premium : -0.6772769940227381
+Stock_Prices_mom24mma%_change : -0.6343521892756625
+REER : -0.09122519835115733
+Current_Account_Balance_over_GDP : -0.15950807268578313
+Broad_Money_mo12m%_change : -0.0720682975897972
+--------------------
+
