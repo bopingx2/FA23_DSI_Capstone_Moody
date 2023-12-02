@@ -9,41 +9,45 @@ library(plotly)
 library(shinydashboard)
 library(DT)
 library(shinythemes)
+library(see)
+
 wd = getwd()
 
-egypt_data <- read_csv(paste0(wd, '/../FCI_app/data/Egypt_DataFrame.csv')) %>%
+egypt_data <- read_csv('data/Egypt_DataFrame.csv') %>%
   clean_names() %>%
   mutate(
     country = 'Egypt'
   )
-hungary_data <- read_csv(paste0(wd, '/../FCI_app/data/Hungary_DataFrame.csv')) %>% 
+hungary_data <- read_csv('data/Hungary_DataFrame.csv') %>% 
   clean_names() %>%
   mutate(
     country = 'Hungary'
   )
-nigeria_data <- read_csv(paste0(wd, '/../FCI_app/data/Nigeria_DataFrame.csv')) %>% 
+nigeria_data <- read_csv('data/Nigeria_DataFrame.csv') %>% 
   clean_names() %>%
   mutate(
     country = 'Nigeria'
   )
-poland_data <- read_csv(paste0(wd, '/../FCI_app/data/Poland_DataFrame.csv')) %>% 
+poland_data <- read_csv('data/Poland_DataFrame.csv') %>% 
   clean_names() %>%
   mutate(
     country = 'Poland'
   )
-romania_data <- read_csv(paste0(wd, '/../FCI_app/data/Romania_DataFrame.csv')) %>% 
+romania_data <- read_csv('data/Romania_DataFrame.csv') %>% 
   clean_names() %>%
   mutate(
     country = 'Romania'
   )
 
-hungary_fci <- read_csv(paste0(wd, "/../FCI_app/data/hungary_fci.csv")) %>%
+hungary_fci <- read_csv("data/hungary_fci.csv") %>%
   mutate(country = 'Hungary')
+poland_fci <- read_csv("data/poland_fci.csv") %>%
+  mutate(country = 'Poland')
 
 combined_data <- bind_rows(egypt_data, hungary_data, nigeria_data, poland_data, 
                            romania_data)
 
-combined_fci <- bind_rows(hungary_fci)
+combined_fci <- bind_rows(hungary_fci, poland_fci)
 
 
 ui <- dashboardPage(
@@ -72,7 +76,8 @@ ui <- dashboardPage(
         plotlyOutput("allCountriesPlot", height = "500px"),
         downloadButton("downloadAllCountriesPlot", "Download Compare Countries Plot")
       ),
-      tabPanel("FCI plot", 
+      tabPanel("FCI plot",
+               prettyCheckbox("imf", "Show IMF FCI"),
                plotOutput("fciPlot"),
                downloadButton("downloadFciPlot", "Download FCI Plot")
       )
@@ -155,10 +160,17 @@ server <- function(input, output, session) {
   
   output$summaryPlot <- renderPlot({
     req(selected_data())
-    ggplot(selected_data(), aes(x = "", y = !!sym(input$var))) +
+    ggplot(
+      selected_data(), 
+      aes(x = !!sym(input$var))
+      ) +
       geom_boxplot() +
-      labs(title = paste("Distribution of", input$var, "in", input$country),
-           y = var_name())
+      labs(
+        title = paste("Distribution of", input$var, "in", input$country),
+        y = NULL,
+        x = var_name(),
+        ) +
+      theme_minimal()
   })
   
   output$selectedTable <- renderDT({
@@ -230,6 +242,7 @@ server <- function(input, output, session) {
       aes(x = date, y = !!sym(input$var), color = country)
     ) +
       geom_line() +
+      scale_color_okabeito() +
       labs(
         title = paste(var_name(), "over time")
       ) +
@@ -272,9 +285,14 @@ server <- function(input, output, session) {
     req(input$country)
     p <- ggplot(
       combined_fci %>% filter(country == input$country),
-      aes(x = date, y = fci)
+      aes(x = date, y = fci, color = "Custom")
     ) +
       geom_line() +
+      scale_color_manual(
+        name='FCI',
+        breaks=c('Custom', 'IMF'),
+        values=c('Custom'='black', 'IMF'='red')
+        ) +
       labs(
         title = paste("Custom FCI over time for", input$country),
         x = "Date",
@@ -284,6 +302,10 @@ server <- function(input, output, session) {
     
     if(input$smooth) {
       p <- p + geom_smooth(se = FALSE)
+    }
+    
+    if(input$imf){
+      p <- p + geom_line(aes(y = imf_fci, color = "IMF")) 
     }
     
     p
@@ -296,9 +318,13 @@ server <- function(input, output, session) {
     content = function(file) {
       p <- ggplot(
         combined_fci %>% filter(country == input$country),
-        aes(x = date, y = fci)
+        aes(x = date, y = fci, color = "Custom")
       ) +
         geom_line() +
+        geom_line(aes(y = imf_fci, color = "IMF")) +
+        scale_color_manual(name='FCI',
+                           breaks=c('Custom', 'IMF'),
+                           values=c('Custom'='black', 'IMF'='red')) +
         labs(
           title = paste("Custom FCI over time for", input$country),
           x = "Date",

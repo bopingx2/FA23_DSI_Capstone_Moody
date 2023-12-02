@@ -1,0 +1,13 @@
+name: current_app
+title: current_app
+username:
+account: mwreed1
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 10680009
+bundleId: 7990529
+url: https://mwreed1.shinyapps.io/current_app/
+when: 1701367079.24942
+lastSyncTime: 1701367079.24943
+asMultiple: FALSE
+asStatic: FALSE

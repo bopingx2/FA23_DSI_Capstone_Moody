@@ -1,0 +1,13 @@
+name: moodys_fci
+title: moodys_fci
+username:
+account: mwreed1
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 10679954
+bundleId: 7990519
+url: https://mwreed1.shinyapps.io/moodys_fci/
+when: 1701366908.06614
+lastSyncTime: 1701366908.06615
+asMultiple: FALSE
+asStatic: FALSE
