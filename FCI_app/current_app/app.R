@@ -54,40 +54,69 @@ combined_data <- bind_rows(egypt_data, hungary_data, nigeria_data, poland_data,
 combined_fci <- bind_rows(hungary_fci, poland_fci, romania_fci, egypt_fci)
 
 
-ui <- dashboardPage(
-  dashboardHeader(title = "Financial Data Explorer"),
-  dashboardSidebar(
-    selectInput("country", "Select Country", choices = unique(combined_data$country)),
-    varSelectInput("var", "Choose variable", combined_data %>% select(-date, -country)),
-    dateRangeInput("dateRange", "Select Date Range", start = min(combined_data$date), end = max(combined_data$date)),
-    prettyCheckbox("smooth", "Apply smooth line"),
-    actionButton("showData", "Show Complete Data")
-  ),
-  dashboardBody(
-    tabsetPanel(
-      tabPanel("Plot", plotlyOutput("explorePlot", height = "500px"),downloadButton("downloadPlot", "Download Plot")),
-      tabPanel("Selected Data", DTOutput("selectedTable"),downloadButton("downloadData", "Download Selected Data")),
-      tabPanel("Data Summary", DTOutput("summaryTable"), plotOutput("summaryPlot")),
-      tabPanel(
-        "Compare Countries", 
-        checkboxGroupInput(
-          "countries",
-          "Choose which countries to display:",
-          choices = c("Egypt", "Nigeria", "Hungary", "Romania", "Poland"),
-          selected = c("Egypt", "Nigeria", "Hungary", "Romania", "Poland"),
-          inline = T
-        ),
-        plotlyOutput("allCountriesPlot", height = "500px"),
-        downloadButton("downloadAllCountriesPlot", "Download Compare Countries Plot")
-      ),
-      tabPanel("FCI plot",
-               prettyCheckbox("imf", "Show IMF FCI"),
-               plotOutput("fciPlot"),
-               downloadButton("downloadFciPlot", "Download FCI Plot")
-      )
-      
-    )
-  )
+ui <- fluidPage(
+  navbarPage("Financial Data Explorer", theme = shinytheme("lumen")),
+    tabPanel("Custom FCI", fluid = TRUE, icon = icon("chart-line"),
+             mainPanel(
+                 h2("Investigate our custom FCIs over 5 different emerging markets"),
+               fluidRow(
+                 column(10, offset = 2,
+                   checkboxGroupInput(
+                   "countries", "", inline = TRUE,
+                   choices = c("Egypt", "Nigeria", "Hungary", "Romania", "Poland"),
+                   selected = c("Egypt", "Nigeria", "Hungary", "Romania", "Poland")
+                 )
+                 ),
+                 plotOutput("fciPlot"),
+                 br(),
+                 h1("\n "),
+                 br(),
+                 h1("\n ")
+               ),
+               fluidRow(
+                 h4("Compare Poland and Hungary to their corresponding IMF FCI"),
+                 column(10, offset = 2,
+                        radioButtons("imfCountry", "", inline = TRUE,
+                              c("Poland" = "Poland",
+                                "Hungary" = "Hungary"))
+                        ),
+                 plotOutput("fciIMF")
+                 
+               )
+               )
+             )
+  # dashboardSidebar(
+  #   selectInput("country", "Select Country", choices = unique(combined_data$country)),
+  #   varSelectInput("var", "Choose variable", combined_data %>% select(-date, -country)),
+  #   dateRangeInput("dateRange", "Select Date Range", start = min(combined_data$date), end = max(combined_data$date)),
+  #   prettyCheckbox("smooth", "Apply smooth line"),
+  #   actionButton("showData", "Show Complete Data")
+  # ),
+  # dashboardBody(
+  #   tabsetPanel(
+  #     tabPanel("Plot", plotlyOutput("explorePlot", height = "500px"),downloadButton("downloadPlot", "Download Plot")),
+  #     tabPanel("Selected Data", DTOutput("selectedTable"),downloadButton("downloadData", "Download Selected Data")),
+  #     tabPanel("Data Summary", DTOutput("summaryTable"), plotOutput("summaryPlot")),
+  #     tabPanel(
+  #       "Compare Countries", 
+  #       checkboxGroupInput(
+  #         "countries",
+  #         "Choose which countries to display:",
+  #         choices = c("Egypt", "Nigeria", "Hungary", "Romania", "Poland"),
+  #         selected = c("Egypt", "Nigeria", "Hungary", "Romania", "Poland"),
+  #         inline = T
+  #       ),
+  #       plotlyOutput("allCountriesPlot", height = "500px"),
+  #       downloadButton("downloadAllCountriesPlot", "Download Compare Countries Plot")
+  #     ),
+  #     tabPanel("FCI plot",
+  #              prettyCheckbox("imf", "Show IMF FCI"),
+  #              plotOutput("fciPlot"),
+  #              downloadButton("downloadFciPlot", "Download FCI Plot")
+  #     )
+  #     
+  #   )
+  # )
 )
 
 server <- function(input, output, session) {
@@ -167,13 +196,13 @@ server <- function(input, output, session) {
     ggplot(
       selected_data(), 
       aes(x = !!sym(input$var))
-      ) +
+    ) +
       geom_boxplot() +
       labs(
         title = paste("Distribution of", input$var, "in", input$country),
         y = NULL,
         x = var_name(),
-        ) +
+      ) +
       theme_minimal()
   })
   
@@ -286,31 +315,65 @@ server <- function(input, output, session) {
   
   
   output$fciPlot <- renderPlot({
-    req(input$country)
+    req(input$countries)
     p <- ggplot(
-      combined_fci %>% filter(country == input$country),
-      aes(x = date, y = fci, color = "Custom")
+      combined_fci %>% filter(country %in% input$countries), 
+      aes(x = date, y = fci, color = country)
     ) +
       geom_line() +
+      scale_color_okabeito() +
+      scale_color_manual(
+        name='Country',
+        breaks=c('Egypt', 'Nigeria', "Romania", "Hungary", "Poland"),
+        values=c('Egypt' = "#E69F00", 'Nigeria' = "#009E73", "Romania" = "#D55E00", 
+                 "Hungary" = "#CC79A7", "Poland" = "#0072B2")
+      ) +
+      labs(
+        title = "Compare custom FCIs over time",
+        x = "Date",
+        y = "FCI",
+        color = "Country"
+      ) +
+      theme_minimal()
+    
+    # if(input$smooth) {
+    #   p <- p + geom_smooth(se = FALSE)
+    # }
+    # 
+    # if(input$imf){
+    #   p <- p + geom_line(aes(y = imf_fci, color = "IMF")) 
+    # }
+    
+    p
+  })
+  
+  output$fciIMF <- renderPlot({
+    req(input$imfCountry)
+    p <- ggplot(
+      combined_fci %>% filter(country == input$imfCountry),
+      aes(x = date, y = fci, color = "Custom")
+    ) +
+      geom_line() + 
+      geom_line(aes(y = imf_fci, color = "IMF")) +
       scale_color_manual(
         name='FCI',
         breaks=c('Custom', 'IMF'),
         values=c('Custom'='black', 'IMF'='red')
-        ) +
+      ) +
       labs(
-        title = paste("Custom FCI over time for", input$country),
+        title = paste("Custom FCI over time for", input$imfCountry),
         x = "Date",
         y = "FCI"
       ) +
       theme_minimal()
     
-    if(input$smooth) {
-      p <- p + geom_smooth(se = FALSE)
-    }
-    
-    if(input$imf){
-      p <- p + geom_line(aes(y = imf_fci, color = "IMF")) 
-    }
+    # if(input$smooth) {
+    #   p <- p + geom_smooth(se = FALSE)
+    # }
+    # 
+    # if(input$imf){
+    #   p <- p + geom_line(aes(y = imf_fci, color = "IMF")) 
+    # }
     
     p
   })
@@ -330,7 +393,7 @@ server <- function(input, output, session) {
                            breaks=c('Custom', 'IMF'),
                            values=c('Custom'='black', 'IMF'='red')) +
         labs(
-          title = paste("Custom FCI over time for", input$country),
+          title = paste("Custom FCI over time for", input$fciIMF),
           x = "Date",
           y = "FCI"
         ) +
