@@ -47,11 +47,13 @@ romania_fci <- read_csv("data/romania_fci.csv") %>%
   mutate(country = 'Romania')
 egypt_fci <- read_csv("data/egypt_fci.csv") %>%
   mutate(country = 'Egypt')
+nigeria_fci <- read_csv("data/nigeria_fci.csv") %>%
+  mutate(country = 'Nigeria')
 
 combined_data <- bind_rows(egypt_data, hungary_data, nigeria_data, poland_data, 
                            romania_data)
 
-combined_fci <- bind_rows(hungary_fci, poland_fci, romania_fci, egypt_fci)
+combined_fci <- bind_rows(hungary_fci, poland_fci, romania_fci, egypt_fci, nigeria_fci)
 
 read_fci_weights_text <- function(file_path) {
   readLines(file_path, warn = FALSE) %>% paste(collapse = "\n")
@@ -63,7 +65,7 @@ hungary_weights_text <- read_fci_weights_text("data/hungary_weights.txt")
 romania_weights_text <- read_fci_weights_text("data/romania_weights.txt")
 nigeria_weights_text <- read_fci_weights_text("data/nigeria_weights.txt")
 
-all_data <- bind_rows(combined_data, combined_fci)
+all_data <- full_join(combined_data, combined_fci, by= c("date", "country"))
 
 
 ui <- fluidPage(
@@ -146,38 +148,6 @@ ui <- fluidPage(
              )
            ))
   )
-  # dashboardSidebar(
-  #   selectInput("country", "Select Country", choices = unique(combined_data$country)),
-  #   varSelectInput("var", "Choose variable", combined_data %>% select(-date, -country)),
-  #   dateRangeInput("dateRange", "Select Date Range", start = min(combined_data$date), end = max(combined_data$date)),
-  #   prettyCheckbox("smooth", "Apply smooth line"),
-  #   actionButton("showData", "Show Complete Data")
-  # ),
-  # dashboardBody(
-  #   tabsetPanel(
-  #     tabPanel("Plot", plotlyOutput("explorePlot", height = "500px"),downloadButton("downloadPlot", "Download Plot")),
-  #     tabPanel("Selected Data", DTOutput("selectedTable"),downloadButton("downloadData", "Download Selected Data")),
-  #     tabPanel("Data Summary", DTOutput("summaryTable"), plotOutput("summaryPlot")),
-  #     tabPanel(
-  #       "Compare Countries", 
-  #       checkboxGroupInput(
-  #         "countries",
-  #         "Choose which countries to display:",
-  #         choices = c("Egypt", "Nigeria", "Hungary", "Romania", "Poland"),
-  #         selected = c("Egypt", "Nigeria", "Hungary", "Romania", "Poland"),
-  #         inline = T
-  #       ),
-  #       plotlyOutput("allCountriesPlot", height = "500px"),
-  #       downloadButton("downloadAllCountriesPlot", "Download Compare Countries Plot")
-  #     ),
-  #     tabPanel("FCI plot",
-  #              prettyCheckbox("imf", "Show IMF FCI"),
-  #              plotOutput("fciPlot"),
-  #              downloadButton("downloadFciPlot", "Download FCI Plot")
-  #     )
-  #     
-  #   )
-  # )
 )
 
 server <- function(input, output, session) {
