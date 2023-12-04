@@ -118,10 +118,10 @@ ui <- fluidPage(
   tabPanel("Individual variables", fluid = TRUE, icon = icon("circle-dot"),
            sidebarLayout(
              sidebarPanel(
-               selectInput("country", "Select Country", choices = unique(combined_data$country)),
+               selectInput("countryVar", "Select Country", choices = unique(combined_data$country)),
                varSelectInput("var", "Choose variable", combined_data %>% select(-date, -country)),
-               dateRangeInput("dateRange", "Select Date Range", start = min(combined_data$date), end = max(combined_data$date)),
-               prettyCheckbox("smooth", "Apply smooth line")
+               dateRangeInput("dateRangeVar", "Select Date Range", start = min(combined_data$date), end = max(combined_data$date)),
+               prettyCheckbox("smoothVar", "Apply smooth line")
              ),
              mainPanel(
                h3("Explore the variables we used in our PCA analysis"),
@@ -151,12 +151,13 @@ ui <- fluidPage(
 )
 
 server <- function(input, output, session) {
+  
   selected_data <- reactive({
     combined_data %>%
       filter(
-        country == input$country,
-        date >= input$dateRange[1],
-        date <= input$dateRange[2],
+        country == input$countryVar,
+        date >= input$dateRangeVar[1],
+        date <= input$dateRangeVar[2],
         !is.na(!!sym(input$var))
       ) %>%
       select(date, !!sym(input$var))  
@@ -192,18 +193,18 @@ server <- function(input, output, session) {
   
   
   output$explorePlot <- renderPlotly({
-    req(selected_data())
+    req(input$country)
     
     p <- ggplot(selected_data(), aes(x = date, y = !!sym(input$var))) +
       geom_line() +
       labs(
-        title = paste(var_name(), "in", input$country, "over time"),
+        title = paste(var_name(), "in", input$countryVar, "over time"),
         x = "Date",
         y = var_name()
       ) +
       theme_minimal()
     
-    if(input$smooth) {
+    if(input$smoothVar) {
       p <- p + geom_smooth(se = FALSE)
     }
     
