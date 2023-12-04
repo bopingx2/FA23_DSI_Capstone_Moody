@@ -53,12 +53,24 @@ combined_data <- bind_rows(egypt_data, hungary_data, nigeria_data, poland_data,
 
 combined_fci <- bind_rows(hungary_fci, poland_fci, romania_fci, egypt_fci)
 
+read_fci_weights_text <- function(file_path) {
+  readLines(file_path, warn = FALSE) %>% paste(collapse = "\n")
+}
+
+egypt_weights_text <- read_fci_weights_text("data/egypt_weights.txt")
+poland_weights_text <- read_fci_weights_text("data/poland_weights.txt")
+hungary_weights_text <- read_fci_weights_text("data/hungary_weights.txt")
+romania_weights_text <- read_fci_weights_text("data/romania_weights.txt")
+nigeria_weights_text <- read_fci_weights_text("data/nigeria_weights.txt")
+
+all_data <- bind_rows(combined_data, combined_fci)
+
 
 ui <- fluidPage(
-  navbarPage("Financial Data Explorer", theme = shinytheme("lumen")),
+  navbarPage("Financial Data Explorer", theme = shinytheme("lumen"),
     tabPanel("Custom FCI", fluid = TRUE, icon = icon("chart-line"),
              mainPanel(
-                 h2("Investigate our custom FCIs over 5 different emerging markets"),
+                 h3("Investigate our custom FCIs over 5 different emerging markets"),
                fluidRow(
                  column(10, offset = 2,
                    checkboxGroupInput(
@@ -84,7 +96,56 @@ ui <- fluidPage(
                  
                )
                )
+             ),
+  tabPanel("A closer look", fluid = TRUE, icon = icon("magnifying-glass"),
+           sidebarLayout(
+             sidebarPanel(
+               selectInput("country", "Select Country", choices = unique(combined_data$country)),
+               dateRangeInput("dateRange", "Select Date Range", start = min(combined_data$date), end = max(combined_data$date)),
+               prettyCheckbox("smooth", "Apply smooth line")
+               ),
+             mainPanel(
+               h3("Dive deeper into our custom FCI in each country"),
+               plotOutput("fciIndPlot"),
+               downloadButton("downloadIndFciPlot", "Download FCI Plot"),
+               verbatimTextOutput("weightsInfo"),
+               downloadButton("downloadWeights", "Download Weights")
              )
+           )
+           ),
+  tabPanel("Individual variables", fluid = TRUE, icon = icon("circle-dot"),
+           sidebarLayout(
+             sidebarPanel(
+               selectInput("country", "Select Country", choices = unique(combined_data$country)),
+               varSelectInput("var", "Choose variable", combined_data %>% select(-date, -country)),
+               dateRangeInput("dateRange", "Select Date Range", start = min(combined_data$date), end = max(combined_data$date)),
+               prettyCheckbox("smooth", "Apply smooth line")
+             ),
+             mainPanel(
+               h3("Explore the variables we used in our PCA analysis"),
+               plotlyOutput("explorePlot", height = "500px"),
+               downloadButton("downloadPlot", "Download Plot"),
+               br(),
+               h1("\n "),
+               br(),
+               h1("\n "),
+               DTOutput("summaryTable"), 
+               plotOutput("summaryPlot")
+             )
+           )
+           ),
+  tabPanel("Download data", fluid = TRUE, icon = icon("table"),
+           sidebarLayout(
+             sidebarPanel(
+               selectInput("country", "Select Country", choices = unique(combined_data$country))
+              ),
+             mainPanel(
+               h3("Download the data"),
+               DTOutput("completeDataTable"),
+               downloadButton("downloadCompleteData", "Download Complete Data")
+             )
+           ))
+  )
   # dashboardSidebar(
   #   selectInput("country", "Select Country", choices = unique(combined_data$country)),
   #   varSelectInput("var", "Choose variable", combined_data %>% select(-date, -country)),
@@ -241,7 +302,7 @@ server <- function(input, output, session) {
   )
   
   complete_data <- reactive({
-    combined_data %>%
+    all_data %>%
       filter(country == input$country)
   })
   
@@ -321,7 +382,6 @@ server <- function(input, output, session) {
       aes(x = date, y = fci, color = country)
     ) +
       geom_line() +
-      scale_color_okabeito() +
       scale_color_manual(
         name='Country',
         breaks=c('Egypt', 'Nigeria', "Romania", "Hungary", "Poland"),
@@ -336,16 +396,33 @@ server <- function(input, output, session) {
       ) +
       theme_minimal()
     
-    # if(input$smooth) {
-    #   p <- p + geom_smooth(se = FALSE)
-    # }
-    # 
-    # if(input$imf){
-    #   p <- p + geom_line(aes(y = imf_fci, color = "IMF")) 
-    # }
-    
     p
   })
+    
+    output$fciIndPlot <- renderPlot({
+      req(input$country)
+      p <- ggplot(
+        combined_fci %>% 
+          filter(
+            country == input$country,
+            date >= input$dateRange[1],
+            date <= input$dateRange[2]
+            ), 
+        aes(x = date, y = fci)
+      ) +
+        geom_line() +
+        labs(
+          title = paste("Custom FCI over time for", input$country),
+          x = "Date",
+          y = "FCI"
+        ) +
+        theme_minimal()
+      
+      if(input$smooth) {
+        p <- p + geom_smooth(se = FALSE)
+      }
+      p
+    })
   
   output$fciIMF <- renderPlot({
     req(input$imfCountry)
@@ -367,14 +444,6 @@ server <- function(input, output, session) {
       ) +
       theme_minimal()
     
-    # if(input$smooth) {
-    #   p <- p + geom_smooth(se = FALSE)
-    # }
-    # 
-    # if(input$imf){
-    #   p <- p + geom_line(aes(y = imf_fci, color = "IMF")) 
-    # }
-    
     p
   })
   
@@ -383,17 +452,48 @@ server <- function(input, output, session) {
       paste(input$country, "fci_plot.png", sep = "_")
     },
     content = function(file) {
+      req(input$countries)
       p <- ggplot(
-        combined_fci %>% filter(country == input$country),
-        aes(x = date, y = fci, color = "Custom")
+        combined_fci %>% filter(country %in% input$countries), 
+        aes(x = date, y = fci, color = country)
       ) +
         geom_line() +
-        geom_line(aes(y = imf_fci, color = "IMF")) +
-        scale_color_manual(name='FCI',
-                           breaks=c('Custom', 'IMF'),
-                           values=c('Custom'='black', 'IMF'='red')) +
+        scale_color_manual(
+          name='Country',
+          breaks=c('Egypt', 'Nigeria', "Romania", "Hungary", "Poland"),
+          values=c('Egypt' = "#E69F00", 'Nigeria' = "#009E73", "Romania" = "#D55E00", 
+                   "Hungary" = "#CC79A7", "Poland" = "#0072B2")
+        ) +
         labs(
-          title = paste("Custom FCI over time for", input$fciIMF),
+          title = "Compare custom FCIs over time",
+          x = "Date",
+          y = "FCI",
+          color = "Country"
+        ) +
+        theme_minimal()
+      
+      ggsave(file, plot = p, device = "png", width = 10, height = 6)
+    }
+  )
+  
+  output$downloadIndFciPlot <- downloadHandler(
+    filename = function() {
+      paste(input$country, "ind_fci_plot.png", sep = "_")
+    },
+    content = function(file) {
+      req(input$country)
+      p <- ggplot(
+        combined_fci %>% 
+          filter(
+            country == input$country,
+            date >= input$dateRange[1],
+            date <= input$dateRange[2]
+          ), 
+        aes(x = date, y = fci)
+      ) +
+        geom_line() +
+        labs(
+          title = paste("Custom FCI over time for", input$country),
           x = "Date",
           y = "FCI"
         ) +
@@ -407,6 +507,34 @@ server <- function(input, output, session) {
     }
   )
   
+  output$weightsInfo <- renderText({
+    req(input$country)
+    weights_text <- switch(input$country,
+                           "Egypt" = egypt_weights_text,
+                           "Poland" = poland_weights_text,
+                           "Hungary" = hungary_weights_text,
+                           "Romania" = romania_weights_text,
+                           "Nigeria" = nigeria_weights_text,
+                           "Weights info not available")
+    weights_text
+  })
+  
+  output$downloadWeights <- downloadHandler(
+    filename = function() {
+      paste(input$country, "weights.txt", sep = "_")
+    },
+    content = function(file) {
+      req(input$country)
+      weights_text <- switch(input$country,
+                             "Egypt" = egypt_weights_text,
+                             "Poland" = poland_weights_text,
+                             "Hungary" = hungary_weights_text,
+                             "Romania" = romania_weights_text,
+                             "Nigeria" = nigeria_weights_text,
+                             stop("Weights info not available"))
+      writeLines(weights_text, file)
+    }
+  )
   
 }
 
