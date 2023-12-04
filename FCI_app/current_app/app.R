@@ -69,7 +69,7 @@ all_data <- full_join(combined_data, combined_fci, by= c("date", "country"))
 
 
 ui <- fluidPage(
-  navbarPage("Financial Data Explorer", theme = shinytheme("lumen"),
+  navbarPage("Financial Data Explorer", theme = shinytheme("flatly"),
     tabPanel("Custom FCI", fluid = TRUE, icon = icon("chart-line"),
              mainPanel(
                  h3("Investigate our custom FCIs over 5 different emerging markets"),
