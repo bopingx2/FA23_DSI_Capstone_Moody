@@ -43,11 +43,15 @@ hungary_fci <- read_csv("data/hungary_fci.csv") %>%
   mutate(country = 'Hungary')
 poland_fci <- read_csv("data/poland_fci.csv") %>%
   mutate(country = 'Poland')
+romania_fci <- read_csv("data/romania_fci.csv") %>%
+  mutate(country = 'Romania')
+egypt_fci <- read_csv("data/egypt_fci.csv") %>%
+  mutate(country = 'Egypt')
 
 combined_data <- bind_rows(egypt_data, hungary_data, nigeria_data, poland_data, 
                            romania_data)
 
-combined_fci <- bind_rows(hungary_fci, poland_fci)
+combined_fci <- bind_rows(hungary_fci, poland_fci, romania_fci, egypt_fci)
 
 
 ui <- dashboardPage(

@@ -1,0 +1,106 @@
+---
+title: "Data Cleaning FCI"
+author: "Mingkang Yuan"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(janitor)
+```
+
+
+```{r}
+egypt_fci <- read_csv('/Users/yuanmingkang/Downloads/egypt_fci.csv') 
+hungary_fci <- read_csv('/Users/yuanmingkang/Downloads/hungary_fci.csv') 
+nigeria_fci_1 <- read_csv('/Users/yuanmingkang/Downloads/nigeria_fci_1.csv') 
+nigeria_fci_2 <- read_csv('/Users/yuanmingkang/Downloads/nigeria_fci_2.csv') 
+poland_fci <- read_csv('/Users/yuanmingkang/Downloads/poland_fci.csv') 
+romania_fci <- read_csv('/Users/yuanmingkang/Downloads/romania_fci.csv') 
+```
+```{r}
+egypt_fci <- egypt_fci %>%
+  clean_names() %>%
+  mutate(
+    date = as.Date(paste0(date, "-01"), format = "%Y-%m-%d")
+  )
+write_csv(egypt_fci, "/Users/yuanmingkang/Desktop/Fall_24/Capstone/R shiny/data/data1/egypt_fci.csv")
+```
+
+```{r}
+romania_fci <- romania_fci %>%
+  clean_names() %>%
+  mutate(
+    date = as.Date(paste0(date, "-01"), format = "%Y-%m-%d")
+  )
+write_csv(romania_fci, "/Users/yuanmingkang/Desktop/Fall_24/Capstone/R shiny/data/data1/romania_fci.csv")
+```
+
+
+```{r}
+nigeria_fci_1 <- nigeria_fci_1 %>%
+  clean_names() %>%
+  mutate(
+    date = as.Date(paste0(date, "-01"), format = "%Y-%m-%d")
+  )
+write_csv(nigeria_fci_1, "/Users/yuanmingkang/Desktop/Fall_24/Capstone/R shiny/data/data1/nigeria_fci_1.csv")
+```
+
+```{r}
+nigeria_fci_2 <- nigeria_fci_2 %>%
+  clean_names() %>%
+  mutate(
+    date = as.Date(paste0(date, "-01"), format = "%Y-%m-%d")
+  )
+write_csv(nigeria_fci_2, "/Users/yuanmingkang/Desktop/Fall_24/Capstone/R shiny/data/data1/nigeria_fci_2.csv")
+```
+
+```{r}
+poland_fci <- poland_fci %>%
+  clean_names() %>%
+  mutate(
+    date = as.Date(paste0(date, "-01"), format = "%Y-%m-%d")
+  )
+imf_fci_poland_raw <- read_csv("/Users/yuanmingkang/Downloads/IMF_FCI_Poland.csv") %>%
+  clean_names()
+
+imf_fci_poland <- imf_fci_poland_raw %>%
+  clean_names() %>%
+  mutate(
+    date = as.Date(paste0(date, "-01"), format = "%Y-%m-%d")
+  )
+
+
+poland_fci <- right_join(imf_fci_poland, poland_fci)
+write_csv(poland_fci, "/Users/yuanmingkang/Desktop/Fall_24/Capstone/R shiny/data/data1/poland_fci.csv")
+```
+
+```{r}
+
+hungary_fci <- hungary_fci %>%
+  clean_names() %>%
+  mutate(
+    date = as.Date(paste0(date, "-01"), format = "%Y-%m-%d")
+  )
+imf_fci_hungary_raw <- read_csv("/Users/yuanmingkang/Downloads/IMF_FCI_Hungary.csv") %>%
+  clean_names()
+
+imf_fci_hungary <- imf_fci_hungary_raw %>%
+  clean_names() %>%
+  mutate(
+    date = as.Date(paste0(date, "-01"), format = "%Y-%m-%d")
+  )
+
+
+hungary_fci <- right_join(imf_fci_hungary, hungary_fci)
+write_csv(hungary_fci, "/Users/yuanmingkang/Desktop/Fall_24/Capstone/R shiny/data/data1/hungary_fci.csv")
+```
+
+
+
+

@@ -69,5 +69,8 @@ imf_fci_poland <- imf_fci_poland_raw %>%
 poland_fci <- right_join(imf_fci_poland, poland_fci)
 write_csv(poland_fci, "../FCI_app/data/poland_fci.csv")
 ```
+```{r}
+read_csv("../FCI_app/current_app/data/egypt_fci.csv")
+```
 
 
