@@ -1,0 +1,14 @@
+--------------------
+id : 8721418713
+corr_coef : -0.2506787812902953
+explain variance ratio : 0.23329913338564207
+Weight :
+Risk_Premium : -0.09247919397980643
+Stock_Market_Volatility : -0.36846003838412167
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.036435617488387195
+One-Day_Repo_Rate_EOP : -0.3026335951099015
+REER : -0.6738551252480253
+Foreign_Exchange_Reserve_change_yryr% : -0.46462891359297726
+Portfolio_Flows : -0.3046463433463326
+--------------------
+

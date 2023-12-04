@@ -1,0 +1,12 @@
+--------------------
+id : 9521906064
+corr_coef : -0.4018277706099779
+explain variance ratio : 0.2813250457018557
+Weight :
+Risk_Premium : -0.09684174070773516
+Stock_Market_Volatility : -0.5750983661274859
+REER : -0.667318350710446
+Foreign_Exchange_Reserve_over_GDP : -0.08492036307742673
+Portfolio_Flows : -0.4553661134450828
+--------------------
+

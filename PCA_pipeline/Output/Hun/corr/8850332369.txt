@@ -1,0 +1,14 @@
+--------------------
+id : 8850332369
+corr_coef : 0.26864050014634533
+explain variance ratio : 0.21310664889889
+Weight :
+Term_Premium : -0.0680531791165899
+Stock_Prices_mom%_change : -0.3924496945666171
+Stock_Prices_mom24mma%_change : -0.06923823342916749
+Stock_Market_Volatility : -0.5162070249460435
+Current_Account_Balance_change_yryr% : -0.26755928901136317
+One-Day_Repo_Rate_AVG : -0.28055961246362227
+Bank_Lending_mo12m%_change : -0.6479094899695884
+--------------------
+

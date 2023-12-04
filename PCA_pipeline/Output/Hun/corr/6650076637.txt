@@ -1,0 +1,14 @@
+--------------------
+id : 6650076637
+corr_coef : -0.11468765219424513
+explain variance ratio : 0.21575136129952419
+Weight :
+Risk_Premium : -0.09002634961823926
+Stock_Prices_mom%_change : -0.30782739443850005
+REER : -0.701294035057161
+Current_Account_Balance_over_GDP : -0.09515100499229709
+Bank_Lending_mo12m%_change : -0.4550236141943521
+Foreign_Exchange_Reserve_change_yryr% : -0.22051471043463192
+Portfolio_Flows : -0.3749630478557311
+--------------------
+

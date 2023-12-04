@@ -1,0 +1,12 @@
+--------------------
+id : 6728345663
+corr_coef : -0.5136178918401091
+explain variance ratio : 0.3541491414490262
+Weight :
+Term_Premium : 0.5832390497107509
+Stock_Market_Volatility : 0.01306934343506072
+Current_Account_Balance_change_yryr% : 0.1688743455976548
+REER : 0.6892068197322962
+Bank_Lending_mo12m%_change : 0.39514151665970876
+--------------------
+

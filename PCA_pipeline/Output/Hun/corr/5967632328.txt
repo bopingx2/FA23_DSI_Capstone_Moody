@@ -1,0 +1,14 @@
+--------------------
+id : 5967632328
+corr_coef : -0.11445318083078597
+explain variance ratio : 0.24722737872778197
+Weight :
+Risk_Premium : -0.4440662317340486
+Stock_Prices_mom%_change : -0.2643543001997142
+Stock_Prices_mom24mma%_change : -0.1386111493102219
+Stock_Market_Volatility : -0.3148943659259754
+REER : -0.5407935736610988
+Foreign_Exchange_Reserve_change_yryr% : -0.42512323006335384
+Portfolio_Flows : -0.3759827434095572
+--------------------
+

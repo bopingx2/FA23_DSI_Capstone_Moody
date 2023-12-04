@@ -1,0 +1,12 @@
+--------------------
+id : 7080215257
+corr_coef : -0.05150219734821899
+explain variance ratio : 0.3043982440590546
+Weight :
+Term_Premium : -0.2730810208921465
+Stock_Market_Volatility : -0.5296843885836648
+One-Day_Repo_Rate_EOP : -0.6359071432377101
+REER : -0.481376718533935
+Portfolio_Flows : -0.09359361384200982
+--------------------
+

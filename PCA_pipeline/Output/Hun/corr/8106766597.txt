@@ -1,0 +1,14 @@
+--------------------
+id : 8106766597
+corr_coef : -0.1673965887379237
+explain variance ratio : 0.21902938771251798
+Weight :
+Risk_Premium : -0.10338092005689008
+Stock_Prices_mom%_change : -0.24621084029508225
+REER : -0.7178840719946185
+Bank_Lending_mo12m%_change : -0.39890860533410827
+Foreign_Exchange_Reserve_change_yryr% : -0.3435910614494117
+Foreign_Exchange_Reserve_over_GDP : -0.11646924463243735
+Portfolio_Flows : -0.35012439047146715
+--------------------
+

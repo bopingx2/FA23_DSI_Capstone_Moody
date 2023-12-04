@@ -1,0 +1,12 @@
+--------------------
+id : 4894978756
+corr_coef : 0.1327037884717801
+explain variance ratio : 0.2625550633517648
+Weight :
+Risk_Premium : -0.6535852819519792
+Stock_Prices_mom24mma%_change : -0.5465211850044913
+Current_Account_Balance_over_GDP : -0.07188630950142633
+Foreign_Exchange_Reserve_change_yryr% : -0.03867330268311969
+Portfolio_Flows : -0.5171823737550258
+--------------------
+

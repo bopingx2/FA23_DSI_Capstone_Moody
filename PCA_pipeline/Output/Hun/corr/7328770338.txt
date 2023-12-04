@@ -1,0 +1,14 @@
+--------------------
+id : 7328770338
+corr_coef : -0.208169589206663
+explain variance ratio : 0.2284898903391428
+Weight :
+Risk_Premium : -0.16575625965937715
+Stock_Prices_mom%_change : -0.15526052832237458
+One-Day_Repo_Rate_AVG : -0.2162340691594031
+REER : -0.7004058688773197
+Bank_Lending_mo12m%_change : -0.2531873798117692
+Foreign_Exchange_Reserve_change_yryr% : -0.47994888951721704
+Portfolio_Flows : -0.3415240709832991
+--------------------
+

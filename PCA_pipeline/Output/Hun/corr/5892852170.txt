@@ -1,0 +1,13 @@
+--------------------
+id : 5892852170
+corr_coef : 0.02882113904039914
+explain variance ratio : 0.21194663394337326
+Weight :
+Term_Premium : -0.01051352005071747
+Stock_Market_Volatility : -0.3961495926187299
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.451719740075762
+One-Day_Repo_Rate_EOP : -0.1779327048963539
+Current_Account_Balance_over_GDP : -0.3564747845376294
+Foreign_Exchange_Reserve_over_GDP : -0.6929429436159679
+--------------------
+

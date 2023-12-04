@@ -1,0 +1,14 @@
+--------------------
+id : 3168938576
+corr_coef : 0.029052134685774264
+explain variance ratio : 0.2980956861890815
+Weight :
+Term_Premium : -0.20750702428647905
+Stock_Market_Volatility : -0.26646488968027804
+Current_Account_Balance_change_yryr% : -0.17611045782370982
+One-Day_Repo_Rate_EOP : -0.3688917237867831
+Current_Account_Balance_over_GDP : -0.14826691736635456
+Bank_Lending_mo12m%_change : -0.5881709455812631
+Foreign_Exchange_Reserve_over_GDP : -0.5923792368026659
+--------------------
+

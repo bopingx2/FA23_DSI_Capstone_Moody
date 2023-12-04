@@ -1,0 +1,14 @@
+--------------------
+id : 2602050134
+corr_coef : -0.13676991859687443
+explain variance ratio : 0.22870455504195206
+Weight :
+Risk_Premium : -0.03910087506259177
+Stock_Prices_mom%_change : -0.4155972085588018
+Stock_Market_Volatility : -0.5726958962581569
+REER : -0.5921036726431548
+Foreign_Exchange_Reserve_change_yryr% : -0.20605559982366137
+Foreign_Exchange_Reserve_over_GDP : -0.201185148340145
+Portfolio_Flows : -0.253472599954495
+--------------------
+

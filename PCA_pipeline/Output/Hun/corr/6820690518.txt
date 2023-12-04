@@ -1,0 +1,14 @@
+--------------------
+id : 6820690518
+corr_coef : -0.25349907104521874
+explain variance ratio : 0.24197336784734294
+Weight :
+Risk_Premium : -0.2867787781187321
+Stock_Market_Volatility : -0.32096919129639073
+One-Day_Repo_Rate_AVG : -0.0731262758970138
+REER : -0.6412498041003531
+Bank_Lending_mo12m%_change : -0.1698945124590262
+Foreign_Exchange_Reserve_change_yryr% : -0.47924953660309
+Portfolio_Flows : -0.37368928734443874
+--------------------
+

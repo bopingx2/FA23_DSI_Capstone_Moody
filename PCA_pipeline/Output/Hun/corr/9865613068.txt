@@ -1,0 +1,14 @@
+--------------------
+id : 9865613068
+corr_coef : 0.35432158749708753
+explain variance ratio : 0.24261704486611657
+Weight :
+Risk_Premium : -0.052811855175943334
+Stock_Prices_mom%_change : -0.5169117726101029
+Stock_Prices_mom24mma%_change : -0.5314300366496836
+One-Day_Repo_Rate_EOP : -0.00022081336896201398
+REER : -0.42407465128562216
+Bank_Lending_mo12m%_change : -0.48880531328511756
+Portfolio_Flows : -0.16978000624085166
+--------------------
+

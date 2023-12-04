@@ -1,0 +1,14 @@
+--------------------
+id : 5595930017
+corr_coef : 0.56274991569608
+explain variance ratio : 0.2143488570679871
+Weight :
+Risk_Premium : -0.023729630290540916
+Stock_Prices_mom%_change : -0.6084366711527984
+Stock_Prices_mom24mma%_change : -0.49781194527271955
+Stock_Market_Volatility : -0.44199818187511714
+Current_Account_Balance_change_yryr% : -0.07729864060533931
+One-Day_Repo_Rate_EOP : -0.3027076102377375
+Foreign_Exchange_Reserve_change_yryr% : -0.297414893827432
+--------------------
+

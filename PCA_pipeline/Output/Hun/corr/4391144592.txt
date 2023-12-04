@@ -1,0 +1,12 @@
+--------------------
+id : 4391144592
+corr_coef : -0.13394850114161733
+explain variance ratio : 0.22291513602228463
+Weight :
+Term_Premium : 0.2031529299852609
+Stock_Prices_mom%_change : 0.08056321564818048
+Current_Account_Balance_over_GDP : 0.23029160172268823
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : 0.6305331915733623
+Foreign_Exchange_Reserve_over_GDP : 0.7082599295619775
+--------------------
+

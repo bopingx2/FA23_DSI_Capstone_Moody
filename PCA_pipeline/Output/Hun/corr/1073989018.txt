@@ -1,0 +1,11 @@
+--------------------
+id : 1073989018
+corr_coef : 0.5799025875302773
+explain variance ratio : 0.25095547649437183
+Weight :
+Risk_Premium : -0.019135193950356663
+Stock_Prices_mom%_change : -0.9928530897501499
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : -0.11220461437410667
+Foreign_Exchange_Reserve_over_GDP : -0.035870754650848435
+--------------------
+

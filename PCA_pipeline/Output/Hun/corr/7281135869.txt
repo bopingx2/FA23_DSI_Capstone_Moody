@@ -1,0 +1,12 @@
+--------------------
+id : 7281135869
+corr_coef : 0.5466240633605391
+explain variance ratio : 0.26593209196145706
+Weight :
+Risk_Premium : -0.13895239734436718
+Stock_Prices_mom%_change : -0.6869041804833605
+Stock_Market_Volatility : -0.6863431818492034
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : -0.009227389054300872
+Portfolio_Flows : -0.19417201169861611
+--------------------
+

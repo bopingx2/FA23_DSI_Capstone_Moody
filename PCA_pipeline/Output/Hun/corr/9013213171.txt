@@ -1,0 +1,15 @@
+--------------------
+id : 9013213171
+corr_coef : 0.14943796516338642
+explain variance ratio : 0.2490235429285091
+Weight :
+Term_Premium : 0.039279237059317525
+Stock_Prices_mom24mma%_change : 0.008726501564161632
+Current_Account_Balance_change_yryr% : 0.15589879601398177
+REER : 0.28328116934708353
+Current_Account_Balance_over_GDP : 0.30068319604581806
+Bank_Lending_mo12m%_change : 0.6514372618831608
+Foreign_Exchange_Reserve_change_yryr% : 0.060862730318158274
+Foreign_Exchange_Reserve_over_GDP : 0.6126525701450134
+--------------------
+

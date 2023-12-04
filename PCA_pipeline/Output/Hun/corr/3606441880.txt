@@ -1,0 +1,14 @@
+--------------------
+id : 3606441880
+corr_coef : -0.21173119437059296
+explain variance ratio : 0.22209529275953474
+Weight :
+Risk_Premium : 0.1215804047222704
+Stock_Prices_mom%_change : 0.09911999542751337
+One-Day_Repo_Rate_AVG : 0.29951333932055757
+REER : 0.6815210445195437
+Foreign_Exchange_Reserve_change_yryr% : 0.5620988497767763
+Foreign_Exchange_Reserve_over_GDP : 0.11193412304555005
+Portfolio_Flows : 0.30451583262238807
+--------------------
+

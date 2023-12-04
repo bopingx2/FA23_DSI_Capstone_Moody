@@ -1,0 +1,13 @@
+--------------------
+id : 7892861659
+corr_coef : 0.10034428634287568
+explain variance ratio : 0.24300805126525205
+Weight :
+Term_Premium : 0.059396800079527995
+Stock_Prices_mom%_change : 0.29140235504954987
+Current_Account_Balance_change_yryr% : 0.27490031247475877
+REER : 0.42686867844756204
+Current_Account_Balance_over_GDP : 0.28256640977564385
+Bank_Lending_mo12m%_change : 0.7575789471996329
+--------------------
+

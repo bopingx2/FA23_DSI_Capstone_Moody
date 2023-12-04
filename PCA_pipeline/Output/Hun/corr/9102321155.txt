@@ -1,0 +1,14 @@
+--------------------
+id : 9102321155
+corr_coef : -0.20491224731570082
+explain variance ratio : 0.2233273596385595
+Weight :
+Risk_Premium : 0.1238434517842469
+Stock_Prices_mom%_change : 0.09158922746270444
+One-Day_Repo_Rate_EOP : 0.3079190705395696
+REER : 0.6766319031101785
+Foreign_Exchange_Reserve_change_yryr% : 0.5661089843908824
+Foreign_Exchange_Reserve_over_GDP : 0.10764587426414865
+Portfolio_Flows : 0.3025926471352622
+--------------------
+

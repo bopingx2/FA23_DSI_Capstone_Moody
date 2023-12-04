@@ -1,0 +1,14 @@
+--------------------
+id : 4159517608
+corr_coef : -0.25063804178940496
+explain variance ratio : 0.23329651908107707
+Weight :
+Risk_Premium : -0.09235326372781298
+Stock_Market_Volatility : -0.3685839212737354
+One-Day_Repo_Rate_EOP : -0.30278612161421065
+REER : -0.673817653203554
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : -0.036497198697994476
+Foreign_Exchange_Reserve_change_yryr% : -0.46452274946514616
+Portfolio_Flows : -0.3046205379860609
+--------------------
+

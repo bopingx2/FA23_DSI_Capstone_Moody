@@ -1,0 +1,13 @@
+--------------------
+id : 7707472850
+corr_coef : 0.06278901778227637
+explain variance ratio : 0.2719404793485994
+Weight :
+Term_Premium : -0.17963169619180794
+Stock_Prices_mom%_change : -0.27659851137688257
+Stock_Market_Volatility : -0.3943072031404273
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.49238352787065287
+Current_Account_Balance_over_GDP : -0.19214910990560707
+Bank_Lending_mo12m%_change : -0.6755625269529484
+--------------------
+

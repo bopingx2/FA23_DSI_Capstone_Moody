@@ -1,0 +1,14 @@
+--------------------
+id : 4237467312
+corr_coef : -0.4003424356593511
+explain variance ratio : 0.3219919212025654
+Weight :
+Term_Premium : 0.4577571818218871
+Stock_Market_Volatility : 0.0346179006123527
+Current_Account_Balance_change_yryr% : 0.08321530486312095
+REER : 0.5840004870558462
+Bank_Lending_mo12m%_change : 0.3887344760430403
+Foreign_Exchange_Reserve_change_yryr% : 0.42695804281768246
+Foreign_Exchange_Reserve_over_GDP : 0.32843712398507285
+--------------------
+

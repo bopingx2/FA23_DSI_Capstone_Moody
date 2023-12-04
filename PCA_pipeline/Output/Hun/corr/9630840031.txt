@@ -1,0 +1,12 @@
+--------------------
+id : 9630840031
+corr_coef : -0.19663146272250165
+explain variance ratio : 0.2224359465046667
+Weight :
+Risk_Premium : -0.07047214243914864
+Stock_Market_Volatility : -0.652910012737316
+One-Day_Repo_Rate_EOP : -0.36327371045127355
+Foreign_Exchange_Reserve_change_yryr% : -0.4072474246422718
+Portfolio_Flows : -0.520503543527415
+--------------------
+

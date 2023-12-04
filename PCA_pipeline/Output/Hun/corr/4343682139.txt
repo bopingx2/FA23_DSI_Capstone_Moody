@@ -1,0 +1,14 @@
+--------------------
+id : 4343682139
+corr_coef : 0.07412150051738106
+explain variance ratio : 0.22746752061338454
+Weight :
+Term_Premium : -0.04489245543620396
+Stock_Market_Volatility : -0.4638687343410087
+Current_Account_Balance_change_yryr% : -0.2146641724675617
+REER : -0.40784462425773926
+Current_Account_Balance_over_GDP : -0.2678545236038565
+Bank_Lending_mo12m%_change : -0.7028003366424628
+Foreign_Exchange_Reserve_change_yryr% : -0.06868887296245113
+--------------------
+

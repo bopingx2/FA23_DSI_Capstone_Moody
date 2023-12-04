@@ -1,0 +1,14 @@
+--------------------
+id : 8508020006
+corr_coef : -0.32442683851108906
+explain variance ratio : 0.21667326627313283
+Weight :
+Risk_Premium : -0.023555536121570863
+Stock_Market_Volatility : -0.4784964609854241
+REER : -0.7009889793387656
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : -0.10133611100958761
+Foreign_Exchange_Reserve_change_yryr% : -0.3533484404509713
+Foreign_Exchange_Reserve_over_GDP : -0.19170021418190142
+Portfolio_Flows : -0.32745629404086707
+--------------------
+

@@ -1,0 +1,14 @@
+--------------------
+id : 3015302221
+corr_coef : 0.15657308183724583
+explain variance ratio : 0.24382269561623113
+Weight :
+Term_Premium : 0.04459181007348456
+Stock_Prices_mom%_change : 0.28873459396488277
+One-Day_Repo_Rate_EOP : 0.5322554451893978
+REER : 0.5356414855425535
+Bank_Lending_mo12m%_change : 0.5809829774245721
+Foreign_Exchange_Reserve_change_yryr% : 0.047177856917617646
+Portfolio_Flows : 0.0683320899274005
+--------------------
+

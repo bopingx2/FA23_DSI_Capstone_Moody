@@ -1,0 +1,14 @@
+--------------------
+id : 5535001139
+corr_coef : -0.4083736598502384
+explain variance ratio : 0.209587912871978
+Weight :
+Risk_Premium : -0.011679495563437973
+Stock_Market_Volatility : -0.5637068582212326
+Policy_Rate_&_Fed_Funds_Rate_Differential_AVG : -0.10715334207311378
+REER : -0.6702734428787177
+Current_Account_Balance_over_GDP : -0.1972153274619567
+Foreign_Exchange_Reserve_change_yryr% : -0.15588348087871992
+Portfolio_Flows : -0.3976886916106758
+--------------------
+

@@ -156,8 +156,8 @@ def PCA_module(df: pd.DataFrame, Country: str, Country_abbr: str, df_IMF = None)
     
 
 if __name__ == "__main__":
-    Country = "Egypt" # Poland, Hungary
-    Country_abbr = "Egy" # Pol, Hun
+    Country = "Hungary" # Poland, Hungary
+    Country_abbr = "Hun" # Pol, Hun
 
     ## empty outputs
     if os.path.exists("./PCA_pipeline/Output/" + Country_abbr):
@@ -173,8 +173,8 @@ if __name__ == "__main__":
 
 
     # Only poland has IMF_FCI
-    # df_IMF_FCI = pd.read_csv("./PCA_pipeline/IMF_FCI_"+Country +".csv")
     df_IMF_FCI=None
+    df_IMF_FCI = pd.read_csv("./PCA_pipeline/IMF_FCI_"+Country +".csv")
 
 
     p = Pool(10) 

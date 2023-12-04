@@ -1,0 +1,13 @@
+--------------------
+id : 5890276263
+corr_coef : 0.1538595252760167
+explain variance ratio : 0.24246243154655453
+Weight :
+Term_Premium : 0.07823382195058486
+Stock_Prices_mom%_change : 0.34342735625182
+Stock_Prices_mom24mma%_change : 0.019865979131044237
+Current_Account_Balance_over_GDP : 0.32139369684112895
+Policy_Rate_&_Fed_Funds_Rate_Differential_EOP : 0.43988978642572774
+Bank_Lending_mo12m%_change : 0.7607532651150268
+--------------------
+

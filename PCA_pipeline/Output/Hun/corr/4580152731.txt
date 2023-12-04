@@ -1,0 +1,14 @@
+--------------------
+id : 4580152731
+corr_coef : 0.6008116520174321
+explain variance ratio : 0.22302323743968044
+Weight :
+Term_Premium : -0.13079681768323934
+Risk_Premium : -0.20358010947126082
+Stock_Prices_mom%_change : -0.5912833359158834
+Stock_Prices_mom24mma%_change : -0.6004640843924544
+Stock_Market_Volatility : -0.40292007931029405
+One-Day_Repo_Rate_AVG : -0.182193513587383
+Foreign_Exchange_Reserve_change_yryr% : -0.189037469380525
+--------------------
+
