@@ -1,0 +1,11 @@
+--------------------
+id : 1393933249
+corr_coef : 0.8800849274074958
+explain variance ratio : 0.44403725748599576
+Weight :
+Risk_Premium : 40%
+Stock_Prices_mom24mma%_change : 15%
+Current_Account_Balance_over_GDP : 27.5%
+Velocity_of_Money_mo12m%_change : 17.5%
+--------------------
+
