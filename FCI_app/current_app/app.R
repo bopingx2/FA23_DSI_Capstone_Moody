@@ -231,7 +231,7 @@ server <- function(input, output, session) {
     ) +
       geom_boxplot() +
       labs(
-        title = paste("Distribution of", input$var, "in", input$country),
+        title = paste("Distribution of", input$var, "in", input$countryVar),
         y = NULL,
         x = var_name(),
       ) +
