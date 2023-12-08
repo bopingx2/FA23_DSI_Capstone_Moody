@@ -55,15 +55,20 @@ combined_data <- bind_rows(egypt_data, hungary_data, nigeria_data, poland_data,
 
 combined_fci <- bind_rows(hungary_fci, poland_fci, romania_fci, egypt_fci, nigeria_fci)
 
-read_fci_weights_text <- function(file_path) {
-  readLines(file_path, warn = FALSE) %>% paste(collapse = "\n")
+read_fci_weights_text <- function(country) {
+  file_path = paste0("data/", country, "_weights_rounding.txt")
+  skip_val = 4
+  if(country %in% c("hungary", "poland")) skip_val = 5
+  read_delim(file_path, delim = " : ", skip = skip_val, col_names = c("variable", "weight")) %>%
+    slice(1:n()-1) %>%
+    mutate(variable = str_replace_all(variable, "_", " "))
 }
 
-egypt_weights_text <- read_fci_weights_text("data/egypt_weights.txt")
-poland_weights_text <- read_fci_weights_text("data/poland_weights.txt")
-hungary_weights_text <- read_fci_weights_text("data/hungary_weights.txt")
-romania_weights_text <- read_fci_weights_text("data/romania_weights.txt")
-nigeria_weights_text <- read_fci_weights_text("data/nigeria_weights.txt")
+egypt_weights_text <- read_fci_weights_text("egypt")
+poland_weights_text <- read_fci_weights_text("poland")
+hungary_weights_text <- read_fci_weights_text("hungary")
+romania_weights_text <- read_fci_weights_text("romania")
+nigeria_weights_text <- read_fci_weights_text("nigeria")
 
 all_data <- full_join(combined_data, combined_fci, by= c("date", "country"))
 
@@ -110,7 +115,9 @@ ui <- fluidPage(
                h3("Dive deeper into our custom FCI in each country"),
                plotOutput("fciIndPlot"),
                downloadButton("downloadIndFciPlot", "Download FCI Plot"),
-               verbatimTextOutput("weightsInfo"),
+               br(),
+               h1("\n "),
+               DTOutput("weightsInfo"),
                downloadButton("downloadWeights", "Download Weights")
              )
            )
@@ -478,7 +485,7 @@ server <- function(input, output, session) {
     }
   )
   
-  output$weightsInfo <- renderText({
+  output$weightsInfo <- renderDT({
     req(input$country)
     weights_text <- switch(input$country,
                            "Egypt" = egypt_weights_text,

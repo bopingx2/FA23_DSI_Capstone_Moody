@@ -70,7 +70,9 @@ poland_fci <- right_join(imf_fci_poland, poland_fci)
 write_csv(poland_fci, "../FCI_app/data/poland_fci.csv")
 ```
 ```{r}
-read_csv("../FCI_app/current_app/data/egypt_fci.csv")
+read_delim("../FCI_app/current_app/data/poland_weights_rounding.txt", delim = " : ", skip = 4, col_names = c("variable", "weight")) %>%
+  slice(1:n()-1) %>%
+  mutate(variable = str_replace_all(variable, "_", " "))
 ```
 
 
