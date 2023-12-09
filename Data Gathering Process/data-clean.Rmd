@@ -18,8 +18,11 @@ library(janitor)
 read_csv("../FCI_app/data/Egypt_DataFrame.csv")
 ```
 ```{r}
-hungary_fci <- read_csv("../FCI_app/data/hungary_fci.csv") 
-poland_fci <- read_csv("../FCI_app/data/poland_fci.csv") 
+hungary_fci <- read_csv("../FCI_app/current_app/data/hungary_fci.csv") 
+poland_fci <- read_csv("../FCI_app/current_app/data/poland_fci.csv") 
+nigeria_fci <- read_csv("../FCI_app/current_app/data/nigeria_fci.csv") 
+romania_fci <- read_csv("../FCI_app/current_app/data/romania_fci.csv") 
+egypt_fci <- read_csv("../FCI_app/current_app/data/egypt_fci.csv") 
 ```
 ```{r}
 hungary_fci <- hugary_fci %>%
@@ -73,6 +76,13 @@ write_csv(poland_fci, "../FCI_app/data/poland_fci.csv")
 read_delim("../FCI_app/current_app/data/poland_weights_rounding.txt", delim = " : ", skip = 4, col_names = c("variable", "weight")) %>%
   slice(1:n()-1) %>%
   mutate(variable = str_replace_all(variable, "_", " "))
+```
+```{r}
+romania_fci %>%
+  ggplot(aes(x = date, y = fci)) +
+  geom_line() +
+  geom_smooth(se = F, method = "gam") +
+  theme_minimal()
 ```
 
 

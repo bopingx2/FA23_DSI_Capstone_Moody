@@ -212,7 +212,7 @@ server <- function(input, output, session) {
       theme_minimal()
     
     if(input$smoothVar) {
-      p <- p + geom_smooth(se = FALSE)
+      p <- p + geom_smooth(se = FALSE, method = "gam")
     }
     
     ggplotly(p)
@@ -273,7 +273,7 @@ server <- function(input, output, session) {
         ) +
         theme_minimal()
       if(input$smooth) {
-        p <- p + geom_smooth(se = FALSE)
+        p <- p + geom_smooth(se = FALSE, method = "gam")
       }
       ggsave(file, plot = p, device = "png", width = 10, height = 6)
     }
@@ -321,7 +321,7 @@ server <- function(input, output, session) {
       theme_minimal()
     
     if(input$smooth) {
-      p <- p + geom_smooth(se = FALSE)
+      p <- p + geom_smooth(se = FALSE, method = "gam")
     }
     
     ggplotly(p)
@@ -345,7 +345,7 @@ server <- function(input, output, session) {
         theme_minimal()
       
       if(input$smooth) {
-        p <- p + geom_smooth(se = FALSE)
+        p <- p + geom_smooth(se = FALSE, method = "gam")
       }
       
       ggsave(file, plot = p, device = "png", width = 10, height = 6)
@@ -397,7 +397,7 @@ server <- function(input, output, session) {
         theme_minimal()
       
       if(input$smooth) {
-        p <- p + geom_smooth(se = FALSE)
+        p <- p + geom_smooth(se = FALSE, method = "gam")
       }
       p
     })
@@ -478,7 +478,7 @@ server <- function(input, output, session) {
         theme_minimal()
       
       if(input$smooth) {
-        p <- p + geom_smooth(se = FALSE)
+        p <- p + geom_smooth(se = FALSE, method = "gam")
       }
       
       ggsave(file, plot = p, device = "png", width = 10, height = 6)
