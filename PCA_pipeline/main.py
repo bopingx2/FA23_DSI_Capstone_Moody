@@ -159,6 +159,11 @@ if __name__ == "__main__":
     Country = "Hungary" # Poland, Hungary
     Country_abbr = "Hun" # Pol, Hun
 
+    # Only poland has IMF_FCI
+    df_IMF_FCI=None
+    if Country_abbr == "Hun" or Country_abbr == "Pol":
+        df_IMF_FCI = pd.read_csv("./PCA_pipeline/IMF_FCI_"+Country +".csv")
+
     ## empty outputs
     if os.path.exists("./PCA_pipeline/Output/" + Country_abbr):
         shutil.rmtree("./PCA_pipeline/Output/" + Country_abbr)
@@ -172,9 +177,7 @@ if __name__ == "__main__":
     # PCA_module(country_df[country_comb[0]])
 
 
-    # Only poland has IMF_FCI
-    df_IMF_FCI=None
-    df_IMF_FCI = pd.read_csv("./PCA_pipeline/IMF_FCI_"+Country +".csv")
+
 
 
     p = Pool(10) 
