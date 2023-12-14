@@ -92,15 +92,18 @@ def PCA_module(df: pd.DataFrame, Country: str, Country_abbr: str, df_IMF = None)
     pca = sklearn.decomposition.PCA(n_components = len(df_PCA_decomp.columns)) 
     pca.fit(df_PCA_decomp)
 
-    # TODO: flip sign
+    # TODO: flip sign 
     df_transformed = pd.DataFrame(np.transpose(np.matmul(np.square(pca.components_),np.transpose(df.iloc[ :, 1:]))))
     # df_transformed = pd.DataFrame(pca.transform(df.iloc[ :, 1:]))
     df_transformed.insert(0, "Date", df["Date"], True)
 
+    '''concatenate IMF FCI with our FCI'''
     if df_IMF is None:
         df_combined=    df_transformed
     else:
         df_combined = df_transformed.merge(df_IMF, how = 'left',on ="Date")
+
+    '''normalize FCI, calculate Covariance Matrix (if IMF FCI is not None)'''
     end_index = None
     for index in range(len(df_combined)):
         if df_combined.iloc[index, 0] == "2020-03":
@@ -112,7 +115,7 @@ def PCA_module(df: pd.DataFrame, Country: str, Country_abbr: str, df_IMF = None)
     corr_coef = np.corrcoef(df_combined.iloc[:, 1:].dropna(), rowvar = False)[-1]
     df_combined = df_combined.sort_values(by= ["Date"], ascending=True, ignore_index=True)
 
-
+    # check eigenvector
 
     for i in range(len(df_PCA_decomp.columns)):
         eigenvector = pca.components_[i]
@@ -170,16 +173,12 @@ if __name__ == "__main__":
     os.mkdir("./PCA_pipeline/Output/" + Country_abbr)
     os.mkdir("./PCA_pipeline/Output/" + Country_abbr +"/corr")
     os.mkdir("./PCA_pipeline/Output/" + Country_abbr +"/fig")
-    ##
 
+    ## read in data
     country_df = pd.read_csv(base_dir + Country +'_DataFrame.csv')
     country_comb = generate_combination(Country)
-    # PCA_module(country_df[country_comb[0]])
 
-
-
-
-
+    # run PCA with multiprocessing
     p = Pool(10) 
 
     for i in range(len(country_comb)):
@@ -187,10 +186,4 @@ if __name__ == "__main__":
         if (i%1000 == 0): print(i//1000, "k", sep = "")
     p.close() 
     p.join()
-    # combine_files = (os.listdir("./PCA_pipeline/corr"))
-    # with open("./PCA_pipeline/corr/all.txt", "w") as outfile:
-    #     for name in combine_files:
-    #         if name.endswith("txt"):
-    #             with open("./PCA_pipeline/corr/"+name, "r") as readfile:
-    #                 shutil.copyfileobj(readfile, outfile)
 
