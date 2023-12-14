@@ -13,31 +13,23 @@ library(see)
 
 wd = getwd()
 
+# Read data
+
 egypt_data <- read_csv('data/Egypt_DataFrame.csv') %>%
   clean_names() %>%
-  mutate(
-    country = 'Egypt'
-  )
+  mutate(country = 'Egypt')
 hungary_data <- read_csv('data/Hungary_DataFrame.csv') %>% 
   clean_names() %>%
-  mutate(
-    country = 'Hungary'
-  )
+  mutate(country = 'Hungary')
 nigeria_data <- read_csv('data/Nigeria_DataFrame.csv') %>% 
   clean_names() %>%
-  mutate(
-    country = 'Nigeria'
-  )
+  mutate(country = 'Nigeria')
 poland_data <- read_csv('data/Poland_DataFrame.csv') %>% 
   clean_names() %>%
-  mutate(
-    country = 'Poland'
-  )
+  mutate(country = 'Poland')
 romania_data <- read_csv('data/Romania_DataFrame.csv') %>% 
   clean_names() %>%
-  mutate(
-    country = 'Romania'
-  )
+  mutate(country = 'Romania')
 
 hungary_fci <- read_csv("data/hungary_fci.csv") %>%
   mutate(country = 'Hungary')
@@ -53,13 +45,16 @@ nigeria_fci <- read_csv("data/nigeria_fci.csv") %>%
 combined_data <- bind_rows(egypt_data, hungary_data, nigeria_data, poland_data, 
                            romania_data)
 
-combined_fci <- bind_rows(hungary_fci, poland_fci, romania_fci, egypt_fci, nigeria_fci)
+combined_fci <- bind_rows(hungary_fci, poland_fci, romania_fci, egypt_fci, 
+                          nigeria_fci)
 
+# Turn txt files into tidy df
 read_fci_weights_text <- function(country) {
   file_path = paste0("data/", country, "_weights_rounding.txt")
   skip_val = 4
   if(country %in% c("hungary", "poland")) skip_val = 5
-  read_delim(file_path, delim = " : ", skip = skip_val, col_names = c("variable", "weight")) %>%
+  read_delim(file_path, delim = " : ", skip = skip_val, 
+             col_names = c("variable", "weight")) %>%
     slice(1:n()-1) %>%
     mutate(variable = str_replace_all(variable, "_", " "))
 }
@@ -72,7 +67,7 @@ nigeria_weights_text <- read_fci_weights_text("nigeria")
 
 all_data <- full_join(combined_data, combined_fci, by= c("date", "country"))
 
-
+# Definte UI
 ui <- fluidPage(
   navbarPage("Financial Data Explorer", theme = shinytheme("flatly"),
     tabPanel("Custom FCI", fluid = TRUE, icon = icon("chart-line"),
@@ -82,8 +77,10 @@ ui <- fluidPage(
                  column(10, offset = 2,
                    checkboxGroupInput(
                    "countries", "", inline = TRUE,
-                   choices = c("Egypt", "Nigeria", "Hungary", "Romania", "Poland"),
-                   selected = c("Egypt", "Nigeria", "Hungary", "Romania", "Poland")
+                   choices = c("Egypt", "Nigeria", "Hungary", "Romania", 
+                               "Poland"),
+                   selected = c("Egypt", "Nigeria", "Hungary", "Romania", 
+                                "Poland")
                  )
                  ),
                  plotOutput("fciPlot"),
@@ -96,8 +93,7 @@ ui <- fluidPage(
                  h4("Compare Poland and Hungary to their corresponding IMF FCI"),
                  column(10, offset = 2,
                         radioButtons("imfCountry", "", inline = TRUE,
-                              c("Poland" = "Poland",
-                                "Hungary" = "Hungary"))
+                              c("Poland" = "Poland", "Hungary" = "Hungary"))
                         ),
                  plotOutput("fciIMF")
                  
@@ -107,8 +103,11 @@ ui <- fluidPage(
   tabPanel("A closer look", fluid = TRUE, icon = icon("magnifying-glass"),
            sidebarLayout(
              sidebarPanel(
-               selectInput("country", "Select Country", choices = unique(combined_data$country)),
-               dateRangeInput("dateRange", "Select Date Range", start = min(combined_data$date), end = max(combined_data$date)),
+               selectInput("country", "Select Country", 
+                           choices = unique(combined_data$country)),
+               dateRangeInput("dateRange", "Select Date Range", 
+                              start = min(combined_data$date), 
+                              end = max(combined_data$date)),
                prettyCheckbox("smooth", "Apply smooth line")
                ),
              mainPanel(
@@ -125,9 +124,13 @@ ui <- fluidPage(
   tabPanel("Individual variables", fluid = TRUE, icon = icon("circle-dot"),
            sidebarLayout(
              sidebarPanel(
-               selectInput("countryVar", "Select Country", choices = unique(combined_data$country)),
-               varSelectInput("var", "Choose variable", combined_data %>% select(-date, -country)),
-               dateRangeInput("dateRangeVar", "Select Date Range", start = min(combined_data$date), end = max(combined_data$date)),
+               selectInput("countryVar", "Select Country", 
+                           choices = unique(combined_data$country)),
+               varSelectInput("var", "Choose variable", 
+                              combined_data %>% select(-date, -country)),
+               dateRangeInput("dateRangeVar", "Select Date Range", 
+                              start = min(combined_data$date), 
+                              end = max(combined_data$date)),
                prettyCheckbox("smoothVar", "Apply smooth line")
              ),
              mainPanel(
@@ -146,7 +149,8 @@ ui <- fluidPage(
   tabPanel("Download data", fluid = TRUE, icon = icon("table"),
            sidebarLayout(
              sidebarPanel(
-               selectInput("country", "Select Country", choices = unique(combined_data$country))
+               selectInput("country", "Select Country", 
+                           choices = unique(combined_data$country))
               ),
              mainPanel(
                h3("Download the data"),
@@ -157,8 +161,10 @@ ui <- fluidPage(
   )
 )
 
+# Define server
 server <- function(input, output, session) {
   
+  # Reactive data for FCI plots
   selected_data <- reactive({
     combined_data %>%
       filter(
@@ -198,7 +204,7 @@ server <- function(input, output, session) {
     str_to_title(str_replace_all(as.character(input$var), "_", " "))
   })
   
-  
+  # Plot to explore individual variables
   output$explorePlot <- renderPlotly({
     req(input$country)
     
@@ -217,6 +223,8 @@ server <- function(input, output, session) {
     
     ggplotly(p)
   })
+  
+  # Summary table for individual variables
   output$summaryTable <- renderDT({
     req(selected_data())
     summary_df <- selected_data() %>% 
@@ -230,6 +238,7 @@ server <- function(input, output, session) {
     datatable(summary_df, options = list(pageLength = 5, scrollX = TRUE))
   })
   
+  # Boxplot for individual variables
   output$summaryPlot <- renderPlot({
     req(selected_data())
     ggplot(
@@ -279,6 +288,7 @@ server <- function(input, output, session) {
     }
   )
   
+  # Data for download
   complete_data <- reactive({
     all_data %>%
       filter(country == input$country)
@@ -306,6 +316,7 @@ server <- function(input, output, session) {
     }
   )
   
+  # out of date
   output$allCountriesPlot <- renderPlotly({
     req(selected_data())
     
@@ -352,7 +363,7 @@ server <- function(input, output, session) {
     }
   )
   
-  
+  # First exploratory FCI plot
   output$fciPlot <- renderPlot({
     req(input$countries)
     p <- ggplot(
@@ -376,7 +387,8 @@ server <- function(input, output, session) {
     
     p
   })
-    
+  
+    # Closer look FCI plot
     output$fciIndPlot <- renderPlot({
       req(input$country)
       p <- ggplot(
@@ -402,6 +414,7 @@ server <- function(input, output, session) {
       p
     })
   
+    # Plot depicting IMF FCI
   output$fciIMF <- renderPlot({
     req(input$imfCountry)
     p <- ggplot(
@@ -485,6 +498,7 @@ server <- function(input, output, session) {
     }
   )
   
+  # Formatted weights table
   output$weightsInfo <- renderDT({
     req(input$country)
     weights_text <- switch(input$country,
