@@ -41,3 +41,5 @@ The gathered data is stored in "data" folder.
 The data and output of PCA analysis is in "PCA_pipeline" folder. "PCA-trial" folder contains a PCA trial for Poland with 7 time series.
 
 Please refer to Readme file in "PCA_pipeline" folder for information about PCA analysis.
+
+Please refer to Readme file in "FCI_app" for information about RShiny app.
