@@ -1,4 +1,4 @@
-# Build benchmark financial condition indicators for emergying market countries
+# Build Benchmark Financial Condition Indicators for Emergying Market Countries
 ### Group members Name UNI 
 - Boping Xia (bx2210)
 - Xinhao Dai (xd2285)
@@ -53,7 +53,7 @@ Please refer to Readme file in "FCI_app" for information about RShiny app.
 ## Directory tree
 <details>
 
-<summary> large!! tip here to unfold it </summary>
+<summary> caution!! large!! tip here to unfold it </summary>
 
 ```bash
 .gitignore
