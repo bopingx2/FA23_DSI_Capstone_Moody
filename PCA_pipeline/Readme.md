@@ -10,6 +10,8 @@ This folder contains the codes and results for PCA analysis.
 
 - __vis.ipynb__ (Deprecated) create some graph for poster or report.
 
+- __optimal_pca_selection__ Select the optimal permutation PCA result based on explained variance ratio and correlation value.
+
 ### Folder Descrption:
 
 - __Output__: includes PCA results for each country. "corr" folder contains the information about correlation (for Poland and Hungary), explain variance ratio, and weight of every selected time series. "fig" folder contains the visualized FCI graph. "FCI.csv" is the final FCI we selected and created.
