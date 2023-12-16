@@ -1,7 +1,4 @@
-# FA23_DSI_Capstone_Moody
-
-This Capstone Project is sponsored by Moody’s Investor Service, a bond credit ratings company. Our goal is to develop a country-specific Financial Condition Indicator (FCI) for multiple emerging market countries (Egypt, Hungary, Nigeria, Poland, and Romania). To visually analyze FCIs, we also developed R Shiny Dashboards that visualize our results. FCIs are used in financial areas that could tell investors and analysts about an economy's financial status and assist them in making decisions. Most companies and agencies have already built FCIs for developed countries and some well-known developing countries as they play crucial roles in the world economic system. But other emerging markets do have more investment opportunities, and we need some kind of metrics to evaluate their financial health and risks. To develop a reasonable FCI, we gathered data from multiple economic aspects (bond markets, equity markets, macroeconomic fundamentals, and money and portfolio flows) and determined possible components and their weight to the final FCI. Our final product is an R shiny Dashboard which includes interactive features for users to research or compare FCIs between different time periods and countries. 
-
+# Build benchmark financial condition indicators for emergying market countries
 ### Group members Name UNI 
 - Boping Xia (bx2210)
 - Xinhao Dai (xd2285)
@@ -11,9 +8,11 @@ This Capstone Project is sponsored by Moody’s Investor Service, a bond credit 
 
 Emails  &lt;UNI&gt; @ columbia.edu
 
-**Accenture mentor & co-mentors:** Tiago Freire and Gina He
+**Moody's mentor & co-mentors:** Tiago Freire and Gina He
 
 **Instructor/CA:** Prof. Adam Kelleher and Rufina Flora George Rajan
+
+This Capstone Project is sponsored by Moody’s Investor Service, a bond credit ratings company. Our goal is to develop a country-specific Financial Condition Indicator (FCI) for multiple emerging market countries (Egypt, Hungary, Nigeria, Poland, and Romania). To visually analyze FCIs, we also developed R Shiny Dashboards that visualize our results. FCIs are used in financial areas that could tell investors and analysts about an economy's financial status and assist them in making decisions. Most companies and agencies have already built FCIs for developed countries and some well-known developing countries as they play crucial roles in the world economic system. But other emerging markets do have more investment opportunities, and we need some kind of metrics to evaluate their financial health and risks. To develop a reasonable FCI, we gathered data from multiple economic aspects (bond markets, equity markets, macroeconomic fundamentals, and money and portfolio flows) and determined possible components and their weight to the final FCI. Our final product is an R shiny Dashboard which includes interactive features for users to research or compare FCIs between different time periods and countries. 
 
 
 ## Data Gathering
