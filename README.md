@@ -46,6 +46,7 @@ Please refer to Readme file in "FCI_app" for information about RShiny app.
 
 
 ## Directory tree
+```bash
 .gitignore
 Data Gathering Process
    |-- Data Gathering Current Account balance year-over-year.Rmd
@@ -16407,4 +16408,4 @@ data
    |   |   |-- NGXINDX daily prices.xlsx
    |   |   |-- Warsaw Stock Exchange WIG Index daily prices.xlsx
    |   |   |-- stock_indeices_calculation.ipynb
-
+```
