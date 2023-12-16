@@ -51,8 +51,11 @@ Please refer to Readme file in "PCA_pipeline" folder for information about PCA a
 
 Please refer to Readme file in "FCI_app" for information about RShiny app.
 
-
 ## Directory tree
+<details>
+
+<summary> large!! tip here to unfold it </summary>
+
 ```bash
 .gitignore
 Data Gathering Process
@@ -16416,3 +16419,4 @@ data
    |   |   |-- Warsaw Stock Exchange WIG Index daily prices.xlsx
    |   |   |-- stock_indeices_calculation.ipynb
 ```
+</details>
